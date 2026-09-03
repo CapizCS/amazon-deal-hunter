@@ -147,24 +147,46 @@ def search_parse(query):
             response.read().decode("utf-8")
         )
 
-    # Parse può restituire direttamente una lista
-    # oppure una lista dentro un campo contenitore.
-    if isinstance(data, list):
-        return data
+    def find_products(value):
+        # Lista di prodotti
+        if isinstance(value, list):
+            products = [
+                item for item in value
+                if isinstance(item, dict) and item.get("asin")
+            ]
 
-    if isinstance(data, dict):
-        for key in ["data", "results", "products", "items"]:
-            value = data.get(key)
+            if products:
+                return products
 
-            if isinstance(value, list):
-                return value
+            # Cerca anche dentro eventuali liste annidate
+            for item in value:
+                result = find_products(item)
+                if result:
+                    return result
 
-        # Fallback: cerca una lista tra i valori della risposta.
-        for value in data.values():
-            if isinstance(value, list):
-                return value
+        # Dizionario: cerca ricorsivamente in tutti i valori
+        elif isinstance(value, dict):
+            if value.get("asin"):
+                return [value]
 
-    return []
+            for item in value.values():
+                result = find_products(item)
+                if result:
+                    return result
+
+        # A volte una risposta può contenere JSON sotto forma di stringa
+        elif isinstance(value, str):
+            try:
+                decoded = json.loads(value)
+                return find_products(decoded)
+            except (json.JSONDecodeError, TypeError):
+                pass
+
+        return []
+
+    products = find_products(data)
+
+    return products
 
 
 def product_passes_filter(product, category):
