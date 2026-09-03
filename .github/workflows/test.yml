@@ -1,34 +1,44 @@
-name: Deal Hunter Test
+name: Telegram Test
 
 on:
   workflow_dispatch:
-  push:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Scarica il progetto
-        uses: actions/checkout@v4
-
-      - name: Configura Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Test Telegram
+      - name: Trova Chat ID
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
           python - <<'PY'
           import os
+          import json
           import urllib.request
-          import urllib.parse
 
           token = os.environ["TELEGRAM_BOT_TOKEN"]
 
-          # Per ora il chat ID lo inseriremo nel prossimo passaggio.
-          print("Token Telegram trovato correttamente.")
-          print("Test configurazione completato.")
+          url = f"https://api.telegram.org/bot{token}/getUpdates"
+
+          with urllib.request.urlopen(url) as response:
+              data = json.load(response)
+
+          if not data.get("ok"):
+              raise SystemExit("Errore Telegram")
+
+          results = data.get("result", [])
+
+          if not results:
+              raise SystemExit("Nessun messaggio ricevuto dal bot.")
+
+          for update in results:
+              message = update.get("message", {})
+              chat = message.get("chat", {})
+
+              if chat:
+                  print("CHAT_ID:", chat.get("id"))
+                  print("NOME:", chat.get("first_name", ""))
+                  print("USERNAME:", chat.get("username", ""))
+
           PY
