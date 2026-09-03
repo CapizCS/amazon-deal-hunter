@@ -4,7 +4,11 @@ import urllib.request
 
 
 def calculate_deal_score(current_price, normal_price):
-    if current_price <= 0 or normal_price <= 0:
+    # Il nostro range di acquisto
+    if current_price < 10 or current_price > 50:
+        return 0
+
+    if normal_price <= 0:
         return 0
 
     ratio = normal_price / current_price
