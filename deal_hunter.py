@@ -1,10 +1,4 @@
 def calculate_deal_score(current_price, normal_price):
-    """
-    Calcola un punteggio preliminare da 0 a 100.
-    Più il prezzo attuale è basso rispetto al prezzo normale,
-    maggiore è il punteggio.
-    """
-
     if current_price <= 0 or normal_price <= 0:
         return 0
 
@@ -13,7 +7,7 @@ def calculate_deal_score(current_price, normal_price):
 
     score = 0
 
-    # Rapporto prezzo normale / prezzo attuale
+    # Rapporto tra prezzo normale e prezzo attuale
     if ratio >= 5:
         score += 50
     elif ratio >= 4:
@@ -37,27 +31,46 @@ def calculate_deal_score(current_price, normal_price):
     elif discount >= 0.40:
         score += 10
 
-    # Bonus se il prezzo è nel nostro range ideale
+    # Prezzo nel nostro range
     if 10 <= current_price <= 50:
         score += 15
 
     return min(score, 100)
 
 
+def analyze_product(name, current_price, normal_price):
+    score = calculate_deal_score(current_price, normal_price)
+
+    ratio = normal_price / current_price
+    discount = (1 - current_price / normal_price) * 100
+
+    print()
+    print("=" * 50)
+    print(name)
+    print(f"Prezzo attuale: {current_price:.2f} €")
+    print(f"Prezzo normale: {normal_price:.2f} €")
+    print(f"Valore/prezzo:  {ratio:.1f}x")
+    print(f"Sconto reale:   {discount:.1f}%")
+    print(f"DEAL SCORE:     {score}/100")
+
+    if score >= 80:
+        print("🔥 SUPER DEAL")
+    elif score >= 65:
+        print("🟢 AFFARE")
+    else:
+        print("⚪ IGNORA")
+
+
 if __name__ == "__main__":
-    examples = [
-        ("Prodotto A", 39, 45),
-        ("Prodotto B", 39, 179),
-        ("Prodotto C", 25, 120),
-        ("Prodotto D", 49, 199),
+
+    products = [
+        ("Cuffie economiche", 39, 45),
+        ("Smartwatch", 39, 179),
+        ("SSD", 29, 119),
+        ("Monitor gaming", 49, 199),
+        ("Prodotto troppo economico", 5, 100),
+        ("Prodotto troppo costoso", 89, 300),
     ]
 
-    for name, current, normal in examples:
-        score = calculate_deal_score(current, normal)
-
-        print(
-            f"{name}: "
-            f"{current:.2f}€ -> "
-            f"normale {normal:.2f}€ | "
-            f"Deal Score: {score}/100"
-        )
+    for product in products:
+        analyze_product(*product)
