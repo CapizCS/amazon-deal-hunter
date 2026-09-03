@@ -14,13 +14,13 @@ def main():
 
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
+
+            data = response.read()
+
             print(f"HTTP status: {response.status}")
+            print(f"URL finale: {response.geturl()}")
             print(f"Content-Type: {response.headers.get('Content-Type')}")
-
-            data = response.read(500)
-
-            print("Primi 500 byte ricevuti:")
-            print(data.decode("utf-8", errors="replace"))
+            print(f"Dimensione risposta: {len(data)} byte")
 
     except Exception as error:
         print(f"Richiesta fallita: {type(error).__name__}")
