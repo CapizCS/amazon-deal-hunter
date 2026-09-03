@@ -34,7 +34,7 @@ def get_historical_low(history_data, product_id):
 
 def calculate_deal_score(current_price, normal_price, historical_low=None):
 
-    # Il nostro range di acquisto
+    # Prezzo di acquisto consentito
     if current_price < MIN_PRICE or current_price > MAX_PRICE:
         return 0
 
@@ -46,43 +46,45 @@ def calculate_deal_score(current_price, normal_price, historical_low=None):
 
     score = 0
 
-    # Rapporto valore / prezzo
+    # 1. Rapporto tra valore normale e prezzo attuale
     if ratio >= 5:
-        score += 50
-    elif ratio >= 4:
         score += 45
+    elif ratio >= 4:
+        score += 40
     elif ratio >= 3:
-        score += 38
+        score += 35
     elif ratio >= 2.5:
-        score += 30
+        score += 28
     elif ratio >= 2:
         score += 20
     elif ratio >= 1.5:
         score += 10
 
-    # Sconto rispetto al prezzo normale
+    # 2. Sconto reale
     if discount >= 0.80:
-        score += 30
-    elif discount >= 0.70:
         score += 25
+    elif discount >= 0.70:
+        score += 22
     elif discount >= 0.60:
-        score += 20
+        score += 18
     elif discount >= 0.50:
-        score += 15
+        score += 14
     elif discount >= 0.40:
         score += 8
 
-    # Vicinanza al minimo storico
-    if historical_low is not None:
+    # 3. Quanto siamo vicini al minimo storico
+    if historical_low is not None and historical_low > 0:
 
-        distance_from_low = current_price / historical_low
+        distance = current_price / historical_low
 
-        if distance_from_low <= 1.05:
-            score += 20
-        elif distance_from_low <= 1.10:
-            score += 15
-        elif distance_from_low <= 1.20:
-            score += 8
+        if distance <= 1.02:
+            score += 30
+        elif distance <= 1.05:
+            score += 25
+        elif distance <= 1.10:
+            score += 18
+        elif distance <= 1.20:
+            score += 10
 
     return min(score, 100)
 
