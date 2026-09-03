@@ -117,7 +117,7 @@ def main():
     history = load_history()
 
     searches = [
-        ("ssd 1tb", "technology"),
+        ("abbigliamento", "clothing"),
         ("cuffie bluetooth", "technology"),
         ("accessori gaming", "gaming"),
         ("gadget casa", "home")
