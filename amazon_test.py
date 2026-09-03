@@ -1,7 +1,7 @@
 import urllib.request
 
 
-URL = "https://www.amazon.it/"
+URL = "https://amzn.eu/d/0iH70vWg"
 
 
 def main():
