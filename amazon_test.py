@@ -1,31 +1,32 @@
+import re
+import urllib.parse
 import urllib.request
 
+SEARCH = "ssd 1tb"
 
-URL = "https://amzn.eu/d/0iH70vWg"
+url = (
+    "https://www.amazon.it/s?k=" +
+    urllib.parse.quote(SEARCH)
+)
 
+request = urllib.request.Request(
+    url,
+    headers={
+        "User-Agent": "DealHunterTest/1.0",
+        "Accept-Language": "it-IT,it;q=0.9"
+    }
+)
 
-def main():
-    request = urllib.request.Request(
-        URL,
-        headers={
-            "User-Agent": "DealHunterTest/1.0"
-        }
-    )
+with urllib.request.urlopen(request, timeout=20) as response:
+    html = response.read().decode("utf-8", errors="ignore")
 
-    try:
-        with urllib.request.urlopen(request, timeout=20) as response:
+print("Dimensione HTML:", len(html))
 
-            data = response.read()
+asins = sorted(set(
+    re.findall(r'data-asin="([A-Z0-9]{10})"', html)
+))
 
-            print(f"HTTP status: {response.status}")
-            print(f"URL finale: {response.geturl()}")
-            print(f"Content-Type: {response.headers.get('Content-Type')}")
-            print(f"Dimensione risposta: {len(data)} byte")
+print(f"ASIN trovati: {len(asins)}")
 
-    except Exception as error:
-        print(f"Richiesta fallita: {type(error).__name__}")
-        print(str(error))
-
-
-if __name__ == "__main__":
-    main()
+for asin in asins[:10]:
+    print("-", asin)
