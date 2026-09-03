@@ -16,6 +16,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Aggiorna storico prezzi
+        run: python price_tracker.py
+
+      - name: Salva storico aggiornato
+        run: |
+          git config user.name "Deal Hunter"
+          git config user.email "deal-hunter@users.noreply.github.com"
+          git add price_history.json
+          git diff --cached --quiet || git commit -m "Aggiorna storico prezzi"
+          git push
+
       - name: Avvia Deal Hunter
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
