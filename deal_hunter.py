@@ -218,7 +218,7 @@ def analyze_product(product):
             f"💎 Valore/prezzo: {ratio:.1f}x\n"
             f"📈 Minimo storico: {historical_low:.2f} €\n"
             f"⭐ Deal Score: {score}/100\n\n"
-            f"🔗 {product['url']}"
+            f"🔗 https://www.amazon.it/dp/{product['asin']}"
         )
 
         send_telegram(message)
