@@ -3,7 +3,7 @@ import json
 import statistics
 import urllib.parse
 import urllib.request
-
+from datetime import date
 
 MIN_PRICE = 10
 MAX_PRICE = 50
@@ -20,9 +20,6 @@ def get_real_products(history_data):
     products = []
 
     for asin, product in history_data.items():
-
-        # I prodotti reali raccolti da Parse hanno un titolo.
-        # I vecchi prodotti di test non lo hanno.
         if not product.get("title"):
             continue
 
@@ -47,11 +44,6 @@ def get_real_products(history_data):
 
 
 def calculate_normal_price(prices):
-    """
-    Usa la mediana dello storico come stima
-    del prezzo normale.
-    """
-
     return statistics.median(prices)
 
 
@@ -61,7 +53,6 @@ def calculate_deal_score(
     historical_low=None,
     history_points=0
 ):
-
     if current_price < MIN_PRICE or current_price > MAX_PRICE:
         return 0
 
@@ -76,7 +67,6 @@ def calculate_deal_score(
 
     score = 0
 
-    # 1. Rapporto valore/prezzo
     if ratio >= 5:
         score += 45
     elif ratio >= 4:
@@ -90,7 +80,6 @@ def calculate_deal_score(
     elif ratio >= 1.5:
         score += 10
 
-    # 2. Sconto rispetto al prezzo normale
     if discount >= 0.80:
         score += 25
     elif discount >= 0.70:
@@ -102,9 +91,7 @@ def calculate_deal_score(
     elif discount >= 0.40:
         score += 8
 
-    # 3. Vicinanza al minimo storico
     if historical_low is not None and historical_low > 0:
-
         distance = current_price / historical_low
 
         if distance <= 1.02:
@@ -120,7 +107,6 @@ def calculate_deal_score(
 
 
 def get_deal_level(score):
-
     if score >= 90:
         return "🚨 ECCEZIONALE"
 
@@ -134,7 +120,6 @@ def get_deal_level(score):
 
 
 def send_telegram(message):
-
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
@@ -145,35 +130,24 @@ def send_telegram(message):
         "text": message
     }).encode()
 
-    request = urllib.request.Request(
-        url,
-        data=data
-    )
+    request = urllib.request.Request(url, data=data)
 
     with urllib.request.urlopen(request, timeout=20) as response:
-
         if response.status == 200:
-            print("Telegram: notifica inviata")
+            print("Telegram: messaggio inviato")
 
 
 def analyze_product(product):
-
     prices = product["prices"]
 
-    # Servono almeno 3 rilevazioni
     if len(prices) < MIN_HISTORY_POINTS:
-
         print()
         print(f"IN ATTESA STORICO: {product['title']}")
         print(f"Rilevazioni: {len(prices)}/{MIN_HISTORY_POINTS}")
-
-        return
+        return False
 
     current_price = prices[-1]
-
-    # Prezzo normale = mediana dello storico
     normal_price = calculate_normal_price(prices)
-
     historical_low = min(prices)
 
     score = calculate_deal_score(
@@ -194,11 +168,7 @@ def analyze_product(product):
     print(f"Rilevazioni: {len(prices)}")
 
     if normal_price > 0:
-
-        discount = (
-            1 - current_price / normal_price
-        ) * 100
-
+        discount = (1 - current_price / normal_price) * 100
         ratio = normal_price / current_price
 
         print(f"Sconto rispetto allo storico: {discount:.1f}%")
@@ -208,7 +178,6 @@ def analyze_product(product):
     print(f"VALUTAZIONE: {get_deal_level(score)}")
 
     if score >= 65:
-
         message = (
             f"{get_deal_level(score)}\n\n"
             f"🛍 {product['title']}\n"
@@ -222,12 +191,13 @@ def analyze_product(product):
         )
 
         send_telegram(message)
+        return True
+
+    return False
 
 
 def main():
-
     history_data = load_price_history()
-
     products = get_real_products(history_data)
 
     print()
@@ -236,9 +206,26 @@ def main():
     print(f"Prodotti reali nello storico: {len(products)}")
     print("=" * 70)
 
-    for product in products:
+    deals_found = 0
 
-        analyze_product(product)
+    for product in products:
+        if analyze_product(product):
+            deals_found += 1
+
+    if deals_found == 0:
+        message = (
+            "🤖 Deal Hunter — Controllo completato\n\n"
+            f"📅 {date.today().strftime('%d/%m/%Y')}\n"
+            f"📦 Prodotti analizzati: {len(products)}\n"
+            f"💰 Fascia prezzo: {MIN_PRICE}–{MAX_PRICE} €\n"
+            "🔥 Deal trovati: 0\n\n"
+            "Nessun affare abbastanza interessante oggi."
+        )
+
+        send_telegram(message)
+
+        print()
+        print("Telegram: nessun deal trovato, inviato messaggio di controllo.")
 
 
 if __name__ == "__main__":
