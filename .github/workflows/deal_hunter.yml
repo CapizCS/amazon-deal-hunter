@@ -33,6 +33,10 @@ jobs:
       - name: Test accesso Amazon
         run: python amazon_test.py
 
+      - name: Test Parse Amazon
+        env:
+          PARSE_API_KEY: ${{ secrets.PARSE_API_KEY }}
+        run: python parse_test.py
       - name: Avvia Deal Hunter
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
