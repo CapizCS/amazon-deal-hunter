@@ -143,9 +143,28 @@ def search_parse(query):
     )
 
     with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(
+        data = json.loads(
             response.read().decode("utf-8")
         )
+
+    # Parse può restituire direttamente una lista
+    # oppure una lista dentro un campo contenitore.
+    if isinstance(data, list):
+        return data
+
+    if isinstance(data, dict):
+        for key in ["data", "results", "products", "items"]:
+            value = data.get(key)
+
+            if isinstance(value, list):
+                return value
+
+        # Fallback: cerca una lista tra i valori della risposta.
+        for value in data.values():
+            if isinstance(value, list):
+                return value
+
+    return []
 
 
 def product_passes_filter(product, category):
