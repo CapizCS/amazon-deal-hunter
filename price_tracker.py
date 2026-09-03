@@ -4,6 +4,9 @@ from datetime import date
 
 HISTORY_FILE = "price_history.json"
 
+MIN_PRICE = 10
+MAX_PRICE = 50
+
 
 def load_history():
     with open(HISTORY_FILE, "r", encoding="utf-8") as file:
