@@ -1,14 +1,40 @@
 import os
+import json
 import urllib.parse
 import urllib.request
 
 
 MIN_PRICE = 10
 MAX_PRICE = 50
+HISTORY_FILE = "price_history.json"
+
+
+def load_price_history():
+    with open(HISTORY_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def get_historical_low(history_data, product_id):
+    product = history_data.get(product_id)
+
+    if not product:
+        return None
+
+    prices = [
+        item["price"]
+        for item in product.get("prices", [])
+        if item.get("price", 0) > 0
+    ]
+
+    if not prices:
+        return None
+
+    return min(prices)
 
 
 def calculate_deal_score(current_price, normal_price, historical_low=None):
-    # Filtro obbligatorio: compriamo solo tra 10 € e 50 €
+
+    # Il nostro range di acquisto
     if current_price < MIN_PRICE or current_price > MAX_PRICE:
         return 0
 
@@ -20,7 +46,7 @@ def calculate_deal_score(current_price, normal_price, historical_low=None):
 
     score = 0
 
-    # Quanto valore riceviamo per ogni euro speso
+    # Rapporto valore / prezzo
     if ratio >= 5:
         score += 50
     elif ratio >= 4:
@@ -46,8 +72,9 @@ def calculate_deal_score(current_price, normal_price, historical_low=None):
     elif discount >= 0.40:
         score += 8
 
-    # Bonus se il prezzo attuale è vicino al minimo storico
-    if historical_low is not None and historical_low > 0:
+    # Vicinanza al minimo storico
+    if historical_low is not None:
+
         distance_from_low = current_price / historical_low
 
         if distance_from_low <= 1.05:
@@ -61,17 +88,22 @@ def calculate_deal_score(current_price, normal_price, historical_low=None):
 
 
 def get_deal_level(score):
+
     if score >= 90:
         return "🚨 ECCEZIONALE"
+
     elif score >= 80:
         return "🔥 SUPER DEAL"
+
     elif score >= 65:
         return "🟢 AFFARE"
+
     else:
         return "⚪ IGNORA"
 
 
 def send_telegram(message):
+
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
@@ -85,52 +117,65 @@ def send_telegram(message):
     request = urllib.request.Request(url, data=data)
 
     with urllib.request.urlopen(request) as response:
+
         if response.status == 200:
             print("Telegram: notifica inviata")
+
         else:
             print(f"Telegram: errore HTTP {response.status}")
 
 
 def analyze_product(
+    product_id,
     name,
     current_price,
     normal_price,
-    historical_low=None
+    history_data
 ):
+
+    historical_low = get_historical_low(
+        history_data,
+        product_id
+    )
+
     score = calculate_deal_score(
         current_price,
         normal_price,
         historical_low
     )
 
-    # Fuori dal nostro range: ignoriamo completamente
+    # Fuori dal range
     if score == 0:
+
         print()
         print(f"IGNORATO: {name}")
         print(f"Prezzo: {current_price:.2f} €")
+
         return
 
     ratio = normal_price / current_price
     discount = (1 - current_price / normal_price) * 100
     saving = normal_price - current_price
+
     level = get_deal_level(score)
 
     print()
     print("=" * 60)
     print(name)
-    print(f"Prezzo attuale:   {current_price:.2f} €")
-    print(f"Prezzo normale:    {normal_price:.2f} €")
-    print(f"Risparmio:         {saving:.2f} €")
-    print(f"Sconto reale:      {discount:.1f}%")
-    print(f"Valore/prezzo:     {ratio:.1f}x")
+    print(f"Prezzo attuale: {current_price:.2f} €")
+    print(f"Prezzo normale: {normal_price:.2f} €")
+    print(f"Risparmio: {saving:.2f} €")
+    print(f"Sconto reale: {discount:.1f}%")
+    print(f"Valore/prezzo: {ratio:.1f}x")
 
-    if historical_low:
-        print(f"Minimo storico:    {historical_low:.2f} €")
+    if historical_low is not None:
+        print(f"Minimo storico: {historical_low:.2f} €")
 
-    print(f"DEAL SCORE:        {score}/100")
-    print(f"VALUTAZIONE:       {level}")
+    print(f"DEAL SCORE: {score}/100")
+    print(f"VALUTAZIONE: {level}")
 
     if score >= 65:
+
         message = (
             f"{level}\n\n"
             f"🛍 {name}\n"
@@ -141,8 +186,11 @@ def analyze_product(
             f"💎 Valore/prezzo: {ratio:.1f}x\n"
         )
 
-        if historical_low:
-            message += f"📈 Minimo storico: {historical_low:.2f} €\n"
+        if historical_low is not None:
+            message += (
+                f"📈 Minimo storico: "
+                f"{historical_low:.2f} €\n"
+            )
 
         message += f"⭐ Deal Score: {score}/100"
 
@@ -151,24 +199,45 @@ def analyze_product(
 
 if __name__ == "__main__":
 
+    history_data = load_price_history()
+
     products = [
-        # nome, prezzo attuale, prezzo normale, minimo storico
 
-        ("Smartwatch", 39, 179, 35),
+        {
+            "id": "smartwatch",
+            "name": "Smartwatch",
+            "current_price": 39,
+            "normal_price": 179
+        },
 
-        ("SSD", 29, 119, 27),
+        {
+            "id": "ssd",
+            "name": "SSD",
+            "current_price": 29,
+            "normal_price": 119
+        },
 
-        ("Monitor gaming", 49, 199, 45),
+        {
+            "id": "monitor-gaming",
+            "name": "Monitor gaming",
+            "current_price": 49,
+            "normal_price": 199
+        },
 
-        # Questo NON deve generare una notifica
-        ("Prodotto troppo economico", 5, 100, 4),
-
-        # Questo NON deve generare una notifica
-        ("Prodotto troppo costoso", 89, 300, 80),
-
-        # Questo serve a testare un falso affare
-        ("Falso affare", 39, 45, 38),
+        {
+            "id": "fake-deal",
+            "name": "Falso affare",
+            "current_price": 39,
+            "normal_price": 45
+        }
     ]
 
     for product in products:
-        analyze_product(*product)
+
+        analyze_product(
+            product["id"],
+            product["name"],
+            product["current_price"],
+            product["normal_price"],
+            history_data
+        )
