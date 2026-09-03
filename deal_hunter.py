@@ -1,3 +1,8 @@
+import os
+import urllib.parse
+import urllib.request
+
+
 def calculate_deal_score(current_price, normal_price):
     if current_price <= 0 or normal_price <= 0:
         return 0
@@ -7,7 +12,6 @@ def calculate_deal_score(current_price, normal_price):
 
     score = 0
 
-    # Rapporto tra prezzo normale e prezzo attuale
     if ratio >= 5:
         score += 50
     elif ratio >= 4:
@@ -19,7 +23,6 @@ def calculate_deal_score(current_price, normal_price):
     elif ratio >= 2:
         score += 20
 
-    # Sconto reale
     if discount >= 0.80:
         score += 35
     elif discount >= 0.70:
@@ -31,11 +34,29 @@ def calculate_deal_score(current_price, normal_price):
     elif discount >= 0.40:
         score += 10
 
-    # Prezzo nel nostro range
     if 10 <= current_price <= 50:
         score += 15
 
     return min(score, 100)
+
+
+def send_telegram(message):
+    token = os.environ["TELEGRAM_BOT_TOKEN"]
+    chat_id = os.environ["TELEGRAM_CHAT_ID"]
+
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+
+    data = urllib.parse.urlencode({
+        "chat_id": chat_id,
+        "text": message
+    }).encode()
+
+    request = urllib.request.Request(url, data=data)
+
+    with urllib.request.urlopen(request) as response:
+        result = response.read().decode()
+
+    print("Telegram:", result)
 
 
 def analyze_product(name, current_price, normal_price):
@@ -53,10 +74,25 @@ def analyze_product(name, current_price, normal_price):
     print(f"Sconto reale:   {discount:.1f}%")
     print(f"DEAL SCORE:     {score}/100")
 
+    # Per il primo test notifichiamo solo i veri affari
     if score >= 80:
         print("🔥 SUPER DEAL")
+
+        message = (
+            "🔥 SUPER DEAL\n\n"
+            f"🛍 {name}\n"
+            f"💰 Ora: {current_price:.2f} €\n"
+            f"📊 Prezzo normale: {normal_price:.2f} €\n"
+            f"📉 Sconto reale: {discount:.1f}%\n"
+            f"💎 Rapporto valore/prezzo: {ratio:.1f}x\n"
+            f"⭐ Deal Score: {score}/100"
+        )
+
+        send_telegram(message)
+
     elif score >= 65:
         print("🟢 AFFARE")
+
     else:
         print("⚪ IGNORA")
 
