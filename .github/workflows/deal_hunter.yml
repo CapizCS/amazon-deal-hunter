@@ -22,10 +22,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test Parse Amazon
-        env:
-          PARSE_API_KEY: ${{ secrets.PARSE_API_KEY }}
-        run: python parse_test.py
 
       - name: Aggiorna storico prezzi
         env:
