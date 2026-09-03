@@ -17,5 +17,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Avvia Deal Hunter
-        run: python deal_hunter.py
+      - name: Test Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          python - <<'PY'
+          import os
+          import urllib.request
+          import urllib.parse
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+
+          # Per ora il chat ID lo inseriremo nel prossimo passaggio.
+          print("Token Telegram trovato correttamente.")
+          print("Test configurazione completato.")
+          PY
