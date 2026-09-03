@@ -38,28 +38,133 @@ def update_price(history, product_id, price):
         "price": price
     })
 
+def search_parse(query, category):
+    import os
+    import urllib.parse
+    import urllib.request
+
+    api_url = (
+        "https://api.parse.bot"
+        "/scraper/18564612-8aa3-47b4-a88b-4bc5ba70f945"
+        "/get_search_results_csv"
+    )
+
+    params = urllib.parse.urlencode({
+        "query": query
+    })
+
+    request = urllib.request.Request(
+        f"{api_url}?{params}",
+        headers={
+            "X-API-Key": os.environ["PARSE_API_KEY"]
+        }
+    )
+
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = json.loads(
+            response.read().decode("utf-8")
+        )
+
+    products = data.get("data", {}).get("products", [])
+
+    print(f"Ricerca: {query}")
+    print(f"Prodotti ricevuti: {len(products)}")
+
+    return products, category
+
+
+def save_product(history, product, category):
+
+    asin = product.get("asin")
+    price = product.get("price")
+
+    if not asin or not price:
+        return
+
+    if asin not in history:
+
+        history[asin] = {
+            "category": category,
+            "title": product.get("title", ""),
+            "url": product.get("product_url", ""),
+            "image_url": product.get("image_url", ""),
+            "rating": product.get("rating"),
+            "ratings_count": product.get("ratings_count", 0),
+            "prices": []
+        }
+
+    else:
+
+        history[asin]["category"] = category
+        history[asin]["title"] = product.get(
+            "title",
+            history[asin].get("title", "")
+        )
+
+        history[asin]["url"] = product.get(
+            "product_url",
+            history[asin].get("url", "")
+        )
+
+    update_price(history, asin, float(price))
+
 
 def main():
 
     history = load_history()
 
-    # Prezzi di test attuali.
-    # In seguito questi valori arriveranno dalla fonte dati reale.
-    products = {
-        "smartwatch": 39.00,
-        "ssd": 29.00,
-        "monitor-gaming": 49.00
-    }
+    searches = [
+        ("ssd 1tb", "technology"),
+        ("cuffie bluetooth", "technology"),
+        ("accessori gaming", "gaming"),
+        ("gadget casa", "home")
+    ]
 
-    for product_id, price in products.items():
-        update_price(history, product_id, price)
+    total = 0
+
+    for query, category in searches:
+
+        try:
+
+            products, category = search_parse(
+                query,
+                category
+            )
+
+            for product in products:
+
+                price = product.get("price")
+
+                if price is None:
+                    continue
+
+                price = float(price)
+
+                # Il nostro range: 10–50 €
+                if MIN_PRICE <= price <= MAX_PRICE:
+
+                    save_product(
+                        history,
+                        product,
+                        category
+                    )
+
+                    total += 1
+
+        except Exception as error:
+
+            print()
+            print(f"Errore ricerca '{query}':")
+            print(type(error).__name__)
+            print(str(error))
 
     save_history(history)
 
-    print("Storico prezzi aggiornato correttamente.")
-
-    for product_id, price in products.items():
-        print(f"{product_id}: {price:.2f} €")
+    print()
+    print("=" * 60)
+    print("Storico aggiornato.")
+    print(f"Prodotti nel range 10–50 € elaborati: {total}")
+    print(f"Totale prodotti nello storico: {len(history)}")
 
 
 if __name__ == "__main__":
