@@ -30,6 +30,9 @@ jobs:
           git diff --cached --quiet || git commit -m "Aggiorna storico prezzi"
           git push
 
+      - name: Test accesso Amazon
+        run: python amazon_test.py
+
       - name: Avvia Deal Hunter
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
