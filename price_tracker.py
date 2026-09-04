@@ -54,86 +54,37 @@ MIN_HISTORY_POINTS = 3
 # ============================================================
 
 SEARCH_CYCLE = [
-    {
-        "category": "technology",
-        "query": "tecnologia elettronica",
-    },
-    {
-        "category": "gaming",
-        "query": "gaming",
-    },
-    {
-        "category": "women_evening",
-        "query": "vestito da sera donna",
-    },
-    {
-        "category": "outdoor_clothing",
-        "query": "abbigliamento outdoor",
-    },
-    {
-        "category": "men_tshirts",
-        "query": "t-shirt uomo",
-    },
-    {
-        "category": "technology",
-        "query": "smartwatch cuffie auricolari",
-    },
-    {
-        "category": "gaming",
-        "query": "accessori gaming",
-    },
-    {
-        "category": "women_evening",
-        "query": "abito elegante donna",
-    },
-    {
-        "category": "outdoor_clothing",
-        "query": "giacca outdoor uomo donna",
-    },
-    {
-        "category": "men_tshirts",
-        "query": "magliette uomo",
-    },
-    {
-        "category": "technology",
-        "query": "computer accessori elettronica",
-    },
-    {
-        "category": "gaming",
-        "query": "mouse tastiera gaming",
-    },
-    {
-        "category": "women_evening",
-        "query": "vestito elegante donna",
-    },
-    {
-        "category": "outdoor_clothing",
-        "query": "pile giacca trekking",
-    },
-    {
-        "category": "men_tshirts",
-        "query": "t shirt uomo cotone",
-    },
-    {
-        "category": "technology",
-        "query": "tablet elettronica",
-    },
-    {
-        "category": "gaming",
-        "query": "controller gaming cuffie gaming",
-    },
-    {
-        "category": "women_evening",
-        "query": "abito cerimonia donna",
-    },
-    {
-        "category": "outdoor_clothing",
-        "query": "abbigliamento trekking",
-    },
-    {
-        "category": "technology",
-        "query": "monitor elettronica",
-    },
+    # 🔴 TECNOLOGIA — 5/20
+    {"category": "technology", "query": "cuffie bluetooth"},
+    {"category": "technology", "query": "smartwatch"},
+    {"category": "technology", "query": "mouse wireless"},
+    {"category": "technology", "query": "tastiera meccanica"},
+    {"category": "technology", "query": "webcam full hd"},
+
+    # 🔴 GAMING — 4/20
+    {"category": "gaming", "query": "mouse gaming"},
+    {"category": "gaming", "query": "tastiera gaming"},
+    {"category": "gaming", "query": "cuffie gaming"},
+    {"category": "gaming", "query": "controller pc gaming"},
+
+    # 🔴 VESTITI DA SERA DONNA — 4/20
+    {"category": "women_evening", "query": "vestito elegante donna"},
+    {"category": "women_evening", "query": "abito cerimonia donna"},
+    {"category": "women_evening", "query": "vestito cocktail donna"},
+    {"category": "women_evening", "query": "abito lungo elegante donna"},
+
+    # 🔴 OUTDOOR — 3/20
+    {"category": "outdoor_clothing", "query": "pile trekking"},
+    {"category": "outdoor_clothing", "query": "giacca softshell"},
+    {"category": "outdoor_clothing", "query": "giacca impermeabile trekking"},
+
+    # 🔴 MAGLIETTE UOMO — 3/20
+    {"category": "men_tshirts", "query": "t shirt uomo confezione"},
+    {"category": "men_tshirts", "query": "t shirt uomo 2 pezzi"},
+    {"category": "men_tshirts", "query": "t shirt uomo 3 pezzi"},
+
+    # 🟡 ABBIGLIAMENTO SPORTIVO — 1/20
+    {"category": "sportswear", "query": "t shirt running"},
 ]
 
 
