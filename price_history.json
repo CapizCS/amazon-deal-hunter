@@ -263,6 +263,10 @@
       {
         "date": "2026-09-03",
         "price": 14.99
+      },
+      {
+        "date": "2026-09-04",
+        "price": 14.99
       }
     ]
   },
@@ -459,6 +463,10 @@
       {
         "date": "2026-09-03",
         "price": 19.95
+      },
+      {
+        "date": "2026-09-04",
+        "price": 19.95
       }
     ]
   },
@@ -500,6 +508,10 @@
     "prices": [
       {
         "date": "2026-09-03",
+        "price": 19.99
+      },
+      {
+        "date": "2026-09-04",
         "price": 19.99
       }
     ]
@@ -795,6 +807,10 @@
       {
         "date": "2026-09-03",
         "price": 16.57
+      },
+      {
+        "date": "2026-09-04",
+        "price": 16.57
       }
     ]
   },
@@ -921,6 +937,10 @@
       {
         "date": "2026-09-03",
         "price": 19.95
+      },
+      {
+        "date": "2026-09-04",
+        "price": 19.95
       }
     ]
   },
@@ -991,6 +1011,34 @@
       {
         "date": "2026-09-03",
         "price": 20.99
+      }
+    ]
+  },
+  "B0HHQV8DT9": {
+    "category": "clothing",
+    "title": "Giacca Elegante per slim Fit per Ufficio e Daily Giacca Elegante",
+    "url": "https://www.amazon.it/dp/B0HHQV8DT9/ref=sr_1_34?dib=eyJ2IjoiMSJ9.w4Y2e4LOPj8xwTmUUm4yrg3S2plEDjHhtywSYRcKAb6enCWTRZFHS-IhgZqeaGDHKnq2hC7jmswtKAKYEdsWKZuYp0CdVPKJngYFpA5jpjPv0DpML5SopT0n01-nIcIzGekoAMa_u3fXmFKITyVMCEiURfrp2nxtvFoIJoDuTB1_FIOe5Y0hgBECyyvNTE_i6yi0L35mJHTtcChlVq6OEJujvAaAHRwWNl1V0M1RYhrLG-NlQUWvRMRlVloYcPjrrTbH3ZbJ-Yaeaxvm50LEeoOXs7rYm0X2yciWclbFmJo.5FzK3KuVoaAMlIggztk4Rb44dXo1wwLGYRkn3o1ByFk&dib_tag=se&keywords=abbigliamento+outdoor&qid=1788513174&sr=8-34",
+    "image_url": "https://m.media-amazon.com/images/I/71RGrw6lEeL._AC_UL320_.jpg",
+    "rating": null,
+    "ratings_count": 0,
+    "prices": [
+      {
+        "date": "2026-09-04",
+        "price": 19.51
+      }
+    ]
+  },
+  "B0HHQZ4NLK": {
+    "category": "clothing",
+    "title": "Giacca Uomo Poliestere Leggera Manica Lunga per slim Fit Giacca(Khaki L) | Tessuto leggero, manica lunga, design per slim per fit, ideale per strato base, comfort quotidiano",
+    "url": "https://www.amazon.it/dp/B0HHQZ4NLK/ref=sr_1_43?dib=eyJ2IjoiMSJ9.w4Y2e4LOPj8xwTmUUm4yrg3S2plEDjHhtywSYRcKAb6enCWTRZFHS-IhgZqeaGDHKnq2hC7jmswtKAKYEdsWKZuYp0CdVPKJngYFpA5jpjPv0DpML5SopT0n01-nIcIzGekoAMa_u3fXmFKITyVMCEiURfrp2nxtvFoIJoDuTB1_FIOe5Y0hgBECyyvNTE_i6yi0L35mJHTtcChlVq6OEJujvAaAHRwWNl1V0M1RYhrLG-NlQUWvRMRlVloYcPjrrTbH3ZbJ-Yaeaxvm50LEeoOXs7rYm0X2yciWclbFmJo.5FzK3KuVoaAMlIggztk4Rb44dXo1wwLGYRkn3o1ByFk&dib_tag=se&keywords=abbigliamento+outdoor&qid=1788513174&sr=8-43",
+    "image_url": "https://m.media-amazon.com/images/I/51H+30vHqGL._AC_UL320_.jpg",
+    "rating": null,
+    "ratings_count": 0,
+    "prices": [
+      {
+        "date": "2026-09-04",
+        "price": 20.88
       }
     ]
   }
