@@ -11,3 +11,4 @@ jobs:
     steps:
       - name: Test scheduler
         run: echo "SCHEDULER OK"
+# force scheduler registration
