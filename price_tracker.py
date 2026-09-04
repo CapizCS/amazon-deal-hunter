@@ -5,9 +5,13 @@ import urllib.request
 from datetime import date
 
 HISTORY_FILE = "price_history.json"
+ROTATION_FILE = "search_rotation.json"
 
 MIN_PRICE = 10
 MAX_PRICE = 50
+
+# 2 query per ogni esecuzione.
+QUERIES_PER_RUN = 2
 
 # Parole che indicano spesso risultati poco utili per il nostro progetto.
 EXCLUDED_WORDS = [
@@ -24,7 +28,8 @@ EXCLUDED_WORDS = [
     "sticker",
 ]
 
-# Un prodotto deve avere almeno una parola coerente con la categoria.
+# Parole che aiutano a verificare che il prodotto appartenga
+# realmente alla categoria cercata.
 CATEGORY_KEYWORDS = {
     "technology": [
         "cuffie",
@@ -38,6 +43,7 @@ CATEGORY_KEYWORDS = {
         "altoparlante",
         "sd",
         "nvme",
+        "ssd",
         "hard disk",
         "power bank",
         "caricatore",
@@ -46,26 +52,10 @@ CATEGORY_KEYWORDS = {
         "router",
         "smartwatch",
         "monitor",
-    ],
-
-    "clothing": [
-        "giacca",
-        "pantaloni",
-        "scarpe",
-        "sneakers",
-        "felpa",
-        "maglia",
-        "t-shirt",
-        "camicia",
-        "jeans",
-        "piumino",
-        "giubbotto",
-        "parka",
-        "gilet",
-        "vestito",
-        "abito",
-        "calzini",
-        "scarponi",
+        "microfono",
+        "tablet",
+        "dock",
+        "usb",
     ],
 
     "gaming": [
@@ -81,27 +71,223 @@ CATEGORY_KEYWORDS = {
         "microfono",
         "joystick",
         "volante",
+        "playstation",
+        "ps5",
+        "ps4",
+        "xbox",
+        "switch",
+        "steam deck",
     ],
 
-    "home": [
-        "lampada",
-        "lampada led",
-        "aspirapolvere",
-        "umidificatore",
-        "deumidificatore",
-        "termometro",
-        "bilancia",
-        "organizer",
-        "dispenser",
-        "presa smart",
-        "sensore",
-        "smart home",
-        "led",
-        "diffusore",
-        "ventilatore",
+    "women_clothing": [
+        "donna",
+        "donne",
+        "woman",
+        "women",
+        "giacca",
+        "pantaloni",
+        "scarpe",
+        "sneakers",
+        "felpa",
+        "maglia",
+        "t-shirt",
+        "camicia",
+        "jeans",
+        "piumino",
+        "giubbotto",
+        "parka",
+        "gilet",
+        "vestito",
+        "abito",
+        "gonna",
+        "blusa",
+        "cardigan",
+        "pullover",
+        "cappotto",
+        "top",
+        "leggings",
+    ],
+
+    "outdoor_clothing": [
+        "outdoor",
+        "trekking",
+        "escursionismo",
+        "hiking",
+        "montagna",
+        "alpinismo",
+        "running",
+        "trail",
+        "giacca",
+        "pantaloni",
+        "scarpe",
+        "scarponi",
+        "pile",
+        "fleece",
+        "piumino",
+        "giubbotto",
+        "parka",
+        "gilet",
+        "impermeabile",
+        "softshell",
+        "windbreaker",
+    ],
+
+    "sports": [
+        "sport",
+        "fitness",
+        "palestra",
+        "running",
+        "ciclismo",
+        "bicicletta",
+        "calcio",
+        "tennis",
+        "padel",
+        "yoga",
+        "allenamento",
+        "training",
+        "escursionismo",
+        "trekking",
+    ],
+
+    "auto": [
+        "auto",
+        "automobile",
         "macchina",
+        "automotive",
+        "car",
+        "moto",
+        "motocicletta",
+        "accessori auto",
+        "supporto auto",
+        "caricatore auto",
+        "compressore",
+        "dash cam",
+        "telecamera auto",
+        "organizer auto",
+    ],
+
+    "travel": [
+        "viaggio",
+        "travel",
+        "valigia",
+        "trolley",
+        "zaino",
+        "bagaglio",
+        "beauty case",
+        "porta passaporto",
+        "adattatore viaggio",
+        "travel organizer",
+        "borsa viaggio",
+        "accessori viaggio",
+    ],
+
+    "hobbies": [
+        "hobby",
+        "modellismo",
+        "fotografia",
+        "musica",
+        "strumento musicale",
+        "disegno",
+        "pittura",
+        "craft",
+        "fai da te creativo",
+        "collezionismo",
+        "giochi da tavolo",
+        "board game",
+        "tempo libero",
     ],
 }
+
+
+# -------------------------------------------------------------------
+# QUERY
+# -------------------------------------------------------------------
+#
+# Le query sono distribuite secondo le priorità concordate.
+#
+# Alta priorità:
+#   Tecnologia        30%
+#   Gaming            20%
+#   Vestiti donna     15%
+#   Outdoor           15%
+#
+# Media:
+#   Sport              5%
+#   Auto               5%
+#   Travel             5%
+#   Hobby              5%
+#
+# La lista è costruita in modo che la rotazione sia continua.
+# Lo stato dell'ultima posizione viene salvato in ROTATION_FILE.
+#
+# Con 180 query/mese, le proporzioni vengono approssimate
+# sul lungo periodo.
+#
+
+SEARCH_POOL = [
+    # TECNOLOGIA - alta priorità
+    ("cuffie bluetooth", "technology"),
+    ("auricolari bluetooth", "technology"),
+    ("mouse wireless", "technology"),
+    ("tastiera meccanica", "technology"),
+    ("webcam pc", "technology"),
+    ("power bank", "technology"),
+    ("caricatore usb c", "technology"),
+    ("ssd nvme", "technology"),
+    ("smartwatch", "technology"),
+
+    # GAMING - alta priorità
+    ("controller gaming", "gaming"),
+    ("cuffie gaming", "gaming"),
+    ("mouse gaming", "gaming"),
+    ("tastiera gaming", "gaming"),
+    ("accessori ps5", "gaming"),
+    ("accessori xbox", "gaming"),
+
+    # VESTITI DONNA - alta priorità
+    ("giacca donna", "women_clothing"),
+    ("scarpe donna", "women_clothing"),
+    ("sneakers donna", "women_clothing"),
+    ("felpa donna", "women_clothing"),
+    ("pantaloni donna", "women_clothing"),
+    ("vestito donna", "women_clothing"),
+
+    # ABBIGLIAMENTO OUTDOOR - alta priorità
+    ("giacca trekking", "outdoor_clothing"),
+    ("scarpe trekking", "outdoor_clothing"),
+    ("pantaloni trekking", "outdoor_clothing"),
+    ("pile uomo donna", "outdoor_clothing"),
+    ("giacca impermeabile", "outdoor_clothing"),
+    ("abbigliamento running", "outdoor_clothing"),
+
+    # SPORT - media
+    ("accessori fitness", "sports"),
+    ("accessori running", "sports"),
+    ("accessori ciclismo", "sports"),
+    ("accessori palestra", "sports"),
+    ("accessori trekking", "sports"),
+
+    # AUTO - media
+    ("accessori auto", "auto"),
+    ("supporto smartphone auto", "auto"),
+    ("caricatore auto usb", "auto"),
+    ("compressore auto", "auto"),
+    ("dash cam", "auto"),
+
+    # TRAVEL - media
+    ("accessori viaggio", "travel"),
+    ("zaino viaggio", "travel"),
+    ("valigia trolley", "travel"),
+    ("organizer viaggio", "travel"),
+    ("accessori valigia", "travel"),
+
+    # HOBBY - media
+    ("modellismo", "hobbies"),
+    ("accessori fotografia", "hobbies"),
+    ("giochi da tavolo", "hobbies"),
+    ("accessori musica", "hobbies"),
+    ("hobby creativi", "hobbies"),
+]
 
 
 def load_history():
@@ -120,6 +306,58 @@ def save_history(history):
             indent=2,
             ensure_ascii=False
         )
+
+
+def load_rotation_index():
+    if not os.path.exists(ROTATION_FILE):
+        return 0
+
+    try:
+        with open(ROTATION_FILE, "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+        return int(data.get("index", 0))
+
+    except (json.JSONDecodeError, TypeError, ValueError):
+        return 0
+
+
+def save_rotation_index(index):
+    with open(ROTATION_FILE, "w", encoding="utf-8") as file:
+        json.dump(
+            {"index": index},
+            file,
+            indent=2
+        )
+
+
+def get_next_searches():
+    """
+    Restituisce le prossime QUERIES_PER_RUN query della rotazione.
+
+    La posizione viene salvata su disco, quindi la rotazione
+    continua da una esecuzione all'altra e non ricomincia
+    ogni giorno.
+    """
+
+    if not SEARCH_POOL:
+        return []
+
+    start_index = load_rotation_index()
+
+    selected = []
+
+    for offset in range(QUERIES_PER_RUN):
+        index = (start_index + offset) % len(SEARCH_POOL)
+        selected.append(SEARCH_POOL[index])
+
+    next_index = (
+        start_index + QUERIES_PER_RUN
+    ) % len(SEARCH_POOL)
+
+    save_rotation_index(next_index)
+
+    return selected
 
 
 def search_parse(query):
@@ -151,7 +389,8 @@ def search_parse(query):
         # Lista di prodotti
         if isinstance(value, list):
             products = [
-                item for item in value
+                item
+                for item in value
                 if isinstance(item, dict) and item.get("asin")
             ]
 
@@ -161,24 +400,28 @@ def search_parse(query):
             # Cerca anche dentro eventuali liste annidate
             for item in value:
                 result = find_products(item)
+
                 if result:
                     return result
 
-        # Dizionario: cerca ricorsivamente in tutti i valori
+        # Dizionario
         elif isinstance(value, dict):
             if value.get("asin"):
                 return [value]
 
             for item in value.values():
                 result = find_products(item)
+
                 if result:
                     return result
 
-        # A volte una risposta può contenere JSON sotto forma di stringa
+        # A volte una risposta può contenere JSON
+        # sotto forma di stringa.
         elif isinstance(value, str):
             try:
                 decoded = json.loads(value)
                 return find_products(decoded)
+
             except (json.JSONDecodeError, TypeError):
                 pass
 
@@ -198,6 +441,7 @@ def product_passes_filter(product, category):
     # Controllo prezzo.
     try:
         price = float(product.get("price", 0))
+
     except (TypeError, ValueError):
         return False
 
@@ -227,6 +471,7 @@ def save_product(history, product, category):
 
     try:
         price = float(product.get("price", 0))
+
     except (TypeError, ValueError):
         return False
 
@@ -267,12 +512,17 @@ def save_product(history, product, category):
 def main():
     history = load_history()
 
-    searches = [
-        ("abbigliamento outdoor", "clothing"),
-        ("cuffie bluetooth", "technology"),
-        ("accessori gaming", "gaming"),
-        ("gadget casa", "home"),
-    ]
+    searches = get_next_searches()
+
+    print()
+    print("=" * 70)
+    print("ROTazione query")
+    print("=" * 70)
+
+    for query, category in searches:
+        print(f"- {query} [{category}]")
+
+    print("=" * 70)
 
     total_results = 0
     products_in_range = 0
@@ -282,6 +532,7 @@ def main():
         print()
         print("=" * 70)
         print(f"Ricerca: {query}")
+        print(f"Categoria: {category}")
 
         products = search_parse(query)
 
@@ -290,12 +541,20 @@ def main():
         total_results += len(products)
 
         for product in products:
-            if not product_passes_filter(product, category):
+
+            if not product_passes_filter(
+                product,
+                category
+            ):
                 continue
 
             products_in_range += 1
 
-            if save_product(history, product, category):
+            if save_product(
+                history,
+                product,
+                category
+            ):
                 products_filtered += 1
 
     save_history(history)
@@ -303,10 +562,20 @@ def main():
     print()
     print("=" * 70)
     print("AGGIORNAMENTO STORICO COMPLETATO")
+    print(f"Query eseguite: {len(searches)}")
     print(f"Risultati totali Parse: {total_results}")
-    print(f"Prodotti validi nel range 10–50 €: {products_in_range}")
-    print(f"Prodotti salvati/aggiornati: {products_filtered}")
-    print(f"Totale prodotti nello storico: {len(history)}")
+    print(
+        "Prodotti validi nel range 10–50 €: "
+        f"{products_in_range}"
+    )
+    print(
+        "Prodotti salvati/aggiornati: "
+        f"{products_filtered}"
+    )
+    print(
+        "Totale prodotti nello storico: "
+        f"{len(history)}"
+    )
     print("=" * 70)
 
 
