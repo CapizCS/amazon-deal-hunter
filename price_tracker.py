@@ -68,23 +68,23 @@ SEARCH_CYCLE = [
     {"category": "gaming", "query": "controller pc gaming"},
 
     # 🔴 VESTITI DA SERA DONNA — 4/20
-    {"category": "women_evening", "query": "vestito elegante donna"},
-    {"category": "women_evening", "query": "abito cerimonia donna"},
-    {"category": "women_evening", "query": "vestito cocktail donna"},
-    {"category": "women_evening", "query": "abito lungo elegante donna"},
+    {"category": "women_evening", "query": "Guess vestito donna"},
+    {"category": "women_evening", "query": "Calvin Klein vestito donna"},
+    {"category": "women_evening", "query": "Tommy Hilfiger vestito donna"},
+    {"category": "women_evening", "query": "Vero Moda vestito elegante donna"},
 
     # 🔴 OUTDOOR — 3/20
-    {"category": "outdoor_clothing", "query": "pile trekking"},
-    {"category": "outdoor_clothing", "query": "giacca softshell"},
-    {"category": "outdoor_clothing", "query": "giacca impermeabile trekking"},
+    {"category": "outdoor_clothing", "query": "The North Face giacca"},
+    {"category": "outdoor_clothing", "query": "Columbia pile"},
+    {"category": "outdoor_clothing", "query": "Jack Wolfskin giacca"},
 
     # 🔴 MAGLIETTE UOMO — 3/20
-    {"category": "men_tshirts", "query": "t shirt uomo confezione"},
-    {"category": "men_tshirts", "query": "t shirt uomo 2 pezzi"},
-    {"category": "men_tshirts", "query": "t shirt uomo 3 pezzi"},
+    {"category": "men_tshirts", "query": "Nike t shirt uomo"},
+    {"category": "men_tshirts", "query": "Adidas t shirt uomo"},
+    {"category": "men_tshirts", "query": "Tommy Hilfiger t shirt uomo"},
 
     # 🟡 ABBIGLIAMENTO SPORTIVO — 1/20
-    {"category": "sportswear", "query": "t shirt running"},
+    {"category": "sportswear", "query": "Nike t shirt running"},
 ]
 
 
