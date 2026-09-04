@@ -1,582 +1,785 @@
 import os
 import json
-import urllib.parse
-import urllib.request
 from datetime import date
+from statistics import median
+import requests
+
+
+# ============================================================
+# CONFIGURAZIONE
+# ============================================================
+
+PARSE_API_KEY = os.getenv("PARSE_API_KEY")
+
+PARSE_URL = (
+    "https://api.parse.bot/scraper/"
+    "18564612-8aa3-47b4-a88b-4bc5ba70f945/"
+    "get_search_results_csv"
+)
 
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
-MIN_PRICE = 10
-MAX_PRICE = 50
+MIN_PRICE = 10.0
+MAX_PRICE = 50.0
 
-# 2 query per ogni esecuzione.
+# 2 query Parse per ogni esecuzione
 QUERIES_PER_RUN = 2
 
-# Parole che indicano spesso risultati poco utili per il nostro progetto.
-EXCLUDED_WORDS = [
-    "ricambio",
-    "sostituzione",
-    "replacement",
-    "pellicola",
-    "adesivo",
-    "manuale",
-    "ebook",
-    "libro",
-    "custodia",
-    "cover",
-    "sticker",
-]
+# Limite normale: 180 query/mese
+STANDARD_MONTHLY_QUERY_LIMIT = 180
 
-# Parole che aiutano a verificare che il prodotto appartenga
-# realmente alla categoria cercata.
-CATEGORY_KEYWORDS = {
-    "technology": [
-        "cuffie",
-        "auricolari",
-        "headphones",
-        "headset",
-        "mouse",
-        "tastiera",
-        "webcam",
-        "speaker",
-        "altoparlante",
-        "sd",
-        "nvme",
-        "ssd",
-        "hard disk",
-        "power bank",
-        "caricatore",
-        "hub usb",
-        "adattatore",
-        "router",
-        "smartwatch",
-        "monitor",
-        "microfono",
-        "tablet",
-        "dock",
-        "usb",
-    ],
+# Settembre 2026: lasciamo un margine di sicurezza
+CURRENT_MONTH_QUERY_LIMIT = 140
 
-    "gaming": [
-        "gaming",
-        "controller",
-        "gamepad",
-        "mouse",
-        "tastiera",
-        "headset",
-        "cuffie",
-        "auricolari",
-        "tappetino",
-        "microfono",
-        "joystick",
-        "volante",
-        "playstation",
-        "ps5",
-        "ps4",
-        "xbox",
-        "switch",
-        "steam deck",
-    ],
-
-    "women_clothing": [
-        "donna",
-        "donne",
-        "woman",
-        "women",
-        "giacca",
-        "pantaloni",
-        "scarpe",
-        "sneakers",
-        "felpa",
-        "maglia",
-        "t-shirt",
-        "camicia",
-        "jeans",
-        "piumino",
-        "giubbotto",
-        "parka",
-        "gilet",
-        "vestito",
-        "abito",
-        "gonna",
-        "blusa",
-        "cardigan",
-        "pullover",
-        "cappotto",
-        "top",
-        "leggings",
-    ],
-
-    "outdoor_clothing": [
-        "outdoor",
-        "trekking",
-        "escursionismo",
-        "hiking",
-        "montagna",
-        "alpinismo",
-        "running",
-        "trail",
-        "giacca",
-        "pantaloni",
-        "scarpe",
-        "scarponi",
-        "pile",
-        "fleece",
-        "piumino",
-        "giubbotto",
-        "parka",
-        "gilet",
-        "impermeabile",
-        "softshell",
-        "windbreaker",
-    ],
-
-    "sports": [
-        "sport",
-        "fitness",
-        "palestra",
-        "running",
-        "ciclismo",
-        "bicicletta",
-        "calcio",
-        "tennis",
-        "padel",
-        "yoga",
-        "allenamento",
-        "training",
-        "escursionismo",
-        "trekking",
-    ],
-
-    "auto": [
-        "auto",
-        "automobile",
-        "macchina",
-        "automotive",
-        "car",
-        "moto",
-        "motocicletta",
-        "accessori auto",
-        "supporto auto",
-        "caricatore auto",
-        "compressore",
-        "dash cam",
-        "telecamera auto",
-        "organizer auto",
-    ],
-
-    "travel": [
-        "viaggio",
-        "travel",
-        "valigia",
-        "trolley",
-        "zaino",
-        "bagaglio",
-        "beauty case",
-        "porta passaporto",
-        "adattatore viaggio",
-        "travel organizer",
-        "borsa viaggio",
-        "accessori viaggio",
-    ],
-
-    "hobbies": [
-        "hobby",
-        "modellismo",
-        "fotografia",
-        "musica",
-        "strumento musicale",
-        "disegno",
-        "pittura",
-        "craft",
-        "fai da te creativo",
-        "collezionismo",
-        "giochi da tavolo",
-        "board game",
-        "tempo libero",
-    ],
-}
+# Minimo storico necessario per considerare un prodotto
+MIN_HISTORY_POINTS = 3
 
 
-# -------------------------------------------------------------------
-# QUERY
-# -------------------------------------------------------------------
+# ============================================================
+# ROTAZIONE CATEGORIE
+# ============================================================
 #
-# Le query sono distribuite secondo le priorità concordate.
+# 20 query complessive:
 #
-# Alta priorità:
-#   Tecnologia        30%
-#   Gaming            20%
-#   Vestiti donna     15%
-#   Outdoor           15%
+# Tecnologia       5/20 = 25%
+# Gaming           4/20 = 20%
+# Donna sera       4/20 = 20%
+# Outdoor          3/20 = 15%
+# T-shirt uomo     3/20 = 15%
+# Sportivo         1/20 =  5%
 #
-# Media:
-#   Sport              5%
-#   Auto               5%
-#   Travel             5%
-#   Hobby              5%
-#
-# La lista è costruita in modo che la rotazione sia continua.
-# Lo stato dell'ultima posizione viene salvato in ROTATION_FILE.
-#
-# Con 180 query/mese, le proporzioni vengono approssimate
-# sul lungo periodo.
-#
+# Il ciclo viene ripetuto automaticamente.
+# 9 cicli = 180 query esatte.
+# ============================================================
 
-SEARCH_POOL = [
-    # TECNOLOGIA - alta priorità
-    ("cuffie bluetooth", "technology"),
-    ("auricolari bluetooth", "technology"),
-    ("mouse wireless", "technology"),
-    ("tastiera meccanica", "technology"),
-    ("webcam pc", "technology"),
-    ("power bank", "technology"),
-    ("caricatore usb c", "technology"),
-    ("ssd nvme", "technology"),
-    ("smartwatch", "technology"),
-
-    # GAMING - alta priorità
-    ("controller gaming", "gaming"),
-    ("cuffie gaming", "gaming"),
-    ("mouse gaming", "gaming"),
-    ("tastiera gaming", "gaming"),
-    ("accessori ps5", "gaming"),
-    ("accessori xbox", "gaming"),
-
-    # VESTITI DONNA - alta priorità
-    ("giacca donna", "women_clothing"),
-    ("scarpe donna", "women_clothing"),
-    ("sneakers donna", "women_clothing"),
-    ("felpa donna", "women_clothing"),
-    ("pantaloni donna", "women_clothing"),
-    ("vestito donna", "women_clothing"),
-
-    # ABBIGLIAMENTO OUTDOOR - alta priorità
-    ("giacca trekking", "outdoor_clothing"),
-    ("scarpe trekking", "outdoor_clothing"),
-    ("pantaloni trekking", "outdoor_clothing"),
-    ("pile uomo donna", "outdoor_clothing"),
-    ("giacca impermeabile", "outdoor_clothing"),
-    ("abbigliamento running", "outdoor_clothing"),
-
-    # SPORT - media
-    ("accessori fitness", "sports"),
-    ("accessori running", "sports"),
-    ("accessori ciclismo", "sports"),
-    ("accessori palestra", "sports"),
-    ("accessori trekking", "sports"),
-
-    # AUTO - media
-    ("accessori auto", "auto"),
-    ("supporto smartphone auto", "auto"),
-    ("caricatore auto usb", "auto"),
-    ("compressore auto", "auto"),
-    ("dash cam", "auto"),
-
-    # TRAVEL - media
-    ("accessori viaggio", "travel"),
-    ("zaino viaggio", "travel"),
-    ("valigia trolley", "travel"),
-    ("organizer viaggio", "travel"),
-    ("accessori valigia", "travel"),
-
-    # HOBBY - media
-    ("modellismo", "hobbies"),
-    ("accessori fotografia", "hobbies"),
-    ("giochi da tavolo", "hobbies"),
-    ("accessori musica", "hobbies"),
-    ("hobby creativi", "hobbies"),
+SEARCH_CYCLE = [
+    {
+        "category": "technology",
+        "query": "tecnologia elettronica",
+    },
+    {
+        "category": "gaming",
+        "query": "gaming",
+    },
+    {
+        "category": "women_evening",
+        "query": "vestito da sera donna",
+    },
+    {
+        "category": "outdoor_clothing",
+        "query": "abbigliamento outdoor",
+    },
+    {
+        "category": "men_tshirts",
+        "query": "t-shirt uomo",
+    },
+    {
+        "category": "technology",
+        "query": "smartwatch cuffie auricolari",
+    },
+    {
+        "category": "gaming",
+        "query": "accessori gaming",
+    },
+    {
+        "category": "women_evening",
+        "query": "abito elegante donna",
+    },
+    {
+        "category": "outdoor_clothing",
+        "query": "giacca outdoor uomo donna",
+    },
+    {
+        "category": "men_tshirts",
+        "query": "magliette uomo",
+    },
+    {
+        "category": "technology",
+        "query": "computer accessori elettronica",
+    },
+    {
+        "category": "gaming",
+        "query": "mouse tastiera gaming",
+    },
+    {
+        "category": "women_evening",
+        "query": "vestito elegante donna",
+    },
+    {
+        "category": "outdoor_clothing",
+        "query": "pile giacca trekking",
+    },
+    {
+        "category": "men_tshirts",
+        "query": "t shirt uomo cotone",
+    },
+    {
+        "category": "technology",
+        "query": "tablet elettronica",
+    },
+    {
+        "category": "gaming",
+        "query": "controller gaming cuffie gaming",
+    },
+    {
+        "category": "women_evening",
+        "query": "abito cerimonia donna",
+    },
+    {
+        "category": "outdoor_clothing",
+        "query": "abbigliamento trekking",
+    },
+    {
+        "category": "technology",
+        "query": "monitor elettronica",
+    },
 ]
 
 
-def load_history():
-    if not os.path.exists(HISTORY_FILE):
-        return {}
+# ============================================================
+# FUNZIONI GENERALI
+# ============================================================
 
-    with open(HISTORY_FILE, "r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-def save_history(history):
-    with open(HISTORY_FILE, "w", encoding="utf-8") as file:
-        json.dump(
-            history,
-            file,
-            indent=2,
-            ensure_ascii=False
-        )
-
-
-def load_rotation_index():
-    if not os.path.exists(ROTATION_FILE):
-        return 0
+def load_json(filename, default):
+    """Carica un JSON. Se non esiste o è corrotto, restituisce default."""
+    if not os.path.exists(filename):
+        return default
 
     try:
-        with open(ROTATION_FILE, "r", encoding="utf-8") as file:
-            data = json.load(file)
-
-        return int(data.get("index", 0))
-
-    except (json.JSONDecodeError, TypeError, ValueError):
-        return 0
+        with open(filename, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
 
 
-def save_rotation_index(index):
-    with open(ROTATION_FILE, "w", encoding="utf-8") as file:
-        json.dump(
-            {"index": index},
-            file,
-            indent=2
-        )
+def save_json(filename, data):
+    """Salva un JSON in modo leggibile."""
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def get_next_searches():
-    """
-    Restituisce le prossime QUERIES_PER_RUN query della rotazione.
+def parse_price(value):
+    """Converte vari formati di prezzo in float."""
+    if value is None:
+        return None
 
-    La posizione viene salvata su disco, quindi la rotazione
-    continua da una esecuzione all'altra e non ricomincia
-    ogni giorno.
-    """
+    if isinstance(value, (int, float)):
+        return float(value)
 
-    if not SEARCH_POOL:
-        return []
+    text = str(value).strip()
 
-    start_index = load_rotation_index()
+    if not text:
+        return None
 
-    selected = []
-
-    for offset in range(QUERIES_PER_RUN):
-        index = (start_index + offset) % len(SEARCH_POOL)
-        selected.append(SEARCH_POOL[index])
-
-    next_index = (
-        start_index + QUERIES_PER_RUN
-    ) % len(SEARCH_POOL)
-
-    save_rotation_index(next_index)
-
-    return selected
-
-
-def search_parse(query):
-    api_url = (
-        "https://api.parse.bot"
-        "/scraper/18564612-8aa3-47b4-a88b-4bc5ba70f945"
-        "/get_search_results_csv"
+    # Rimuove simboli comuni
+    text = (
+        text.replace("€", "")
+        .replace("EUR", "")
+        .replace("\u00a0", " ")
+        .strip()
     )
 
-    params = urllib.parse.urlencode({
-        "query": query
-    })
+    # Gestione formato italiano: 1.234,56
+    if "," in text:
+        text = text.replace(".", "").replace(",", ".")
+    else:
+        # Gestione eventuali prezzi con testo extra
+        text = text.replace(",", "")
 
-    url = f"{api_url}?{params}"
+    # Tenta conversione diretta
+    try:
+        return float(text)
+    except ValueError:
+        pass
 
-    request = urllib.request.Request(
-        url,
-        headers={
-            "X-API-Key": os.environ["PARSE_API_KEY"]
-        }
-    )
+    # Estrae il primo numero trovato
+    import re
 
-    with urllib.request.urlopen(request, timeout=30) as response:
-        data = json.loads(
-            response.read().decode("utf-8")
-        )
+    match = re.search(r"\d+(?:\.\d+)?", text)
 
-    def find_products(value):
-        # Lista di prodotti
-        if isinstance(value, list):
-            products = [
-                item
-                for item in value
-                if isinstance(item, dict) and item.get("asin")
-            ]
+    if match:
+        try:
+            return float(match.group(0))
+        except ValueError:
+            return None
 
-            if products:
-                return products
+    return None
 
-            # Cerca anche dentro eventuali liste annidate
-            for item in value:
-                result = find_products(item)
 
-                if result:
-                    return result
+# ============================================================
+# NORMALIZZAZIONE RISPOSTA PARSE
+# ============================================================
 
-        # Dizionario
-        elif isinstance(value, dict):
-            if value.get("asin"):
-                return [value]
+def find_products(obj):
+    """
+    Cerca ricorsivamente liste/dizionari contenenti prodotti con ASIN.
+    Gestisce anche JSON annidato dentro stringhe.
+    """
 
-            for item in value.values():
-                result = find_products(item)
+    products = []
 
-                if result:
-                    return result
+    if isinstance(obj, dict):
 
-        # A volte una risposta può contenere JSON
-        # sotto forma di stringa.
-        elif isinstance(value, str):
+        # Caso: dizionario che è direttamente un prodotto
+        if obj.get("asin"):
+            products.append(obj)
+
+        # Cerca ricorsivamente nei valori
+        for value in obj.values():
+            products.extend(find_products(value))
+
+    elif isinstance(obj, list):
+
+        for item in obj:
+            products.extend(find_products(item))
+
+    elif isinstance(obj, str):
+
+        text = obj.strip()
+
+        # Prova a interpretare stringhe JSON
+        if text.startswith("{") or text.startswith("["):
             try:
-                decoded = json.loads(value)
-                return find_products(decoded)
-
-            except (json.JSONDecodeError, TypeError):
+                parsed = json.loads(text)
+                products.extend(find_products(parsed))
+            except Exception:
                 pass
-
-        return []
-
-    products = find_products(data)
 
     return products
 
 
-def product_passes_filter(product, category):
-    title = product.get("title", "").strip().lower()
+# ============================================================
+# QUERY PARSE
+# ============================================================
+
+def search_parse(query):
+    """Esegue una singola query Parse."""
+
+    if not PARSE_API_KEY:
+        raise RuntimeError("PARSE_API_KEY non configurata.")
+
+    headers = {
+        "X-API-Key": PARSE_API_KEY,
+        "Accept": "application/json",
+    }
+
+    params = {
+        "query": query,
+    }
+
+    response = requests.get(
+        PARSE_URL,
+        headers=headers,
+        params=params,
+        timeout=60,
+    )
+
+    response.raise_for_status()
+
+    try:
+        data = response.json()
+    except Exception:
+        data = response.text
+
+    products = find_products(data)
+
+    # Elimina duplicati per ASIN
+    unique = {}
+
+    for product in products:
+        asin = product.get("asin")
+
+        if asin:
+            unique[str(asin)] = product
+
+    return list(unique.values())
+
+
+# ============================================================
+# FILTRI CATEGORIE
+# ============================================================
+
+def category_matches(product, category):
+    """
+    Filtro aggiuntivo per evitare che i risultati delle query
+    finiscano troppo facilmente in categorie sbagliate.
+    """
+
+    title = str(product.get("title", "")).lower()
 
     if not title:
         return False
 
-    # Controllo prezzo.
-    try:
-        price = float(product.get("price", 0))
+    if category == "technology":
+        keywords = [
+            "smartphone",
+            "tablet",
+            "monitor",
+            "computer",
+            "pc",
+            "laptop",
+            "notebook",
+            "smartwatch",
+            "cuffie",
+            "auricolari",
+            "mouse",
+            "tastiera",
+            "webcam",
+            "router",
+            "ssd",
+            "hard disk",
+            "elettronica",
+        ]
+        return any(k in title for k in keywords)
 
-    except (TypeError, ValueError):
-        return False
+    if category == "gaming":
+        keywords = [
+            "gaming",
+            "videogioco",
+            "controller",
+            "console",
+            "playstation",
+            "xbox",
+            "nintendo",
+            "steam deck",
+            "mouse gaming",
+            "tastiera gaming",
+            "cuffie gaming",
+        ]
+        return any(k in title for k in keywords)
 
-    if price < MIN_PRICE or price > MAX_PRICE:
-        return False
+    if category == "women_evening":
+        keywords = [
+            "vestito donna",
+            "abito donna",
+            "vestito elegante",
+            "abito elegante",
+            "abito cerimonia",
+            "vestito cerimonia",
+            "dress donna",
+            "evening dress",
+        ]
+        return any(k in title for k in keywords)
 
-    # Elimina risultati palesemente poco interessanti.
-    for word in EXCLUDED_WORDS:
-        if word in title:
-            return False
+    if category == "outdoor_clothing":
+        keywords = [
+            "outdoor",
+            "trekking",
+            "escursionismo",
+            "hiking",
+            "montagna",
+            "softshell",
+            "hardshell",
+            "giacca impermeabile",
+            "giacca trekking",
+            "pile",
+            "fleece",
+        ]
+        return any(k in title for k in keywords)
 
-    # Controllo coerenza con la categoria.
-    keywords = CATEGORY_KEYWORDS.get(category, [])
+    if category == "men_tshirts":
+        generic_keywords = [
+            "t-shirt",
+            "t shirt",
+            "maglietta",
+            "maglietta",
+        ]
 
-    if keywords:
-        if not any(keyword in title for keyword in keywords):
-            return False
+        men_keywords = [
+            "uomo",
+            "men",
+            "mens",
+            "male",
+            "maschile",
+        ]
+
+        has_product_type = any(k in title for k in generic_keywords)
+        has_men_marker = any(k in title for k in men_keywords)
+
+        return has_product_type and has_men_marker
+
+    if category == "sports_clothing":
+        keywords = [
+            "abbigliamento sportivo",
+            "tuta sportiva",
+            "pantaloni sportivi",
+            "giacca sportiva",
+            "running",
+            "fitness",
+            "training",
+            "sport",
+        ]
+        return any(k in title for k in keywords)
 
     return True
 
 
-def save_product(history, product, category):
-    asin = product.get("asin")
+# ============================================================
+# STORICO
+# ============================================================
 
-    if not asin:
-        return False
+def update_history(products, category):
+    """
+    Aggiorna lo storico.
 
-    try:
-        price = float(product.get("price", 0))
+    Se lo stesso ASIN viene rilevato più volte nello stesso giorno,
+    aggiorna il prezzo della giornata invece di creare duplicati.
+    """
 
-    except (TypeError, ValueError):
-        return False
+    history = load_json(HISTORY_FILE, {})
 
-    today = str(date.today())
+    today = date.today().isoformat()
 
-    if asin not in history:
-        history[asin] = {
-            "category": category,
-            "title": product.get("title", ""),
-            "url": product.get("product_url", ""),
-            "image_url": product.get("image_url", ""),
-            "rating": product.get("rating", 0),
-            "ratings_count": product.get("ratings_count", 0),
-            "prices": []
+    saved = 0
+    skipped = 0
+
+    for product in products:
+
+        asin = str(product.get("asin", "")).strip()
+
+        if not asin:
+            skipped += 1
+            continue
+
+        price = parse_price(
+            product.get("price")
+            or product.get("current_price")
+            or product.get("buybox_price")
+        )
+
+        if price is None:
+            skipped += 1
+            continue
+
+        # Fascia di prezzo richiesta
+        if price < MIN_PRICE or price > MAX_PRICE:
+            skipped += 1
+            continue
+
+        # Filtro categoria
+        if not category_matches(product, category):
+            skipped += 1
+            continue
+
+        title = str(product.get("title", "")).strip()
+
+        if not title:
+            skipped += 1
+            continue
+
+        # Struttura iniziale prodotto
+        if asin not in history:
+            history[asin] = {
+                "title": title,
+                "category": category,
+                "prices": [],
+            }
+
+        item = history[asin]
+
+        # Aggiorna informazioni che possono cambiare
+        item["title"] = title
+        item["category"] = category
+
+        # Compatibilità con eventuali vecchi dati
+        if "prices" not in item or not isinstance(item["prices"], list):
+            item["prices"] = []
+
+        # Cerca se esiste già una rilevazione oggi
+        existing = None
+
+        for observation in item["prices"]:
+            if (
+                isinstance(observation, dict)
+                and observation.get("date") == today
+            ):
+                existing = observation
+                break
+
+        if existing:
+            existing["price"] = round(price, 2)
+        else:
+            item["prices"].append(
+                {
+                    "date": today,
+                    "price": round(price, 2),
+                }
+            )
+
+        saved += 1
+
+    save_json(HISTORY_FILE, history)
+
+    return saved, skipped, history
+
+
+# ============================================================
+# ROTAZIONE
+# ============================================================
+
+def get_monthly_limit(today):
+    """
+    Settembre 2026: 140 query.
+    Dal mese successivo: 180 query.
+    """
+
+    if today.year == 2026 and today.month == 9:
+        return CURRENT_MONTH_QUERY_LIMIT
+
+    return STANDARD_MONTHLY_QUERY_LIMIT
+
+
+def load_rotation(today):
+    """
+    Carica lo stato della rotazione.
+
+    Se cambia mese:
+    - azzera le query utilizzate
+    - riparte dalla posizione successiva coerente
+      con il ciclo.
+    """
+
+    rotation = load_json(
+        ROTATION_FILE,
+        {
+            "version": 1,
+            "month": today.strftime("%Y-%m"),
+            "queries_used": 0,
+            "index": 0,
+        },
+    )
+
+    current_month = today.strftime("%Y-%m")
+
+    saved_month = rotation.get("month")
+
+    if saved_month != current_month:
+        rotation = {
+            "version": 1,
+            "month": current_month,
+            "queries_used": 0,
+            "index": 0,
         }
 
-    prices = history[asin]["prices"]
+    # Protezione da dati corrotti
+    try:
+        rotation["queries_used"] = int(rotation.get("queries_used", 0))
+    except Exception:
+        rotation["queries_used"] = 0
 
-    # Se abbiamo già registrato il prodotto oggi,
-    # aggiorniamo il prezzo invece di creare un duplicato.
-    existing_today = False
+    try:
+        rotation["index"] = int(rotation.get("index", 0))
+    except Exception:
+        rotation["index"] = 0
 
-    for item in prices:
-        if item.get("date") == today:
-            item["price"] = price
-            existing_today = True
-            break
+    rotation["index"] %= len(SEARCH_CYCLE)
 
-    if not existing_today:
-        prices.append({
-            "date": today,
-            "price": price
-        })
+    return rotation
 
-    return True
 
+def get_next_searches(rotation, monthly_limit):
+    """
+    Determina le prossime query senza modificare ancora lo stato.
+
+    Questo è importante:
+    se Parse fallisce, la query NON viene considerata consumata.
+    """
+
+    remaining = monthly_limit - rotation["queries_used"]
+
+    if remaining <= 0:
+        return []
+
+    count = min(QUERIES_PER_RUN, remaining)
+
+    searches = []
+
+    index = rotation["index"]
+
+    for offset in range(count):
+        position = (index + offset) % len(SEARCH_CYCLE)
+        searches.append(SEARCH_CYCLE[position])
+
+    return searches
+
+
+def register_successful_query(rotation):
+    """Avanza la rotazione dopo una query Parse riuscita."""
+
+    rotation["queries_used"] += 1
+    rotation["index"] = (
+        rotation["index"] + 1
+    ) % len(SEARCH_CYCLE)
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
-    history = load_history()
 
-    searches = get_next_searches()
+    today = date.today()
 
-    print()
-    print("=" * 70)
-    print("ROTazione query")
-    print("=" * 70)
+    monthly_limit = get_monthly_limit(today)
 
-    for query, category in searches:
-        print(f"- {query} [{category}]")
+    rotation = load_rotation(today)
 
-    print("=" * 70)
+    print("=" * 60)
+    print("DEAL HUNTER - PRICE TRACKER")
+    print("=" * 60)
 
-    total_results = 0
-    products_in_range = 0
-    products_filtered = 0
+    print(f"Data: {today}")
+    print(f"Mese: {rotation['month']}")
+    print(f"Query utilizzate: {rotation['queries_used']}/{monthly_limit}")
+    print(f"Posizione rotazione: {rotation['index']}")
+    print(f"Query per esecuzione: {QUERIES_PER_RUN}")
 
-    for query, category in searches:
+    # Controllo budget
+    searches = get_next_searches(
+        rotation,
+        monthly_limit,
+    )
+
+    if not searches:
         print()
-        print("=" * 70)
-        print(f"Ricerca: {query}")
+        print("LIMITE MENSILE RAGGIUNTO.")
+        print("Nessuna query Parse verrà eseguita.")
+        print("=" * 60)
+
+        save_json(ROTATION_FILE, rotation)
+
+        return
+
+    all_products = []
+
+    successful_queries = 0
+
+    # ========================================================
+    # ESECUZIONE QUERY
+    # ========================================================
+
+    for search in searches:
+
+        category = search["category"]
+        query = search["query"]
+
+        print()
+        print(f"Query {successful_queries + 1}/{len(searches)}")
         print(f"Categoria: {category}")
+        print(f"Ricerca: {query}")
 
-        products = search_parse(query)
+        try:
 
-        print(f"Risultati Parse: {len(products)}")
+            products = search_parse(query)
 
-        total_results += len(products)
+            print(f"Risultati ricevuti: {len(products)}")
 
-        for product in products:
+            all_products.extend(
+                [
+                    (product, category)
+                    for product in products
+                ]
+            )
 
-            if not product_passes_filter(
+            # SOLO QUI consumiamo una posizione della rotazione
+            register_successful_query(rotation)
+
+            successful_queries += 1
+
+        except Exception as e:
+
+            print(f"ERRORE Parse: {e}")
+            print("Query non conteggiata nella rotazione.")
+
+    # ========================================================
+    # DEDUPLICAZIONE
+    # ========================================================
+
+    unique_products = {}
+
+    for product, category in all_products:
+
+        asin = str(product.get("asin", "")).strip()
+
+        if not asin:
+            continue
+
+        # Manteniamo la prima categoria associata
+        if asin not in unique_products:
+            unique_products[asin] = (
                 product,
-                category
-            ):
-                continue
+                category,
+            )
 
-            products_in_range += 1
-
-            if save_product(
-                history,
-                product,
-                category
-            ):
-                products_filtered += 1
-
-    save_history(history)
+    products_to_save = [
+        item
+        for item in unique_products.values()
+    ]
 
     print()
-    print("=" * 70)
-    print("AGGIORNAMENTO STORICO COMPLETATO")
-    print(f"Query eseguite: {len(searches)}")
-    print(f"Risultati totali Parse: {total_results}")
-    print(
-        "Prodotti validi nel range 10–50 €: "
-        f"{products_in_range}"
+    print(f"Prodotti unici ricevuti: {len(products_to_save)}")
+
+    # ========================================================
+    # SALVATAGGIO STORICO
+    # ========================================================
+
+    total_saved = 0
+    total_skipped = 0
+
+    # Aggiorniamo per categoria così conserviamo
+    # la categoria della query che ha trovato il prodotto.
+    grouped = {}
+
+    for product, category in products_to_save:
+        grouped.setdefault(category, []).append(product)
+
+    for category, products in grouped.items():
+
+        saved, skipped, _ = update_history(
+            products,
+            category,
+        )
+
+        total_saved += saved
+        total_skipped += skipped
+
+    # ========================================================
+    # SALVA ROTAZIONE
+    # ========================================================
+
+    save_json(
+        ROTATION_FILE,
+        rotation,
     )
+
+    # ========================================================
+    # RIEPILOGO
+    # ========================================================
+
+    print()
+    print("=" * 60)
+    print("COMPLETATO")
+    print("=" * 60)
+
+    print(f"Query riuscite: {successful_queries}")
     print(
-        "Prodotti salvati/aggiornati: "
-        f"{products_filtered}"
+        f"Query mensili utilizzate: "
+        f"{rotation['queries_used']}/{monthly_limit}"
     )
-    print(
-        "Totale prodotti nello storico: "
-        f"{len(history)}"
-    )
-    print("=" * 70)
+
+    print(f"Prodotti validi salvati/aggiornati: {total_saved}")
+    print(f"Prodotti scartati: {total_skipped}")
+
+    print()
+    print("Prossima posizione rotazione:", rotation["index"])
+
+    if rotation["queries_used"] >= monthly_limit:
+        print()
+        print("⚠️ LIMITE MENSILE RAGGIUNTO.")
+        print("Il tracker resterà fermo fino al prossimo mese.")
+
+    print("=" * 60)
 
 
 if __name__ == "__main__":
