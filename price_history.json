@@ -165,6 +165,10 @@
       {
         "date": "2026-09-03",
         "price": 10.89
+      },
+      {
+        "date": "2026-09-04",
+        "price": 10.89
       }
     ]
   },
@@ -1039,6 +1043,34 @@
       {
         "date": "2026-09-04",
         "price": 20.88
+      }
+    ]
+  },
+  "B0CCH47VBD": {
+    "category": "clothing",
+    "title": "Camicia da uomo a maniche lunghe da pirata, stile gotico, steampunk, con volant, camicetta vittoriana, cosplay, costume rinascimentale",
+    "url": "https://www.amazon.it/Camicia-steampunk-camicetta-vittoriana-rinascimentale/dp/B0CCH47VBD/ref=sr_1_38?dib=eyJ2IjoiMSJ9.w4Y2e4LOPj8xwTmUUm4yrg3S2plEDjHhtywSYRcKAb6enCWTRZFHS-IhgZqeaGDHKnq2hC7jmswtKAKYEdsWKZuYp0CdVPKJngYFpA5jpjPv0DpML5SopT0n01-nIcIzGekoAMa_u3fXmFKITyVMCEiURfrp2nxtvFoIJoDuTB1_FIOe5Y0hgBECyyvNTE_iJi4px-0p2gKjTCbrWgmJt_6fjpkgxK9aQG0fl72nvje-JSmW0g97QyJF1WJSunN8_aLblIQBgO-vqFmLXD_X4vnNXo5hWLEkjYNbikoF9_w.F5iaEcocIB9FqsoF6HPjLoSeiCJ9tMTyuHhtr7IiSmg&dib_tag=se&keywords=abbigliamento+outdoor&qid=1788516042&sr=8-38",
+    "image_url": "https://m.media-amazon.com/images/I/61acv2TrTfL._AC_UL320_.jpg",
+    "rating": null,
+    "ratings_count": 0,
+    "prices": [
+      {
+        "date": "2026-09-04",
+        "price": 19.95
+      }
+    ]
+  },
+  "B00IA3DC2M": {
+    "category": "gaming",
+    "title": "Tappetino Mouse Pad MP-02B Blu con Poggiapolso, Mouse Pad Ergonomico con Memory Foam, Tocco Morbido e Impermeabile, Supporto per Computer, Ufficio, Base di Gomma Antiscivolo",
+    "url": "https://www.amazon.it/Vultech-MP-02B-Mouse-Tappetino-Ergonomico/dp/B00IA3DC2M/ref=sr_1_3?dib=eyJ2IjoiMSJ9.W1xMtNMfIzGqoX4PA0tz6q3CaYAuFLBGUoRjc4In5QA8A0RPiCkNWhqMMbEMhrEIekYxlh2p3GfNxjAlDUIfO9PvkVYtgh8yzqOLd6BP2wriU8GhnzBuT-ZrysHZ4fNQtl_mIkP9vEzMxZ0rUHqhYtAENTwMCyJSPWNvCrsyDLD6PMYFEDIrLnR0Vk_-B0jW6etyoWwxQjBueONX8svwg9ut_vx4tTISQ-rbiO8HMjRD0PjBvKKcABKhXGY-R0jzcvxN6h07E-7lMwFGbk3r1PwLv9hK_HQlyzi1WOAgEAA.L2tqaM9zpNgpNeihKav7QFKTo5_gS1juq-Wrv6oMIzM&dib_tag=se&keywords=accessori+gaming&qid=1788516051&sr=8-3",
+    "image_url": "https://m.media-amazon.com/images/I/51IUOMNgjIL._AC_UL320_.jpg",
+    "rating": null,
+    "ratings_count": 0,
+    "prices": [
+      {
+        "date": "2026-09-04",
+        "price": 10.86
       }
     ]
   }
