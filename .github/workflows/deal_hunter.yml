@@ -2,8 +2,7 @@ name: Deal Hunter
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "10 8 * * *"
+
 
 permissions:
   contents: write
