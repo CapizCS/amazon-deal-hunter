@@ -1587,5 +1587,15 @@
         "price": 28.99
       }
     ]
+  },
+  "B016W1FX9S": {
+    "title": "Calvin Klein Jeans",
+    "category": "fashion_men",
+    "prices": [
+      {
+        "date": "2026-09-05",
+        "price": 16.86
+      }
+    ]
   }
 }
