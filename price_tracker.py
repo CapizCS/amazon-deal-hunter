@@ -20,42 +20,41 @@ PARSE_URL = (
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
-# Fascia di acquisto ideale per rivendita
+# Fascia di acquisto per rivendita
 MIN_PRICE = 10.0
 MAX_PRICE = 30.0
 
-# 2 query per ogni esecuzione
+# 2 query per esecuzione
 QUERIES_PER_RUN = 2
 
-# Budget normale
+# Limite normale mensile
 STANDARD_MONTHLY_QUERY_LIMIT = 180
 
 # Settembre 2026: margine di sicurezza
 CURRENT_MONTH_QUERY_LIMIT = 140
 
-# Numero minimo di rilevazioni prima di valutare
-# seriamente il prezzo storico
+# Minimo storico necessario al Deal Hunter
 MIN_HISTORY_POINTS = 3
 
 
 # ============================================================
-# ROTAZIONE
+# ROTAZIONE RICERCHE
 # ============================================================
 #
-# 20 posizioni:
+# 20 query totali.
 #
-# Nike                 4
-# Adidas               4
-# The North Face       4
-# Columbia             3
-# Calvin Klein         2
-# Tommy Hilfiger       1
-# Guess                1
-# Pandora              1
+# Priorità:
 #
-# Totale = 20 query
+# NIKE                 4
+# ADIDAS               4
+# THE NORTH FACE       4
+# COLUMBIA             3
+# CALVIN KLEIN         2
+# TOMMY HILFIGER       1
+# GUESS                1
+# PANDORA              1
 #
-# 9 cicli completi = 180 query
+# 9 cicli = 180 query
 # ============================================================
 
 SEARCH_CYCLE = [
@@ -202,7 +201,7 @@ SEARCH_CYCLE = [
 
 
 # ============================================================
-# FUNZIONI JSON
+# JSON
 # ============================================================
 
 def load_json(filename, default):
@@ -211,14 +210,17 @@ def load_json(filename, default):
         return default
 
     try:
+
         with open(
             filename,
             "r",
             encoding="utf-8",
         ) as f:
+
             return json.load(f)
 
     except Exception:
+
         return default
 
 
@@ -239,6 +241,60 @@ def save_json(filename, data):
 
 
 # ============================================================
+# NORMALIZZAZIONE TESTO
+# ============================================================
+
+def normalize_text(text):
+
+    text = str(text or "").lower()
+
+    text = (
+        text
+        .replace("-", " ")
+        .replace("_", " ")
+        .replace("/", " ")
+        .replace("\\", " ")
+    )
+
+    text = re.sub(
+        r"\s+",
+        " ",
+        text,
+    )
+
+    return text.strip()
+
+
+def contains_keyword(text, keyword):
+
+    text = normalize_text(text)
+    keyword = normalize_text(keyword)
+
+    if not keyword:
+        return False
+
+    pattern = (
+        r"(?<!\w)"
+        + re.escape(keyword)
+        + r"(?!\w)"
+    )
+
+    return re.search(
+        pattern,
+        text,
+        flags=re.IGNORECASE,
+    ) is not None
+
+
+def contains_any(text, keywords):
+
+    return any(
+        contains_keyword(text, keyword)
+        for keyword in keywords
+    )
+
+
+# ============================================================
 # PREZZO
 # ============================================================
 
@@ -247,7 +303,11 @@ def parse_price(value):
     if value is None:
         return None
 
-    if isinstance(value, (int, float)):
+    if isinstance(
+        value,
+        (int, float),
+    ):
+
         return float(value)
 
     text = str(value).strip()
@@ -278,9 +338,11 @@ def parse_price(value):
         text = text.replace(",", "")
 
     try:
+
         return float(text)
 
     except ValueError:
+
         pass
 
     match = re.search(
@@ -288,38 +350,32 @@ def parse_price(value):
         text,
     )
 
-    if match:
+    if not match:
+        return None
 
-        try:
-            return float(
-                match.group(0)
-            )
+    try:
 
-        except ValueError:
-            return None
+        return float(
+            match.group(0)
+        )
 
-    return None
+    except ValueError:
+
+        return None
 
 
 # ============================================================
-# NORMALIZZAZIONE PARSE
+# NORMALIZZAZIONE RISPOSTA PARSE
 # ============================================================
 
 def find_products(obj):
-    """
-    Cerca ricorsivamente prodotti con ASIN.
-
-    Gestisce:
-    - dict
-    - liste
-    - JSON contenuto dentro stringhe
-    """
 
     products = []
 
     if isinstance(obj, dict):
 
         if obj.get("asin"):
+
             products.append(obj)
 
         for value in obj.values():
@@ -354,6 +410,7 @@ def find_products(obj):
                 )
 
             except Exception:
+
                 pass
 
     return products
@@ -403,11 +460,13 @@ def search_parse(query):
 
     for product in products:
 
-        asin = product.get("asin")
+        asin = str(
+            product.get("asin", "")
+        ).strip()
 
         if asin:
 
-            unique[str(asin)] = product
+            unique[asin] = product
 
     return list(
         unique.values()
@@ -415,14 +474,37 @@ def search_parse(query):
 
 
 # ============================================================
+# FILTRO ABBIGLIAMENTO
+# ============================================================
+
+def clothing_match(
+    title,
+    product_type_keywords,
+):
+
+    return contains_any(
+        title,
+        product_type_keywords,
+    )
+
+
+# ============================================================
 # FILTRO CATEGORIA
 # ============================================================
 
-def category_matches(product, category):
+def category_matches(
+    product,
+    category,
+    query,
+):
 
-    title = str(
+    title = normalize_text(
         product.get("title", "")
-    ).lower().strip()
+    )
+
+    query_text = normalize_text(
+        query
+    )
 
     if not title:
         return False
@@ -435,8 +517,8 @@ def category_matches(product, category):
     if category == "fashion_men":
 
         clothing_keywords = [
-            "t-shirt",
             "t shirt",
+            "t-shirt",
             "tshirt",
             "tee",
             "maglietta",
@@ -462,13 +544,17 @@ def category_matches(product, category):
             "vest",
         ]
 
-        bad_keywords = [
+        invalid_keywords = [
             "profumo",
+            "parfum",
+            "eau de toilette",
             "deodorante",
             "shampoo",
+            "conditioner",
             "intimo",
             "underwear",
             "boxer",
+            "slip",
             "calzino",
             "calze",
             "sock",
@@ -476,7 +562,7 @@ def category_matches(product, category):
             "portafoglio",
             "wallet",
             "borsa",
-            "bag",
+            "handbag",
             "zaino",
             "backpack",
             "cintura",
@@ -485,18 +571,61 @@ def category_matches(product, category):
             "watch",
             "cover",
             "custodia",
+            "case",
         ]
 
-        if any(
-            keyword in title
-            for keyword in bad_keywords
+        if contains_any(
+            title,
+            invalid_keywords,
         ):
+
             return False
 
-        return any(
-            keyword in title
-            for keyword in clothing_keywords
-        )
+        # Prima controlliamo il tipo di prodotto.
+        if clothing_match(
+            title,
+            clothing_keywords,
+        ):
+
+            return True
+
+        # Se il titolo Amazon è molto abbreviato,
+        # sfruttiamo la query specifica.
+        if (
+            contains_keyword(
+                query_text,
+                "t shirt",
+            )
+            and contains_any(
+                title,
+                [
+                    "nike",
+                    "adidas",
+                    "calvin klein",
+                    "tommy hilfiger",
+                ],
+            )
+        ):
+
+            return True
+
+        if (
+            contains_keyword(
+                query_text,
+                "felpa",
+            )
+            and contains_any(
+                title,
+                [
+                    "nike",
+                    "adidas",
+                ],
+            )
+        ):
+
+            return True
+
+        return False
 
 
     # ========================================================
@@ -506,8 +635,8 @@ def category_matches(product, category):
     if category == "fashion_women":
 
         clothing_keywords = [
-            "t-shirt",
             "t shirt",
+            "t-shirt",
             "tshirt",
             "tee",
             "maglietta",
@@ -540,10 +669,13 @@ def category_matches(product, category):
             "skirt",
         ]
 
-        bad_keywords = [
+        invalid_keywords = [
             "profumo",
+            "parfum",
+            "eau de toilette",
             "deodorante",
             "shampoo",
+            "conditioner",
             "intimo",
             "underwear",
             "reggiseno",
@@ -554,6 +686,7 @@ def category_matches(product, category):
             "sock",
             "socks",
             "borsa",
+            "handbag",
             "bag",
             "portafoglio",
             "wallet",
@@ -563,18 +696,57 @@ def category_matches(product, category):
             "watch",
             "cover",
             "custodia",
+            "case",
         ]
 
-        if any(
-            keyword in title
-            for keyword in bad_keywords
+        if contains_any(
+            title,
+            invalid_keywords,
         ):
+
             return False
 
-        return any(
-            keyword in title
-            for keyword in clothing_keywords
-        )
+        if clothing_match(
+            title,
+            clothing_keywords,
+        ):
+
+            return True
+
+        if (
+            contains_keyword(
+                query_text,
+                "t shirt",
+            )
+            and contains_any(
+                title,
+                [
+                    "nike",
+                    "adidas",
+                    "calvin klein",
+                ],
+            )
+        ):
+
+            return True
+
+        if (
+            contains_keyword(
+                query_text,
+                "felpa",
+            )
+            and contains_any(
+                title,
+                [
+                    "nike",
+                    "adidas",
+                ],
+            )
+        ):
+
+            return True
+
+        return False
 
 
     # ========================================================
@@ -584,44 +756,39 @@ def category_matches(product, category):
     if category == "outdoor_clothing":
 
         clothing_keywords = [
-            "outdoor",
-            "trekking",
-            "hiking",
-            "escursionismo",
-            "montagna",
-            "mountain",
-            "softshell",
-            "hardshell",
-            "shell",
-            "impermeabile",
-            "waterproof",
-            "rain",
-            "raincoat",
-            "antipioggia",
-            "giacca",
-            "jacket",
-            "coat",
             "pile",
             "fleece",
             "polar",
+            "giacca",
+            "jacket",
+            "coat",
+            "softshell",
+            "hardshell",
+            "shell jacket",
+            "impermeabile",
+            "waterproof",
+            "rain jacket",
+            "raincoat",
+            "antipioggia",
             "windbreaker",
-            "antivento",
             "windproof",
+            "antivento",
             "parka",
             "gilet",
             "vest",
             "piumino",
             "down jacket",
-            "pantaloni trekking",
-            "pantaloni outdoor",
-            "hiking pants",
-            "outdoor pants",
+            "trekking",
+            "hiking",
+            "outdoor",
+            "mountain",
+            "montagna",
         ]
 
-        non_clothing_keywords = [
+        invalid_keywords = [
             "scarpe",
-            "shoes",
             "shoe",
+            "shoes",
             "stivali",
             "boots",
             "zaino",
@@ -632,31 +799,65 @@ def category_matches(product, category):
             "tent",
             "sacco a pelo",
             "sleeping bag",
-            "accessori",
-            "accessory",
             "borraccia",
             "water bottle",
+            "accessorio",
+            "accessories",
         ]
 
-        if any(
-            keyword in title
-            for keyword in non_clothing_keywords
+        if contains_any(
+            title,
+            invalid_keywords,
         ):
+
             return False
 
-        return any(
-            keyword in title
-            for keyword in clothing_keywords
+        if contains_any(
+            title,
+            clothing_keywords,
+        ):
+
+            return True
+
+        # Query molto specifica:
+        # se il titolo contiene la marca richiesta
+        # e almeno un riferimento outdoor,
+        # lo consideriamo valido.
+        brands = [
+            "the north face",
+            "columbia",
+        ]
+
+        outdoor_terms = [
+            "fleece",
+            "pile",
+            "jacket",
+            "giacca",
+            "coat",
+            "softshell",
+            "parka",
+            "vest",
+        ]
+
+        return (
+            contains_any(
+                title,
+                brands,
+            )
+            and contains_any(
+                query_text,
+                outdoor_terms,
+            )
         )
 
 
     # ========================================================
-    # ACCESSORI MODA
+    # ACCESSORI MODA — GUESS
     # ========================================================
 
     if category == "fashion_accessories":
 
-        keywords = [
+        bag_keywords = [
             "borsa",
             "bag",
             "handbag",
@@ -670,14 +871,32 @@ def category_matches(product, category):
             "borsetta",
         ]
 
-        return any(
-            keyword in title
-            for keyword in keywords
+        invalid_keywords = [
+            "cover",
+            "custodia",
+            "case",
+            "portachiavi",
+            "keychain",
+            "profumo",
+            "parfum",
+            "deodorante",
+        ]
+
+        if contains_any(
+            title,
+            invalid_keywords,
+        ):
+
+            return False
+
+        return contains_any(
+            title,
+            bag_keywords,
         )
 
 
     # ========================================================
-    # GIOIELLERIA
+    # GIOIELLERIA — PANDORA
     # ========================================================
 
     if category == "jewelry":
@@ -688,15 +907,9 @@ def category_matches(product, category):
             "gioiello",
             "jewelry",
             "jewellery",
-            "bracciale",
-            "bracelet",
-            "collana",
-            "necklace",
-            "orecchini",
-            "earrings",
         ]
 
-        non_jewelry_keywords = [
+        invalid_keywords = [
             "custodia",
             "case",
             "scatola",
@@ -709,15 +922,16 @@ def category_matches(product, category):
             "jewelry box",
         ]
 
-        if any(
-            keyword in title
-            for keyword in non_jewelry_keywords
+        if contains_any(
+            title,
+            invalid_keywords,
         ):
+
             return False
 
-        return any(
-            keyword in title
-            for keyword in jewelry_keywords
+        return contains_any(
+            title,
+            jewelry_keywords,
         )
 
 
@@ -725,14 +939,18 @@ def category_matches(product, category):
     # FALLBACK
     # ========================================================
 
-    return True
+    return False
 
 
 # ============================================================
 # STORICO
 # ============================================================
 
-def update_history(products, category):
+def update_history(
+    products,
+    category,
+    query,
+):
 
     history = load_json(
         HISTORY_FILE,
@@ -772,10 +990,20 @@ def update_history(products, category):
 
         price_value = (
             product.get("price")
-            or product.get("current_price")
-            or product.get("buybox_price")
-            or product.get("buy_box_price")
+            if product.get("price") is not None
+            else product.get("current_price")
         )
+
+        if price_value is None:
+
+            price_value = (
+                product.get("buybox_price")
+                if product.get("buybox_price")
+                is not None
+                else product.get(
+                    "buy_box_price"
+                )
+            )
 
         price = parse_price(
             price_value
@@ -787,7 +1015,7 @@ def update_history(products, category):
             continue
 
         # ====================================================
-        # FASCIA PREZZO
+        # FASCIA 10–30 €
         # ====================================================
 
         if (
@@ -805,13 +1033,14 @@ def update_history(products, category):
         if not category_matches(
             product,
             category,
+            query,
         ):
 
             skipped_category += 1
             continue
 
         # ====================================================
-        # NUOVO PRODOTTO
+        # CREA / AGGIORNA PRODOTTO
         # ====================================================
 
         if asin not in history:
@@ -819,6 +1048,7 @@ def update_history(products, category):
             history[asin] = {
                 "title": title,
                 "category": category,
+                "query": query,
                 "prices": [],
             }
 
@@ -826,6 +1056,7 @@ def update_history(products, category):
 
         item["title"] = title
         item["category"] = category
+        item["query"] = query
 
         if (
             "prices" not in item
@@ -838,7 +1069,7 @@ def update_history(products, category):
             item["prices"] = []
 
         # ====================================================
-        # RILEVAZIONE ODIERNA
+        # UNA SOLA RILEVAZIONE AL GIORNO
         # ====================================================
 
         existing = None
@@ -916,7 +1147,7 @@ def load_rotation(today):
     rotation = load_json(
         ROTATION_FILE,
         {
-            "version": 2,
+            "version": 3,
             "month": today.strftime(
                 "%Y-%m"
             ),
@@ -929,13 +1160,15 @@ def load_rotation(today):
         "%Y-%m"
     )
 
+    # Nuovo mese:
+    # riparte la rotazione da zero.
     if (
         rotation.get("month")
         != current_month
     ):
 
         rotation = {
-            "version": 2,
+            "version": 3,
             "month": current_month,
             "queries_used": 0,
             "index": 0,
@@ -1101,7 +1334,7 @@ def main():
     successful_queries = 0
 
     # ========================================================
-    # QUERY
+    # ESECUZIONE QUERY
     # ========================================================
 
     for number, search in enumerate(
@@ -1150,11 +1383,14 @@ def main():
                     (
                         product,
                         category,
+                        query,
                     )
                     for product in products
                 ]
             )
 
+            # La query viene conteggiata
+            # solo se Parse ha risposto.
             register_successful_query(
                 rotation
             )
@@ -1171,13 +1407,18 @@ def main():
                 "Query NON conteggiata."
             )
 
+
     # ========================================================
     # DEDUPLICAZIONE
     # ========================================================
 
     unique_products = {}
 
-    for product, category in all_products:
+    for (
+        product,
+        category,
+        query,
+    ) in all_products:
 
         asin = str(
             product.get("asin", "")
@@ -1191,7 +1432,9 @@ def main():
             unique_products[asin] = (
                 product,
                 category,
+                query,
             )
+
 
     products_to_process = list(
         unique_products.values()
@@ -1204,29 +1447,26 @@ def main():
         f"{len(products_to_process)}"
     )
 
+
     # ========================================================
     # AGGIORNAMENTO STORICO
     # ========================================================
-
-    grouped = {}
-
-    for product, category in products_to_process:
-
-        grouped.setdefault(
-            category,
-            [],
-        ).append(product)
 
     total_saved = 0
     total_price_skipped = 0
     total_category_skipped = 0
     total_other_skipped = 0
 
-    for category, products in grouped.items():
+    for (
+        product,
+        category,
+        query,
+    ) in products_to_process:
 
         result = update_history(
-            products,
+            [product],
             category,
+            query,
         )
 
         total_saved += result[
@@ -1245,6 +1485,7 @@ def main():
             "skipped_other"
         ]
 
+
     # ========================================================
     # SALVA ROTAZIONE
     # ========================================================
@@ -1253,6 +1494,7 @@ def main():
         ROTATION_FILE,
         rotation,
     )
+
 
     # ========================================================
     # RIEPILOGO
