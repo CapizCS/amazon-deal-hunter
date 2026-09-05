@@ -20,41 +20,37 @@ PARSE_URL = (
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
-# Fascia di acquisto per rivendita
-MIN_PRICE = 10.0
-MAX_PRICE = 30.0
+# ============================================================
+# IMPORTANTE:
+# questi NON sono limiti per gli alert.
+#
+# Servono soltanto a evitare prezzi palesemente anomali
+# nello storico.
+# ============================================================
+
+HISTORY_MIN_PRICE = 0.01
+HISTORY_MAX_PRICE = 300.0
+
+# Prezzo massimo desiderato per l'acquisto/rivendita.
+# Questo limite viene applicato dal DEAL HUNTER,
+# non dal salvataggio dello storico.
+MAX_CURRENT_PRICE = 30.0
 
 # 2 query per esecuzione
 QUERIES_PER_RUN = 2
 
-# Limite normale mensile
+# Budget normale
 STANDARD_MONTHLY_QUERY_LIMIT = 180
 
 # Settembre 2026: margine di sicurezza
 CURRENT_MONTH_QUERY_LIMIT = 140
 
-# Minimo storico necessario al Deal Hunter
+# Minimo storico tecnico
 MIN_HISTORY_POINTS = 3
 
 
 # ============================================================
 # ROTAZIONE RICERCHE
-# ============================================================
-#
-# 20 query totali.
-#
-# Priorità:
-#
-# NIKE                 4
-# ADIDAS               4
-# THE NORTH FACE       4
-# COLUMBIA             3
-# CALVIN KLEIN         2
-# TOMMY HILFIGER       1
-# GUESS                1
-# PANDORA              1
-#
-# 9 cicli = 180 query
 # ============================================================
 
 SEARCH_CYCLE = [
@@ -241,7 +237,7 @@ def save_json(filename, data):
 
 
 # ============================================================
-# NORMALIZZAZIONE TESTO
+# TESTO
 # ============================================================
 
 def normalize_text(text):
@@ -323,7 +319,6 @@ def parse_price(value):
         .strip()
     )
 
-    # Formato italiano:
     # 1.234,56 -> 1234.56
     if "," in text:
 
@@ -365,7 +360,7 @@ def parse_price(value):
 
 
 # ============================================================
-# NORMALIZZAZIONE RISPOSTA PARSE
+# NORMALIZZAZIONE PARSE
 # ============================================================
 
 def find_products(obj):
@@ -474,21 +469,6 @@ def search_parse(query):
 
 
 # ============================================================
-# FILTRO ABBIGLIAMENTO
-# ============================================================
-
-def clothing_match(
-    title,
-    product_type_keywords,
-):
-
-    return contains_any(
-        title,
-        product_type_keywords,
-    )
-
-
-# ============================================================
 # FILTRO CATEGORIA
 # ============================================================
 
@@ -511,7 +491,7 @@ def category_matches(
 
 
     # ========================================================
-    # ABBIGLIAMENTO UOMO
+    # UOMO
     # ========================================================
 
     if category == "fashion_men":
@@ -581,55 +561,14 @@ def category_matches(
 
             return False
 
-        # Prima controlliamo il tipo di prodotto.
-        if clothing_match(
+        return contains_any(
             title,
             clothing_keywords,
-        ):
-
-            return True
-
-        # Se il titolo Amazon è molto abbreviato,
-        # sfruttiamo la query specifica.
-        if (
-            contains_keyword(
-                query_text,
-                "t shirt",
-            )
-            and contains_any(
-                title,
-                [
-                    "nike",
-                    "adidas",
-                    "calvin klein",
-                    "tommy hilfiger",
-                ],
-            )
-        ):
-
-            return True
-
-        if (
-            contains_keyword(
-                query_text,
-                "felpa",
-            )
-            and contains_any(
-                title,
-                [
-                    "nike",
-                    "adidas",
-                ],
-            )
-        ):
-
-            return True
-
-        return False
+        )
 
 
     # ========================================================
-    # ABBIGLIAMENTO DONNA
+    # DONNA
     # ========================================================
 
     if category == "fashion_women":
@@ -687,7 +626,6 @@ def category_matches(
             "socks",
             "borsa",
             "handbag",
-            "bag",
             "portafoglio",
             "wallet",
             "cintura",
@@ -706,47 +644,10 @@ def category_matches(
 
             return False
 
-        if clothing_match(
+        return contains_any(
             title,
             clothing_keywords,
-        ):
-
-            return True
-
-        if (
-            contains_keyword(
-                query_text,
-                "t shirt",
-            )
-            and contains_any(
-                title,
-                [
-                    "nike",
-                    "adidas",
-                    "calvin klein",
-                ],
-            )
-        ):
-
-            return True
-
-        if (
-            contains_keyword(
-                query_text,
-                "felpa",
-            )
-            and contains_any(
-                title,
-                [
-                    "nike",
-                    "adidas",
-                ],
-            )
-        ):
-
-            return True
-
-        return False
+        )
 
 
     # ========================================================
@@ -812,47 +713,14 @@ def category_matches(
 
             return False
 
-        if contains_any(
+        return contains_any(
             title,
             clothing_keywords,
-        ):
-
-            return True
-
-        # Query molto specifica:
-        # se il titolo contiene la marca richiesta
-        # e almeno un riferimento outdoor,
-        # lo consideriamo valido.
-        brands = [
-            "the north face",
-            "columbia",
-        ]
-
-        outdoor_terms = [
-            "fleece",
-            "pile",
-            "jacket",
-            "giacca",
-            "coat",
-            "softshell",
-            "parka",
-            "vest",
-        ]
-
-        return (
-            contains_any(
-                title,
-                brands,
-            )
-            and contains_any(
-                query_text,
-                outdoor_terms,
-            )
         )
 
 
     # ========================================================
-    # ACCESSORI MODA — GUESS
+    # GUESS / BORSE
     # ========================================================
 
     if category == "fashion_accessories":
@@ -896,7 +764,7 @@ def category_matches(
 
 
     # ========================================================
-    # GIOIELLERIA — PANDORA
+    # PANDORA
     # ========================================================
 
     if category == "jewelry":
@@ -934,10 +802,6 @@ def category_matches(
             jewelry_keywords,
         )
 
-
-    # ========================================================
-    # FALLBACK
-    # ========================================================
 
     return False
 
@@ -985,24 +849,29 @@ def update_history(
             continue
 
         # ====================================================
-        # PREZZO
+        # PREZZO ATTUALE
         # ====================================================
 
-        price_value = (
-            product.get("price")
-            if product.get("price") is not None
-            else product.get("current_price")
+        price_value = product.get(
+            "price"
         )
 
         if price_value is None:
 
-            price_value = (
-                product.get("buybox_price")
-                if product.get("buybox_price")
-                is not None
-                else product.get(
-                    "buy_box_price"
-                )
+            price_value = product.get(
+                "current_price"
+            )
+
+        if price_value is None:
+
+            price_value = product.get(
+                "buybox_price"
+            )
+
+        if price_value is None:
+
+            price_value = product.get(
+                "buy_box_price"
             )
 
         price = parse_price(
@@ -1015,12 +884,15 @@ def update_history(
             continue
 
         # ====================================================
-        # FASCIA 10–30 €
+        # FILTRO TECNICO STORICO
+        #
+        # NON è il limite dell'alert.
+        # Qui permettiamo anche prezzi > 30 €.
         # ====================================================
 
         if (
-            price < MIN_PRICE
-            or price > MAX_PRICE
+            price < HISTORY_MIN_PRICE
+            or price > HISTORY_MAX_PRICE
         ):
 
             skipped_price += 1
@@ -1040,7 +912,7 @@ def update_history(
             continue
 
         # ====================================================
-        # CREA / AGGIORNA PRODOTTO
+        # CREA PRODOTTO
         # ====================================================
 
         if asin not in history:
@@ -1147,7 +1019,7 @@ def load_rotation(today):
     rotation = load_json(
         ROTATION_FILE,
         {
-            "version": 3,
+            "version": 4,
             "month": today.strftime(
                 "%Y-%m"
             ),
@@ -1160,15 +1032,13 @@ def load_rotation(today):
         "%Y-%m"
     )
 
-    # Nuovo mese:
-    # riparte la rotazione da zero.
     if (
         rotation.get("month")
         != current_month
     ):
 
         rotation = {
-            "version": 3,
+            "version": 4,
             "month": current_month,
             "queries_used": 0,
             "index": 0,
@@ -1300,9 +1170,14 @@ def main():
     )
 
     print(
-        f"Fascia prezzo: "
-        f"{MIN_PRICE:.0f}-"
-        f"{MAX_PRICE:.0f} €"
+        "Storico: "
+        f"{HISTORY_MIN_PRICE:.2f}-"
+        f"{HISTORY_MAX_PRICE:.0f} €"
+    )
+
+    print(
+        "Alert/acquisto: "
+        f"max {MAX_CURRENT_PRICE:.0f} €"
     )
 
     searches = get_next_searches(
@@ -1334,7 +1209,7 @@ def main():
     successful_queries = 0
 
     # ========================================================
-    # ESECUZIONE QUERY
+    # QUERY
     # ========================================================
 
     for number, search in enumerate(
@@ -1389,8 +1264,6 @@ def main():
                 ]
             )
 
-            # La query viene conteggiata
-            # solo se Parse ha risposto.
             register_successful_query(
                 rotation
             )
