@@ -1597,5 +1597,35 @@
         "price": 16.86
       }
     ]
+  },
+  "B0D1RMHV1H": {
+    "title": "Calvin Klein Jeans",
+    "category": "fashion_women",
+    "prices": [
+      {
+        "date": "2026-09-05",
+        "price": 13.71
+      }
+    ]
+  },
+  "B00ZIXTZJ6": {
+    "title": "Tommy Jeans",
+    "category": "fashion_men",
+    "prices": [
+      {
+        "date": "2026-09-05",
+        "price": 13.0
+      }
+    ]
+  },
+  "B0BBBBWKK7": {
+    "title": "Tommy Jeans",
+    "category": "fashion_men",
+    "prices": [
+      {
+        "date": "2026-09-05",
+        "price": 19.0
+      }
+    ]
   }
 }
