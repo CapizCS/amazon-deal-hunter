@@ -55,37 +55,38 @@ MIN_HISTORY_POINTS = 3
 
 SEARCH_CYCLE = [
     # 🔴 TECNOLOGIA — 5/20
-    {"category": "technology", "query": "cuffie bluetooth"},
-    {"category": "technology", "query": "smartwatch"},
-    {"category": "technology", "query": "mouse wireless"},
-    {"category": "technology", "query": "tastiera meccanica"},
-    {"category": "technology", "query": "webcam full hd"},
+    {"category": "technology", "query": "cuffie bluetooth Sony"},
+    {"category": "technology", "query": "cuffie bluetooth JBL"},
+    {"category": "technology", "query": "mouse wireless Logitech"},
+    {"category": "technology", "query": "tastiera meccanica gaming"},
+    {"category": "technology", "query": "smartwatch Samsung"},
 
     # 🔴 GAMING — 4/20
-    {"category": "gaming", "query": "mouse gaming"},
-    {"category": "gaming", "query": "tastiera gaming"},
-    {"category": "gaming", "query": "cuffie gaming"},
-    {"category": "gaming", "query": "controller pc gaming"},
+    {"category": "gaming", "query": "mouse gaming Logitech"},
+    {"category": "gaming", "query": "cuffie gaming HyperX"},
+    {"category": "gaming", "query": "tastiera gaming meccanica"},
+    {"category": "gaming", "query": "controller Xbox pc"},
 
-    # 🔴 VESTITI DA SERA DONNA — 4/20
+    # 🔴 DONNA — 4/20
+    {"category": "women_evening", "query": "Guess borsa donna"},
     {"category": "women_evening", "query": "Guess vestito donna"},
+    {"category": "women_evening", "query": "Calvin Klein abito donna"},
     {"category": "women_evening", "query": "Calvin Klein vestito donna"},
-    {"category": "women_evening", "query": "Tommy Hilfiger vestito donna"},
-    {"category": "women_evening", "query": "Vero Moda vestito elegante donna"},
 
     # 🔴 OUTDOOR — 3/20
-    {"category": "outdoor_clothing", "query": "The North Face giacca"},
-    {"category": "outdoor_clothing", "query": "Columbia pile"},
-    {"category": "outdoor_clothing", "query": "Jack Wolfskin giacca"},
+    {"category": "outdoor_clothing", "query": "The North Face pile uomo"},
+    {"category": "outdoor_clothing", "query": "Columbia pile donna"},
+    {"category": "outdoor_clothing", "query": "The North Face giacca donna"},
 
-    # 🔴 MAGLIETTE UOMO — 3/20
+    # 🔴 T-SHIRT UOMO — 3/20
     {"category": "men_tshirts", "query": "Nike t shirt uomo"},
     {"category": "men_tshirts", "query": "Adidas t shirt uomo"},
     {"category": "men_tshirts", "query": "Tommy Hilfiger t shirt uomo"},
 
-    # 🟡 ABBIGLIAMENTO SPORTIVO — 1/20
-    {"category": "sportswear", "query": "Nike t shirt running"},
+    # 🟡 SPORTIVO — 1/20
+    {"category": "sportswear", "query": "Adidas t shirt sport uomo"},
 ]
+
 
 
 # ============================================================
