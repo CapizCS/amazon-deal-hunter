@@ -1,232 +1,775 @@
 import os
 import json
 import statistics
-import urllib.parse
-import urllib.request
 from datetime import date
+import requests
 
-MIN_PRICE = 10
-MAX_PRICE = 50
-MIN_HISTORY_POINTS = 3
+
+# ============================================================
+# CONFIGURAZIONE
+# ============================================================
+
 HISTORY_FILE = "price_history.json"
 
+TELEGRAM_BOT_TOKEN = os.getenv(
+    "TELEGRAM_BOT_TOKEN"
+)
 
-def load_price_history():
-    with open(HISTORY_FILE, "r", encoding="utf-8") as file:
-        return json.load(file)
+TELEGRAM_CHAT_ID = os.getenv(
+    "TELEGRAM_CHAT_ID"
+)
 
+# ============================================================
+# PREZZO MASSIMO PER L'ALERT
+# ============================================================
 
-def get_real_products(history_data):
-    products = []
+MAX_CURRENT_PRICE = 30.0
 
-    for asin, product in history_data.items():
-        if not product.get("title"):
-            continue
-
-        prices = [
-            item["price"]
-            for item in product.get("prices", [])
-            if item.get("price", 0) > 0
-        ]
-
-        if not prices:
-            continue
-
-        products.append({
-            "asin": asin,
-            "title": product.get("title", ""),
-            "url": product.get("url", ""),
-            "category": product.get("category", "unknown"),
-            "prices": prices
-        })
-
-    return products
+# Minimo storico necessario
+MIN_HISTORY_POINTS = 3
 
 
-def calculate_normal_price(prices):
-    return statistics.median(prices)
+# ============================================================
+# SOGLIE DEAL SCORE
+# ============================================================
+
+EXCEPTIONAL_SCORE = 90
+SUPER_DEAL_SCORE = 80
+DEAL_SCORE = 65
 
 
-def calculate_deal_score(
-    current_price,
-    normal_price,
-    historical_low=None,
-    history_points=0
-):
-    if current_price < MIN_PRICE or current_price > MAX_PRICE:
-        return 0
+# ============================================================
+# JSON
+# ============================================================
 
-    if normal_price <= 0:
-        return 0
+def load_json(filename, default):
 
-    if history_points < MIN_HISTORY_POINTS:
-        return 0
+    if not os.path.exists(filename):
+        return default
 
-    ratio = normal_price / current_price
-    discount = 1 - (current_price / normal_price)
+    try:
 
-    score = 0
+        with open(
+            filename,
+            "r",
+            encoding="utf-8",
+        ) as f:
 
-    if ratio >= 5:
-        score += 45
-    elif ratio >= 4:
-        score += 40
-    elif ratio >= 3:
-        score += 35
-    elif ratio >= 2.5:
-        score += 28
-    elif ratio >= 2:
-        score += 20
-    elif ratio >= 1.5:
-        score += 10
+            return json.load(f)
 
-    if discount >= 0.80:
-        score += 25
-    elif discount >= 0.70:
-        score += 22
-    elif discount >= 0.60:
-        score += 18
-    elif discount >= 0.50:
-        score += 14
-    elif discount >= 0.40:
-        score += 8
+    except Exception:
 
-    if historical_low is not None and historical_low > 0:
-        distance = current_price / historical_low
-
-        if distance <= 1.02:
-            score += 30
-        elif distance <= 1.05:
-            score += 25
-        elif distance <= 1.10:
-            score += 18
-        elif distance <= 1.20:
-            score += 10
-
-    return min(score, 100)
+        return default
 
 
-def get_deal_level(score):
-    if score >= 90:
-        return "🚨 ECCEZIONALE"
+# ============================================================
+# PREZZO
+# ============================================================
 
-    if score >= 80:
-        return "🔥 SUPER DEAL"
+def parse_price(value):
 
-    if score >= 65:
-        return "🟢 AFFARE"
+    if value is None:
+        return None
 
-    return "⚪ IGNORA"
+    if isinstance(
+        value,
+        (int, float),
+    ):
 
+        return float(value)
+
+    text = str(value).strip()
+
+    if not text:
+        return None
+
+    text = (
+        text
+        .replace("€", "")
+        .replace("EUR", "")
+        .replace("\u00a0", " ")
+        .strip()
+    )
+
+    if "," in text:
+
+        text = (
+            text
+            .replace(".", "")
+            .replace(",", ".")
+        )
+
+    else:
+
+        text = text.replace(",", "")
+
+    try:
+
+        return float(text)
+
+    except ValueError:
+
+        return None
+
+
+# ============================================================
+# TELEGRAM
+# ============================================================
 
 def send_telegram(message):
-    token = os.environ["TELEGRAM_BOT_TOKEN"]
-    chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-
-    data = urllib.parse.urlencode({
-        "chat_id": chat_id,
-        "text": message
-    }).encode()
-
-    request = urllib.request.Request(url, data=data)
-
-    with urllib.request.urlopen(request, timeout=20) as response:
-        if response.status == 200:
-            print("Telegram: messaggio inviato")
-
-
-def analyze_product(product):
-    prices = product["prices"]
-
-    if len(prices) < MIN_HISTORY_POINTS:
-        print()
-        print(f"IN ATTESA STORICO: {product['title']}")
-        print(f"Rilevazioni: {len(prices)}/{MIN_HISTORY_POINTS}")
+    if not TELEGRAM_BOT_TOKEN:
+        print(
+            "TELEGRAM_BOT_TOKEN non configurato."
+        )
         return False
 
-    current_price = prices[-1]
-    normal_price = calculate_normal_price(prices)
-    historical_low = min(prices)
+    if not TELEGRAM_CHAT_ID:
+        print(
+            "TELEGRAM_CHAT_ID non configurato."
+        )
+        return False
 
-    score = calculate_deal_score(
-        current_price,
-        normal_price,
-        historical_low,
-        len(prices)
+    url = (
+        "https://api.telegram.org/bot"
+        f"{TELEGRAM_BOT_TOKEN}"
+        "/sendMessage"
+    )
+
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "disable_web_page_preview": False,
+    }
+
+    try:
+
+        response = requests.post(
+            url,
+            json=payload,
+            timeout=30,
+        )
+
+        response.raise_for_status()
+
+        return True
+
+    except Exception as e:
+
+        print(
+            f"Errore Telegram: {e}"
+        )
+
+        return False
+
+
+# ============================================================
+# SCORE
+# ============================================================
+
+def calculate_score(
+    current_price,
+    historical_prices,
+):
+
+    if not historical_prices:
+        return 0
+
+    normal_price = statistics.median(
+        historical_prices
+    )
+
+    historical_low = min(
+        historical_prices
+    )
+
+    if current_price <= 0:
+        return 0
+
+    # ========================================================
+    # RAPPORTO VALORE / PREZZO
+    # ========================================================
+
+    ratio = (
+        normal_price
+        / current_price
+    )
+
+    # ========================================================
+    # SCONTO REALE
+    # ========================================================
+
+    discount = (
+        1
+        - (
+            current_price
+            / normal_price
+        )
+    )
+
+    # ========================================================
+    # DISTANZA DAL MINIMO STORICO
+    # ========================================================
+
+    if normal_price > historical_low:
+
+        distance_from_low = (
+            current_price
+            - historical_low
+        ) / (
+            normal_price
+            - historical_low
+        )
+
+    else:
+
+        distance_from_low = 0.0
+
+    distance_from_low = max(
+        0.0,
+        min(
+            1.0,
+            distance_from_low,
+        ),
+    )
+
+    # ========================================================
+    # SCORE RAPPORTO
+    # ========================================================
+
+    if ratio >= 6:
+        ratio_score = 100
+
+    elif ratio >= 5:
+        ratio_score = 95
+
+    elif ratio >= 4:
+        ratio_score = 90
+
+    elif ratio >= 3:
+        ratio_score = 80
+
+    elif ratio >= 2.5:
+        ratio_score = 70
+
+    elif ratio >= 2:
+        ratio_score = 55
+
+    elif ratio >= 1.5:
+        ratio_score = 35
+
+    else:
+        ratio_score = 10
+
+
+    # ========================================================
+    # SCORE SCONTO
+    # ========================================================
+
+    if discount >= 0.80:
+        discount_score = 100
+
+    elif discount >= 0.70:
+        discount_score = 90
+
+    elif discount >= 0.60:
+        discount_score = 80
+
+    elif discount >= 0.50:
+        discount_score = 65
+
+    elif discount >= 0.40:
+        discount_score = 50
+
+    elif discount >= 0.30:
+        discount_score = 35
+
+    else:
+        discount_score = 10
+
+
+    # ========================================================
+    # SCORE VICINANZA AL MINIMO
+    # ========================================================
+
+    low_score = (
+        100
+        * (
+            1
+            - distance_from_low
+        )
+    )
+
+    # ========================================================
+    # SCORE FINALE
+    # ========================================================
+    #
+    # Il rapporto valore/prezzo pesa di più.
+    # Questo evita di segnalare semplicemente
+    # qualsiasi prodotto con una grossa percentuale
+    # di sconto.
+    # ========================================================
+
+    score = (
+        ratio_score * 0.50
+        + discount_score * 0.30
+        + low_score * 0.20
+    )
+
+    return round(
+        max(
+            0,
+            min(
+                100,
+                score,
+            ),
+        )
+    )
+
+
+# ============================================================
+# LIVELLO DEAL
+# ============================================================
+
+def get_deal_level(score):
+
+    if score >= EXCEPTIONAL_SCORE:
+
+        return "🚨 ECCEZIONALE"
+
+    if score >= SUPER_DEAL_SCORE:
+
+        return "🔥 SUPER DEAL"
+
+    if score >= DEAL_SCORE:
+
+        return "🟢 AFFARE"
+
+    return None
+
+
+# ============================================================
+# MAIN
+# ============================================================
+
+def main():
+
+    today = date.today()
+
+    history = load_json(
+        HISTORY_FILE,
+        {},
+    )
+
+    print("=" * 60)
+    print(
+        "DEAL HUNTER"
+    )
+    print("=" * 60)
+
+    print(
+        f"Data: {today}"
+    )
+
+    print(
+        f"Prezzo massimo alert: "
+        f"{MAX_CURRENT_PRICE:.0f} €"
+    )
+
+    print(
+        f"Minimo storico richiesto: "
+        f"{MIN_HISTORY_POINTS}"
     )
 
     print()
-    print("=" * 70)
-    print(product["title"])
-    print(f"ASIN: {product['asin']}")
-    print(f"Categoria: {product['category']}")
-    print(f"Prezzo attuale: {current_price:.2f} €")
-    print(f"Prezzo normale stimato: {normal_price:.2f} €")
-    print(f"Minimo storico: {historical_low:.2f} €")
-    print(f"Rilevazioni: {len(prices)}")
 
-    if normal_price > 0:
-        discount = (1 - current_price / normal_price) * 100
-        ratio = normal_price / current_price
+    deals = []
 
-        print(f"Sconto rispetto allo storico: {discount:.1f}%")
-        print(f"Valore/prezzo: {ratio:.1f}x")
+    analyzed = 0
 
-    print(f"DEAL SCORE: {score}/100")
-    print(f"VALUTAZIONE: {get_deal_level(score)}")
+    insufficient_history = 0
 
-    if score >= 65:
-        message = (
-            f"{get_deal_level(score)}\n\n"
-            f"🛍 {product['title']}\n"
-            f"💰 Ora: {current_price:.2f} €\n"
-            f"📊 Prezzo normale stimato: {normal_price:.2f} €\n"
-            f"📉 Sconto storico: {discount:.1f}%\n"
-            f"💎 Valore/prezzo: {ratio:.1f}x\n"
-            f"📈 Minimo storico: {historical_low:.2f} €\n"
-            f"⭐ Deal Score: {score}/100\n\n"
-            f"🔗 https://www.amazon.it/dp/{product['asin']}"
+    over_budget = 0
+
+    invalid_products = 0
+
+
+    # ========================================================
+    # ANALISI PRODOTTI
+    # ========================================================
+
+    for asin, item in history.items():
+
+        if not isinstance(
+            item,
+            dict,
+        ):
+
+            invalid_products += 1
+            continue
+
+        prices = item.get(
+            "prices",
+            [],
         )
 
-        send_telegram(message)
-        return True
+        if not isinstance(
+            prices,
+            list,
+        ):
 
-    return False
+            invalid_products += 1
+            continue
 
 
-def main():
-    history_data = load_price_history()
-    products = get_real_products(history_data)
+        # ====================================================
+        # ESTRAI PREZZI STORICI
+        # ====================================================
 
-    print()
-    print("=" * 70)
-    print("AMAZON DEAL HUNTER")
-    print(f"Prodotti reali nello storico: {len(products)}")
-    print("=" * 70)
+        historical_prices = []
 
-    deals_found = 0
+        for observation in prices:
 
-    for product in products:
-        if analyze_product(product):
-            deals_found += 1
+            if not isinstance(
+                observation,
+                dict,
+            ):
 
-    if deals_found == 0:
-        message = (
-            "🤖 Deal Hunter — Controllo completato\n\n"
-            f"📅 {date.today().strftime('%d/%m/%Y')}\n"
-            f"📦 Prodotti analizzati: {len(products)}\n"
-            f"💰 Fascia prezzo: {MIN_PRICE}–{MAX_PRICE} €\n"
-            "🔥 Deal trovati: 0\n\n"
-            "Nessun affare abbastanza interessante oggi."
+                continue
+
+            price = parse_price(
+                observation.get(
+                    "price"
+                )
+            )
+
+            if (
+                price is not None
+                and price > 0
+            ):
+
+                historical_prices.append(
+                    price
+                )
+
+
+        if len(
+            historical_prices
+        ) < MIN_HISTORY_POINTS:
+
+            insufficient_history += 1
+            continue
+
+
+        # ====================================================
+        # PREZZO ATTUALE
+        # ====================================================
+
+        latest_observations = []
+
+        for observation in prices:
+
+            if not isinstance(
+                observation,
+                dict,
+            ):
+
+                continue
+
+            observation_price = parse_price(
+                observation.get(
+                    "price"
+                )
+            )
+
+            observation_date = observation.get(
+                "date",
+                "",
+            )
+
+            if (
+                observation_price is not None
+                and observation_date
+            ):
+
+                latest_observations.append(
+                    (
+                        observation_date,
+                        observation_price,
+                    )
+                )
+
+
+        if not latest_observations:
+
+            invalid_products += 1
+            continue
+
+
+        latest_observations.sort(
+            key=lambda x: x[0]
         )
 
-        send_telegram(message)
+        current_price = (
+            latest_observations[-1][1]
+        )
+
+
+        # ====================================================
+        # NUMERO PRODOTTI ANALIZZATI
+        # ====================================================
+
+        analyzed += 1
+
+
+        # ====================================================
+        # LIMITE DI ACQUISTO
+        # ====================================================
+        #
+        # QUESTO È IL SOLO PUNTO IN CUI
+        # applichiamo il limite dei 30 €.
+        #
+        # Un prodotto da 60 € rimane nello storico.
+        # Un prodotto da 60 € semplicemente non genera alert.
+        # ====================================================
+
+        if current_price > MAX_CURRENT_PRICE:
+
+            over_budget += 1
+            continue
+
+
+        # ====================================================
+        # SCORE
+        # ====================================================
+
+        score = calculate_score(
+            current_price,
+            historical_prices,
+        )
+
+        level = get_deal_level(
+            score
+        )
+
+        if not level:
+            continue
+
+
+        # ====================================================
+        # DATI STORICI
+        # ====================================================
+
+        normal_price = statistics.median(
+            historical_prices
+        )
+
+        historical_low = min(
+            historical_prices
+        )
+
+        discount = (
+            1
+            - (
+                current_price
+                / normal_price
+            )
+        )
+
+        ratio = (
+            normal_price
+            / current_price
+        )
+
+
+        # ====================================================
+        # PRODOTTO
+        # ====================================================
+
+        title = item.get(
+            "title",
+            "Prodotto Amazon",
+        )
+
+        category = item.get(
+            "category",
+            "",
+        )
+
+        query = item.get(
+            "query",
+            "",
+        )
+
+
+        # ====================================================
+        # LINK AMAZON
+        # ====================================================
+
+        product_url = (
+            "https://www.amazon.it/dp/"
+            f"{asin}"
+        )
+
+
+        # ====================================================
+        # DEAL
+        # ====================================================
+
+        deals.append(
+            {
+                "asin": asin,
+                "title": title,
+                "category": category,
+                "query": query,
+                "current_price": current_price,
+                "normal_price": normal_price,
+                "historical_low": historical_low,
+                "discount": discount,
+                "ratio": ratio,
+                "score": score,
+                "level": level,
+                "url": product_url,
+                "history_points": len(
+                    historical_prices
+                ),
+            }
+        )
+
+
+    # ========================================================
+    # ORDINA PER SCORE
+    # ========================================================
+
+    deals.sort(
+        key=lambda deal: (
+            deal["score"],
+            deal["ratio"],
+        ),
+        reverse=True,
+    )
+
+
+    # ========================================================
+    # TELEGRAM
+    # ========================================================
+
+    if deals:
+
+        print(
+            f"Deal trovati: "
+            f"{len(deals)}"
+        )
 
         print()
-        print("Telegram: nessun deal trovato, inviato messaggio di controllo.")
 
+        for deal in deals:
+
+            discount_percent = round(
+                deal["discount"] * 100
+            )
+
+            message = (
+                f"{deal['level']}\n\n"
+                f"🛍️ {deal['title']}\n\n"
+                f"💰 Prezzo attuale: "
+                f"€{deal['current_price']:.2f}\n"
+                f"📊 Prezzo normale: "
+                f"€{deal['normal_price']:.2f}\n"
+                f"📉 Minimo storico: "
+                f"€{deal['historical_low']:.2f}\n"
+                f"🔥 Sconto reale: "
+                f"{discount_percent}%\n"
+                f"💎 Rapporto valore/prezzo: "
+                f"{deal['ratio']:.2f}x\n"
+                f"🎯 Deal Score: "
+                f"{deal['score']}/100\n"
+                f"📚 Rilevazioni: "
+                f"{deal['history_points']}\n\n"
+                f"🏷️ Categoria: "
+                f"{deal['category']}\n"
+                f"🔎 Query: "
+                f"{deal['query']}\n\n"
+                f"🔗 {deal['url']}"
+            )
+
+            print(
+                message
+            )
+
+            print()
+
+            send_telegram(
+                message
+            )
+
+
+    else:
+
+        print(
+            "Deal trovati: 0"
+        )
+
+        message = (
+            "🤖 Deal Hunter — "
+            "Controllo completato\n\n"
+            f"📅 {today.strftime('%d/%m/%Y')}\n"
+            f"📦 Prodotti analizzati: "
+            f"{analyzed}\n"
+            f"💰 Fascia acquisto: "
+            f"0–{MAX_CURRENT_PRICE:.0f} €\n"
+            f"🔥 Deal trovati: 0\n\n"
+            "Nessun affare abbastanza "
+            "interessante oggi."
+        )
+
+        send_telegram(
+            message
+        )
+
+
+    # ========================================================
+    # RIEPILOGO
+    # ========================================================
+
+    print()
+
+    print("=" * 60)
+    print("RIEPILOGO")
+    print("=" * 60)
+
+    print(
+        f"Prodotti analizzati: "
+        f"{analyzed}"
+    )
+
+    print(
+        f"Storico insufficiente: "
+        f"{insufficient_history}"
+    )
+
+    print(
+        f"Oltre €{MAX_CURRENT_PRICE:.0f}: "
+        f"{over_budget}"
+    )
+
+    print(
+        f"Prodotti non validi: "
+        f"{invalid_products}"
+    )
+
+    print(
+        f"Deal trovati: "
+        f"{len(deals)}"
+    )
+
+    print("=" * 60)
+
+
+# ============================================================
+# AVVIO
+# ============================================================
 
 if __name__ == "__main__":
+
     main()
