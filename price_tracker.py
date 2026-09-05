@@ -21,7 +21,7 @@ HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
 MIN_PRICE = 10.0
-MAX_PRICE = 50.0
+MAX_PRICE = 30.0
 
 # 2 query per ogni esecuzione
 QUERIES_PER_RUN = 2
@@ -54,37 +54,41 @@ MIN_HISTORY_POINTS = 3
 # ============================================================
 
 SEARCH_CYCLE = [
-    # 🔴 TECNOLOGIA — 5/20
-    {"category": "technology", "query": "cuffie bluetooth Sony"},
-    {"category": "technology", "query": "cuffie bluetooth JBL"},
-    {"category": "technology", "query": "mouse wireless Logitech"},
-    {"category": "technology", "query": "tastiera meccanica gaming"},
-    {"category": "technology", "query": "smartwatch Samsung"},
+    # 🔥 NIKE — 4/20
+    {"category": "men_tshirts", "query": "Nike t shirt uomo"},
+    {"category": "women_evening", "query": "Nike t shirt donna"},
+    {"category": "men_tshirts", "query": "Nike felpa uomo"},
+    {"category": "women_evening", "query": "Nike felpa donna"},
 
-    # 🔴 GAMING — 4/20
-    {"category": "gaming", "query": "mouse gaming Logitech"},
-    {"category": "gaming", "query": "cuffie gaming HyperX"},
-    {"category": "gaming", "query": "tastiera gaming meccanica"},
-    {"category": "gaming", "query": "controller Xbox pc"},
+    # 🔥 ADIDAS — 4/20
+    {"category": "men_tshirts", "query": "Adidas t shirt uomo"},
+    {"category": "women_evening", "query": "Adidas t shirt donna"},
+    {"category": "men_tshirts", "query": "Adidas felpa uomo"},
+    {"category": "women_evening", "query": "Adidas felpa donna"},
 
-    # 🔴 DONNA — 4/20
-    {"category": "women_evening", "query": "Guess borsa donna"},
-    {"category": "women_evening", "query": "Guess vestito donna"},
-    {"category": "women_evening", "query": "Calvin Klein abito donna"},
-    {"category": "women_evening", "query": "Calvin Klein vestito donna"},
-
-    # 🔴 OUTDOOR — 3/20
+    # 🔥 THE NORTH FACE — 4/20
     {"category": "outdoor_clothing", "query": "The North Face pile uomo"},
-    {"category": "outdoor_clothing", "query": "Columbia pile donna"},
+    {"category": "outdoor_clothing", "query": "The North Face pile donna"},
+    {"category": "outdoor_clothing", "query": "The North Face giacca uomo"},
     {"category": "outdoor_clothing", "query": "The North Face giacca donna"},
 
-    # 🔴 T-SHIRT UOMO — 3/20
-    {"category": "men_tshirts", "query": "Nike t shirt uomo"},
-    {"category": "men_tshirts", "query": "Adidas t shirt uomo"},
+    # 🔥 COLUMBIA — 3/20
+    {"category": "outdoor_clothing", "query": "Columbia pile uomo"},
+    {"category": "outdoor_clothing", "query": "Columbia pile donna"},
+    {"category": "outdoor_clothing", "query": "Columbia giacca uomo donna"},
+
+    # 🥈 CALVIN KLEIN — 2/20
+    {"category": "men_tshirts", "query": "Calvin Klein t shirt uomo"},
+    {"category": "women_evening", "query": "Calvin Klein t shirt donna"},
+
+    # 🥈 TOMMY HILFIGER — 1/20
     {"category": "men_tshirts", "query": "Tommy Hilfiger t shirt uomo"},
 
-    # 🟡 SPORTIVO — 1/20
-    {"category": "sportswear", "query": "Adidas t shirt sport uomo"},
+    # 🥈 GUESS — 1/20
+    {"category": "women_evening", "query": "Guess borsa donna"},
+
+    # 🟡 PANDORA — 1/20
+    {"category": "women_evening", "query": "Pandora anello"},
 ]
 
 
