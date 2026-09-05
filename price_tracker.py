@@ -34,7 +34,7 @@ STANDARD_MONTHLY_QUERY_LIMIT = 180
 CURRENT_MONTH_QUERY_LIMIT = 140
 
 # Numero minimo di rilevazioni prima di valutare
-# seriamente il prezzo storico.
+# seriamente il prezzo storico
 MIN_HISTORY_POINTS = 3
 
 
@@ -42,18 +42,16 @@ MIN_HISTORY_POINTS = 3
 # ROTAZIONE
 # ============================================================
 #
-# 20 posizioni.
+# 20 posizioni:
 #
-# Priorità:
-#
-# 1-4   Nike
-# 5-8   Adidas
-# 9-12  The North Face
-# 13-15 Columbia
-# 16-17 Calvin Klein
-# 18    Tommy Hilfiger
-# 19    Guess
-# 20    Pandora
+# Nike                 4
+# Adidas               4
+# The North Face       4
+# Columbia             3
+# Calvin Klein         2
+# Tommy Hilfiger       1
+# Guess                1
+# Pandora              1
 #
 # Totale = 20 query
 #
@@ -213,17 +211,14 @@ def load_json(filename, default):
         return default
 
     try:
-
         with open(
             filename,
             "r",
             encoding="utf-8",
         ) as f:
-
             return json.load(f)
 
     except Exception:
-
         return default
 
 
@@ -253,7 +248,6 @@ def parse_price(value):
         return None
 
     if isinstance(value, (int, float)):
-
         return float(value)
 
     text = str(value).strip()
@@ -284,11 +278,9 @@ def parse_price(value):
         text = text.replace(",", "")
 
     try:
-
         return float(text)
 
     except ValueError:
-
         pass
 
     match = re.search(
@@ -299,13 +291,11 @@ def parse_price(value):
     if match:
 
         try:
-
             return float(
                 match.group(0)
             )
 
         except ValueError:
-
             return None
 
     return None
@@ -330,7 +320,6 @@ def find_products(obj):
     if isinstance(obj, dict):
 
         if obj.get("asin"):
-
             products.append(obj)
 
         for value in obj.values():
@@ -365,7 +354,6 @@ def find_products(obj):
                 )
 
             except Exception:
-
                 pass
 
     return products
@@ -429,16 +417,6 @@ def search_parse(query):
 # ============================================================
 # FILTRO CATEGORIA
 # ============================================================
-#
-# Il vecchio filtro era troppo restrittivo.
-#
-# Ora ogni categoria ha parole chiave coerenti
-# con il tipo di prodotto realmente cercato.
-#
-# Le query sono già molto specifiche, quindi
-# il filtro serve soprattutto a eliminare risultati
-# palesemente fuori categoria.
-# ============================================================
 
 def category_matches(product, category):
 
@@ -447,7 +425,6 @@ def category_matches(product, category):
     ).lower().strip()
 
     if not title:
-
         return False
 
 
@@ -461,49 +438,65 @@ def category_matches(product, category):
             "t-shirt",
             "t shirt",
             "tshirt",
+            "tee",
             "maglietta",
             "felpa",
             "hoodie",
             "sweatshirt",
+            "sweater",
+            "pullover",
             "maglia",
+            "shirt",
+            "camicia",
             "polo",
             "pantaloni",
+            "trousers",
+            "pants",
             "jeans",
-            "giacca",
-            "gilet",
             "shorts",
             "bermuda",
-            "camicia",
+            "giacca",
+            "jacket",
+            "coat",
+            "gilet",
+            "vest",
         ]
 
-        accessory_exclusions = [
+        bad_keywords = [
             "profumo",
             "deodorante",
+            "shampoo",
             "intimo",
+            "underwear",
             "boxer",
             "calzino",
             "calze",
+            "sock",
+            "socks",
             "portafoglio",
+            "wallet",
             "borsa",
+            "bag",
             "zaino",
+            "backpack",
             "cintura",
+            "belt",
             "orologio",
+            "watch",
+            "cover",
+            "custodia",
         ]
 
-        has_clothing = any(
+        if any(
+            keyword in title
+            for keyword in bad_keywords
+        ):
+            return False
+
+        return any(
             keyword in title
             for keyword in clothing_keywords
         )
-
-        has_exclusion = any(
-            keyword in title
-            for keyword in accessory_exclusions
-        )
-
-        if has_exclusion:
-            return False
-
-        return has_clothing
 
 
     # ========================================================
@@ -516,53 +509,72 @@ def category_matches(product, category):
             "t-shirt",
             "t shirt",
             "tshirt",
+            "tee",
             "maglietta",
             "felpa",
             "hoodie",
             "sweatshirt",
+            "sweater",
+            "pullover",
             "maglia",
+            "shirt",
+            "camicia",
+            "top",
             "polo",
             "pantaloni",
+            "trousers",
+            "pants",
             "jeans",
-            "giacca",
-            "gilet",
             "shorts",
             "bermuda",
-            "camicia",
+            "leggings",
+            "giacca",
+            "jacket",
+            "coat",
+            "gilet",
+            "vest",
             "vestito",
+            "dress",
             "abito",
             "gonna",
-            "leggings",
+            "skirt",
         ]
 
-        accessory_exclusions = [
+        bad_keywords = [
             "profumo",
             "deodorante",
+            "shampoo",
             "intimo",
+            "underwear",
             "reggiseno",
+            "bra",
             "slip",
             "mutande",
             "calze",
+            "sock",
+            "socks",
             "borsa",
+            "bag",
             "portafoglio",
+            "wallet",
             "cintura",
+            "belt",
             "orologio",
+            "watch",
+            "cover",
+            "custodia",
         ]
 
-        has_clothing = any(
+        if any(
+            keyword in title
+            for keyword in bad_keywords
+        ):
+            return False
+
+        return any(
             keyword in title
             for keyword in clothing_keywords
         )
-
-        has_exclusion = any(
-            keyword in title
-            for keyword in accessory_exclusions
-        )
-
-        if has_exclusion:
-            return False
-
-        return has_clothing
 
 
     # ========================================================
@@ -571,7 +583,7 @@ def category_matches(product, category):
 
     if category == "outdoor_clothing":
 
-        outdoor_keywords = [
+        clothing_keywords = [
             "outdoor",
             "trekking",
             "hiking",
@@ -580,45 +592,62 @@ def category_matches(product, category):
             "mountain",
             "softshell",
             "hardshell",
+            "shell",
             "impermeabile",
+            "waterproof",
+            "rain",
+            "raincoat",
             "antipioggia",
             "giacca",
+            "jacket",
+            "coat",
             "pile",
             "fleece",
+            "polar",
             "windbreaker",
             "antivento",
+            "windproof",
             "parka",
             "gilet",
+            "vest",
             "piumino",
+            "down jacket",
             "pantaloni trekking",
             "pantaloni outdoor",
+            "hiking pants",
+            "outdoor pants",
         ]
 
         non_clothing_keywords = [
-            "scarponi",
             "scarpe",
+            "shoes",
+            "shoe",
             "stivali",
+            "boots",
             "zaino",
+            "backpack",
             "bastoncini",
+            "trekking poles",
             "tenda",
+            "tent",
             "sacco a pelo",
+            "sleeping bag",
             "accessori",
+            "accessory",
+            "borraccia",
+            "water bottle",
         ]
 
-        has_outdoor = any(
-            keyword in title
-            for keyword in outdoor_keywords
-        )
-
-        has_non_clothing = any(
+        if any(
             keyword in title
             for keyword in non_clothing_keywords
-        )
-
-        if has_non_clothing:
+        ):
             return False
 
-        return has_outdoor
+        return any(
+            keyword in title
+            for keyword in clothing_keywords
+        )
 
 
     # ========================================================
@@ -629,13 +658,16 @@ def category_matches(product, category):
 
         keywords = [
             "borsa",
-            "borsetta",
+            "bag",
             "handbag",
             "shoulder bag",
             "crossbody",
             "tracolla",
             "pochette",
             "clutch",
+            "tote",
+            "shopper",
+            "borsetta",
         ]
 
         return any(
@@ -654,33 +686,39 @@ def category_matches(product, category):
             "anello",
             "ring",
             "gioiello",
+            "jewelry",
+            "jewellery",
             "bracciale",
+            "bracelet",
             "collana",
+            "necklace",
             "orecchini",
+            "earrings",
         ]
 
         non_jewelry_keywords = [
             "custodia",
+            "case",
             "scatola",
+            "box",
             "espositore",
+            "display",
             "supporto",
+            "stand",
             "porta gioielli",
+            "jewelry box",
         ]
 
-        has_jewelry = any(
+        if any(
+            keyword in title
+            for keyword in non_jewelry_keywords
+        ):
+            return False
+
+        return any(
             keyword in title
             for keyword in jewelry_keywords
         )
-
-        has_non_jewelry = any(
-            keyword in title
-            for keyword in non_jewelry_keywords
-        )
-
-        if has_non_jewelry:
-            return False
-
-        return has_jewelry
 
 
     # ========================================================
@@ -1030,7 +1068,7 @@ def main():
 
     print(
         f"Fascia prezzo: "
-        f"{MIN_PRICE:.0f}–"
+        f"{MIN_PRICE:.0f}-"
         f"{MAX_PRICE:.0f} €"
     )
 
@@ -1146,7 +1184,6 @@ def main():
         ).strip()
 
         if not asin:
-
             continue
 
         if asin not in unique_products:
