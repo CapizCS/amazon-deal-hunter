@@ -20,44 +20,66 @@ PARSE_URL = (
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
+
 # ============================================================
-# IMPORTANTE:
-# questi NON sono limiti per gli alert.
+# STORICO
+# ============================================================
 #
-# Servono soltanto a evitare prezzi palesemente anomali
-# nello storico.
+# IMPORTANTE:
+# Il prezzo massimo NON è 30 €.
+#
+# Salviamo nello storico anche prodotti da 50, 100, 200,
+# 300 € perché ci servono per capire il prezzo normale.
+#
+# Il limite di 30 € viene applicato successivamente
+# dal Deal Hunter quando decide se mandare l'alert.
 # ============================================================
 
 HISTORY_MIN_PRICE = 0.01
 HISTORY_MAX_PRICE = 300.0
 
-# Prezzo massimo desiderato per l'acquisto/rivendita.
-# Questo limite viene applicato dal DEAL HUNTER,
-# non dal salvataggio dello storico.
+# Solo informativo: il vero limite viene applicato
+# da deal_hunter.py.
 MAX_CURRENT_PRICE = 30.0
 
-# 2 query per esecuzione
+
+# ============================================================
+# QUERY / BUDGET
+# ============================================================
+
 QUERIES_PER_RUN = 2
 
-# Budget normale
 STANDARD_MONTHLY_QUERY_LIMIT = 180
 
-# Settembre 2026: margine di sicurezza
+# Settembre 2026
 CURRENT_MONTH_QUERY_LIMIT = 140
 
-# Minimo storico tecnico
 MIN_HISTORY_POINTS = 3
 
 
 # ============================================================
-# ROTAZIONE RICERCHE
+# ROTAZIONE
+# ============================================================
+#
+# 20 query:
+#
+# Nike                 4
+# Adidas               4
+# The North Face       4
+# Columbia             3
+# Calvin Klein         2
+# Tommy Hilfiger       1
+# Guess                1
+# Pandora              1
+#
+# 9 cicli completi = 180 query
 # ============================================================
 
 SEARCH_CYCLE = [
 
-    # ========================================================
-    # NIKE — 4/20
-    # ========================================================
+    # --------------------------------------------------------
+    # NIKE
+    # --------------------------------------------------------
 
     {
         "category": "fashion_men",
@@ -80,9 +102,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # ADIDAS — 4/20
-    # ========================================================
+    # --------------------------------------------------------
+    # ADIDAS
+    # --------------------------------------------------------
 
     {
         "category": "fashion_men",
@@ -105,9 +127,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # THE NORTH FACE — 4/20
-    # ========================================================
+    # --------------------------------------------------------
+    # THE NORTH FACE
+    # --------------------------------------------------------
 
     {
         "category": "outdoor_clothing",
@@ -130,9 +152,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # COLUMBIA — 3/20
-    # ========================================================
+    # --------------------------------------------------------
+    # COLUMBIA
+    # --------------------------------------------------------
 
     {
         "category": "outdoor_clothing",
@@ -150,9 +172,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # CALVIN KLEIN — 2/20
-    # ========================================================
+    # --------------------------------------------------------
+    # CALVIN KLEIN
+    # --------------------------------------------------------
 
     {
         "category": "fashion_men",
@@ -165,9 +187,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # TOMMY HILFIGER — 1/20
-    # ========================================================
+    # --------------------------------------------------------
+    # TOMMY HILFIGER
+    # --------------------------------------------------------
 
     {
         "category": "fashion_men",
@@ -175,9 +197,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # GUESS — 1/20
-    # ========================================================
+    # --------------------------------------------------------
+    # GUESS
+    # --------------------------------------------------------
 
     {
         "category": "fashion_accessories",
@@ -185,9 +207,9 @@ SEARCH_CYCLE = [
     },
 
 
-    # ========================================================
-    # PANDORA — 1/20
-    # ========================================================
+    # --------------------------------------------------------
+    # PANDORA
+    # --------------------------------------------------------
 
     {
         "category": "jewelry",
@@ -319,6 +341,7 @@ def parse_price(value):
         .strip()
     )
 
+    # Formato italiano:
     # 1.234,56 -> 1234.56
     if "," in text:
 
@@ -360,7 +383,7 @@ def parse_price(value):
 
 
 # ============================================================
-# NORMALIZZAZIONE PARSE
+# NORMALIZZAZIONE RISPOSTA PARSE
 # ============================================================
 
 def find_products(obj):
@@ -471,6 +494,24 @@ def search_parse(query):
 # ============================================================
 # FILTRO CATEGORIA
 # ============================================================
+#
+# PRINCIPIO:
+#
+# La query è già molto specifica.
+#
+# Non dobbiamo pretendere che il titolo Amazon contenga
+# esattamente tutte le parole della query.
+#
+# Usiamo quindi:
+#
+# 1. marca richiesta
+# 2. tipo di prodotto richiesto
+# 3. sesso quando riconoscibile
+# 4. esclusioni evidenti
+#
+# In questo modo non perdiamo prodotti buoni solo perché
+# Amazon ha restituito un titolo particolare.
+# ============================================================
 
 def category_matches(
     product,
@@ -491,80 +532,201 @@ def category_matches(
 
 
     # ========================================================
+    # ESCLUSIONI GENERALI
+    # ========================================================
+    #
+    # Questi prodotti non ci interessano praticamente mai
+    # nelle categorie attuali.
+    # ========================================================
+
+    universal_exclusions = [
+        "profumo",
+        "parfum",
+        "eau de toilette",
+        "deodorante",
+        "shampoo",
+        "conditioner",
+        "balsamo capelli",
+        "dentifricio",
+        "crema",
+        "make up",
+        "fondotinta",
+        "rossetto",
+
+        "scarpe",
+        "scarpa",
+        "shoe",
+        "shoes",
+        "sneaker",
+        "sneakers",
+        "stivali",
+        "boots",
+        "sandali",
+        "sandal",
+
+        "calze",
+        "calzini",
+        "sock",
+        "socks",
+
+        "intimo",
+        "underwear",
+        "boxer",
+        "slip",
+        "reggiseno",
+        "bra",
+
+        "zaino",
+        "backpack",
+
+        "portafoglio",
+        "wallet",
+
+        "cintura",
+        "belt",
+
+        "cover",
+        "custodia",
+        "case",
+    ]
+
+
+    # ========================================================
     # UOMO
     # ========================================================
 
     if category == "fashion_men":
 
-        clothing_keywords = [
-            "t shirt",
-            "t-shirt",
-            "tshirt",
-            "tee",
-            "maglietta",
-            "felpa",
-            "hoodie",
-            "sweatshirt",
-            "sweater",
-            "pullover",
-            "maglia",
-            "shirt",
-            "camicia",
-            "polo",
-            "pantaloni",
-            "trousers",
-            "pants",
-            "jeans",
-            "shorts",
-            "bermuda",
-            "giacca",
-            "jacket",
-            "coat",
-            "gilet",
-            "vest",
-        ]
+        # ----------------------------------------------------
+        # MARCA
+        # ----------------------------------------------------
 
-        invalid_keywords = [
-            "profumo",
-            "parfum",
-            "eau de toilette",
-            "deodorante",
-            "shampoo",
-            "conditioner",
-            "intimo",
-            "underwear",
-            "boxer",
-            "slip",
-            "calzino",
-            "calze",
-            "sock",
-            "socks",
-            "portafoglio",
-            "wallet",
-            "borsa",
-            "handbag",
-            "zaino",
-            "backpack",
-            "cintura",
-            "belt",
-            "orologio",
-            "watch",
-            "cover",
-            "custodia",
-            "case",
-        ]
+        brands = []
 
-        if contains_any(
+        if contains_keyword(
+            query_text,
+            "nike",
+        ):
+
+            brands.append("nike")
+
+        if contains_keyword(
+            query_text,
+            "adidas",
+        ):
+
+            brands.append("adidas")
+
+        if contains_keyword(
+            query_text,
+            "calvin klein",
+        ):
+
+            brands.append(
+                "calvin klein"
+            )
+
+        if contains_keyword(
+            query_text,
+            "tommy hilfiger",
+        ):
+
+            brands.append(
+                "tommy hilfiger"
+            )
+
+        if brands and not contains_any(
             title,
-            invalid_keywords,
+            brands,
         ):
 
             return False
 
-        return contains_any(
+
+        # ----------------------------------------------------
+        # ESCLUSIONI
+        # ----------------------------------------------------
+
+        if contains_any(
             title,
-            clothing_keywords,
-        )
+            universal_exclusions,
+        ):
+
+            return False
+
+
+        # ----------------------------------------------------
+        # T-SHIRT
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "t shirt",
+        ):
+
+            tshirt_keywords = [
+                "t shirt",
+                "t-shirt",
+                "tshirt",
+                "tee",
+                "maglietta",
+            ]
+
+            return contains_any(
+                title,
+                tshirt_keywords,
+            )
+
+
+        # ----------------------------------------------------
+        # FELPA
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "felpa",
+        ):
+
+            sweatshirt_keywords = [
+                "felpa",
+                "hoodie",
+                "sweatshirt",
+                "sweater",
+                "pullover",
+                "crewneck",
+            ]
+
+            return contains_any(
+                title,
+                sweatshirt_keywords,
+            )
+
+
+        # ----------------------------------------------------
+        # PANTALONI
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "pantaloni",
+        ):
+
+            pants_keywords = [
+                "pantaloni",
+                "pants",
+                "trousers",
+                "jeans",
+                "shorts",
+                "bermuda",
+            ]
+
+            return contains_any(
+                title,
+                pants_keywords,
+            )
+
+
+        return False
 
 
     # ========================================================
@@ -573,81 +735,99 @@ def category_matches(
 
     if category == "fashion_women":
 
-        clothing_keywords = [
-            "t shirt",
-            "t-shirt",
-            "tshirt",
-            "tee",
-            "maglietta",
-            "felpa",
-            "hoodie",
-            "sweatshirt",
-            "sweater",
-            "pullover",
-            "maglia",
-            "shirt",
-            "camicia",
-            "top",
-            "polo",
-            "pantaloni",
-            "trousers",
-            "pants",
-            "jeans",
-            "shorts",
-            "bermuda",
-            "leggings",
-            "giacca",
-            "jacket",
-            "coat",
-            "gilet",
-            "vest",
-            "vestito",
-            "dress",
-            "abito",
-            "gonna",
-            "skirt",
-        ]
+        brands = []
 
-        invalid_keywords = [
-            "profumo",
-            "parfum",
-            "eau de toilette",
-            "deodorante",
-            "shampoo",
-            "conditioner",
-            "intimo",
-            "underwear",
-            "reggiseno",
-            "bra",
-            "slip",
-            "mutande",
-            "calze",
-            "sock",
-            "socks",
-            "borsa",
-            "handbag",
-            "portafoglio",
-            "wallet",
-            "cintura",
-            "belt",
-            "orologio",
-            "watch",
-            "cover",
-            "custodia",
-            "case",
-        ]
+        if contains_keyword(
+            query_text,
+            "nike",
+        ):
 
-        if contains_any(
+            brands.append("nike")
+
+        if contains_keyword(
+            query_text,
+            "adidas",
+        ):
+
+            brands.append("adidas")
+
+        if contains_keyword(
+            query_text,
+            "calvin klein",
+        ):
+
+            brands.append(
+                "calvin klein"
+            )
+
+        if brands and not contains_any(
             title,
-            invalid_keywords,
+            brands,
         ):
 
             return False
 
-        return contains_any(
+
+        # ----------------------------------------------------
+        # ESCLUSIONI
+        # ----------------------------------------------------
+
+        if contains_any(
             title,
-            clothing_keywords,
-        )
+            universal_exclusions,
+        ):
+
+            return False
+
+
+        # ----------------------------------------------------
+        # T-SHIRT
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "t shirt",
+        ):
+
+            tshirt_keywords = [
+                "t shirt",
+                "t-shirt",
+                "tshirt",
+                "tee",
+                "maglietta",
+            ]
+
+            return contains_any(
+                title,
+                tshirt_keywords,
+            )
+
+
+        # ----------------------------------------------------
+        # FELPA
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "felpa",
+        ):
+
+            sweatshirt_keywords = [
+                "felpa",
+                "hoodie",
+                "sweatshirt",
+                "sweater",
+                "pullover",
+                "crewneck",
+            ]
+
+            return contains_any(
+                title,
+                sweatshirt_keywords,
+            )
+
+
+        return False
 
 
     # ========================================================
@@ -656,74 +836,127 @@ def category_matches(
 
     if category == "outdoor_clothing":
 
-        clothing_keywords = [
-            "pile",
-            "fleece",
-            "polar",
-            "giacca",
-            "jacket",
-            "coat",
-            "softshell",
-            "hardshell",
-            "shell jacket",
-            "impermeabile",
-            "waterproof",
-            "rain jacket",
-            "raincoat",
-            "antipioggia",
-            "windbreaker",
-            "windproof",
-            "antivento",
-            "parka",
-            "gilet",
-            "vest",
-            "piumino",
-            "down jacket",
-            "trekking",
-            "hiking",
-            "outdoor",
-            "mountain",
-            "montagna",
+        # ----------------------------------------------------
+        # MARCA
+        # ----------------------------------------------------
+
+        outdoor_brands = [
+            "the north face",
+            "columbia",
         ]
 
-        invalid_keywords = [
-            "scarpe",
-            "shoe",
-            "shoes",
-            "stivali",
-            "boots",
-            "zaino",
-            "backpack",
-            "bastoncini",
-            "trekking poles",
-            "tenda",
-            "tent",
-            "sacco a pelo",
-            "sleeping bag",
-            "borraccia",
-            "water bottle",
-            "accessorio",
-            "accessories",
-        ]
-
-        if contains_any(
+        if not contains_any(
             title,
-            invalid_keywords,
+            outdoor_brands,
         ):
 
             return False
 
-        return contains_any(
+
+        # ----------------------------------------------------
+        # ESCLUSIONI
+        # ----------------------------------------------------
+
+        outdoor_exclusions = [
+            "scarpe",
+            "scarpa",
+            "shoe",
+            "shoes",
+            "sneaker",
+            "stivali",
+            "boots",
+            "zaino",
+            "backpack",
+            "borraccia",
+            "water bottle",
+            "tenda",
+            "tent",
+            "sacco a pelo",
+            "sleeping bag",
+            "bastoncini",
+            "trekking poles",
+        ]
+
+        if contains_any(
             title,
-            clothing_keywords,
-        )
+            outdoor_exclusions,
+        ):
+
+            return False
+
+
+        # ----------------------------------------------------
+        # PILE
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "pile",
+        ):
+
+            pile_keywords = [
+                "pile",
+                "fleece",
+                "polar",
+            ]
+
+            return contains_any(
+                title,
+                pile_keywords,
+            )
+
+
+        # ----------------------------------------------------
+        # GIACCA
+        # ----------------------------------------------------
+
+        if contains_keyword(
+            query_text,
+            "giacca",
+        ):
+
+            jacket_keywords = [
+                "giacca",
+                "jacket",
+                "coat",
+                "parka",
+                "softshell",
+                "hardshell",
+                "shell",
+                "impermeabile",
+                "waterproof",
+                "rain jacket",
+                "raincoat",
+                "antipioggia",
+                "windbreaker",
+                "windproof",
+                "antivento",
+                "piumino",
+                "down jacket",
+            ]
+
+            return contains_any(
+                title,
+                jacket_keywords,
+            )
+
+
+        return False
 
 
     # ========================================================
-    # GUESS / BORSE
+    # GUESS — BORSE DONNA
     # ========================================================
 
     if category == "fashion_accessories":
+
+        if not contains_keyword(
+            title,
+            "guess",
+        ):
+
+            return False
+
 
         bag_keywords = [
             "borsa",
@@ -739,7 +972,15 @@ def category_matches(
             "borsetta",
         ]
 
-        invalid_keywords = [
+        if not contains_any(
+            title,
+            bag_keywords,
+        ):
+
+            return False
+
+
+        accessory_exclusions = [
             "cover",
             "custodia",
             "case",
@@ -752,32 +993,43 @@ def category_matches(
 
         if contains_any(
             title,
-            invalid_keywords,
+            accessory_exclusions,
         ):
 
             return False
 
-        return contains_any(
-            title,
-            bag_keywords,
-        )
+
+        return True
 
 
     # ========================================================
-    # PANDORA
+    # PANDORA — ANELLI
     # ========================================================
 
     if category == "jewelry":
 
-        jewelry_keywords = [
+        if not contains_keyword(
+            title,
+            "pandora",
+        ):
+
+            return False
+
+
+        ring_keywords = [
             "anello",
             "ring",
-            "gioiello",
-            "jewelry",
-            "jewellery",
         ]
 
-        invalid_keywords = [
+        if not contains_any(
+            title,
+            ring_keywords,
+        ):
+
+            return False
+
+
+        jewelry_exclusions = [
             "custodia",
             "case",
             "scatola",
@@ -792,15 +1044,13 @@ def category_matches(
 
         if contains_any(
             title,
-            invalid_keywords,
+            jewelry_exclusions,
         ):
 
             return False
 
-        return contains_any(
-            title,
-            jewelry_keywords,
-        )
+
+        return True
 
 
     return False
@@ -828,6 +1078,7 @@ def update_history(
     skipped_category = 0
     skipped_other = 0
 
+
     for product in products:
 
         asin = str(
@@ -839,6 +1090,7 @@ def update_history(
             skipped_other += 1
             continue
 
+
         title = str(
             product.get("title", "")
         ).strip()
@@ -848,8 +1100,9 @@ def update_history(
             skipped_other += 1
             continue
 
+
         # ====================================================
-        # PREZZO ATTUALE
+        # PREZZO
         # ====================================================
 
         price_value = product.get(
@@ -883,11 +1136,20 @@ def update_history(
             skipped_price += 1
             continue
 
+
         # ====================================================
-        # FILTRO TECNICO STORICO
+        # FILTRO PREZZO DELLO STORICO
         #
         # NON è il limite dell'alert.
-        # Qui permettiamo anche prezzi > 30 €.
+        #
+        # Esempio:
+        #
+        # €25  -> salvato
+        # €60  -> salvato
+        # €150 -> salvato
+        # €250 -> salvato
+        #
+        # Solo oltre €300 viene escluso.
         # ====================================================
 
         if (
@@ -898,8 +1160,9 @@ def update_history(
             skipped_price += 1
             continue
 
+
         # ====================================================
-        # CATEGORIA
+        # FILTRO CATEGORIA
         # ====================================================
 
         if not category_matches(
@@ -910,6 +1173,7 @@ def update_history(
 
             skipped_category += 1
             continue
+
 
         # ====================================================
         # CREA PRODOTTO
@@ -924,11 +1188,13 @@ def update_history(
                 "prices": [],
             }
 
+
         item = history[asin]
 
         item["title"] = title
         item["category"] = category
         item["query"] = query
+
 
         if (
             "prices" not in item
@@ -940,8 +1206,9 @@ def update_history(
 
             item["prices"] = []
 
+
         # ====================================================
-        # UNA SOLA RILEVAZIONE AL GIORNO
+        # UNA RILEVAZIONE AL GIORNO
         # ====================================================
 
         existing = None
@@ -953,12 +1220,14 @@ def update_history(
                     observation,
                     dict,
                 )
-                and observation.get("date")
-                == today
+                and observation.get(
+                    "date"
+                ) == today
             ):
 
                 existing = observation
                 break
+
 
         if existing:
 
@@ -979,12 +1248,15 @@ def update_history(
                 }
             )
 
+
         saved += 1
+
 
     save_json(
         HISTORY_FILE,
         history,
     )
+
 
     return {
         "saved": saved,
@@ -1019,7 +1291,7 @@ def load_rotation(today):
     rotation = load_json(
         ROTATION_FILE,
         {
-            "version": 4,
+            "version": 5,
             "month": today.strftime(
                 "%Y-%m"
             ),
@@ -1032,17 +1304,19 @@ def load_rotation(today):
         "%Y-%m"
     )
 
+
     if (
         rotation.get("month")
         != current_month
     ):
 
         rotation = {
-            "version": 4,
+            "version": 5,
             "month": current_month,
             "queries_used": 0,
             "index": 0,
         }
+
 
     try:
 
@@ -1057,6 +1331,7 @@ def load_rotation(today):
 
         rotation["queries_used"] = 0
 
+
     try:
 
         rotation["index"] = int(
@@ -1069,6 +1344,7 @@ def load_rotation(today):
     except Exception:
 
         rotation["index"] = 0
+
 
     rotation["index"] %= len(
         SEARCH_CYCLE
@@ -1091,12 +1367,15 @@ def get_next_searches(
 
         return []
 
+
     count = min(
         QUERIES_PER_RUN,
         remaining,
     )
 
+
     searches = []
+
 
     for offset in range(count):
 
@@ -1108,6 +1387,7 @@ def get_next_searches(
         searches.append(
             SEARCH_CYCLE[position]
         )
+
 
     return searches
 
@@ -1139,11 +1419,13 @@ def main():
         today
     )
 
+
     print("=" * 60)
     print(
         "DEAL HUNTER - PRICE TRACKER"
     )
     print("=" * 60)
+
 
     print(
         f"Data: {today}"
@@ -1170,20 +1452,22 @@ def main():
     )
 
     print(
-        "Storico: "
+        f"Storico: "
         f"{HISTORY_MIN_PRICE:.2f}-"
         f"{HISTORY_MAX_PRICE:.0f} €"
     )
 
     print(
-        "Alert/acquisto: "
-        f"max {MAX_CURRENT_PRICE:.0f} €"
+        f"Alert/acquisto: max "
+        f"{MAX_CURRENT_PRICE:.0f} €"
     )
+
 
     searches = get_next_searches(
         rotation,
         monthly_limit,
     )
+
 
     if not searches:
 
@@ -1204,9 +1488,11 @@ def main():
 
         return
 
+
     all_products = []
 
     successful_queries = 0
+
 
     # ========================================================
     # QUERY
@@ -1225,6 +1511,7 @@ def main():
             "query"
         ]
 
+
         print()
 
         print(
@@ -1242,16 +1529,19 @@ def main():
             f"{query}"
         )
 
+
         try:
 
             products = search_parse(
                 query
             )
 
+
             print(
                 f"Risultati ricevuti: "
                 f"{len(products)}"
             )
+
 
             all_products.extend(
                 [
@@ -1264,11 +1554,13 @@ def main():
                 ]
             )
 
+
             register_successful_query(
                 rotation
             )
 
             successful_queries += 1
+
 
         except Exception as e:
 
@@ -1287,6 +1579,7 @@ def main():
 
     unique_products = {}
 
+
     for (
         product,
         category,
@@ -1300,6 +1593,7 @@ def main():
         if not asin:
             continue
 
+
         if asin not in unique_products:
 
             unique_products[asin] = (
@@ -1312,6 +1606,7 @@ def main():
     products_to_process = list(
         unique_products.values()
     )
+
 
     print()
 
@@ -1330,6 +1625,7 @@ def main():
     total_category_skipped = 0
     total_other_skipped = 0
 
+
     for (
         product,
         category,
@@ -1341,6 +1637,7 @@ def main():
             category,
             query,
         )
+
 
         total_saved += result[
             "saved"
@@ -1378,6 +1675,7 @@ def main():
     print("=" * 60)
     print("COMPLETATO")
     print("=" * 60)
+
 
     print(
         f"Query riuscite: "
@@ -1419,6 +1717,7 @@ def main():
         f"{rotation['index']}"
     )
 
+
     if (
         rotation["queries_used"]
         >= monthly_limit
@@ -1435,6 +1734,7 @@ def main():
             "Il tracker resterà fermo "
             "fino al prossimo mese."
         )
+
 
     print("=" * 60)
 
