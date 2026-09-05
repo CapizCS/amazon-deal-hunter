@@ -28,40 +28,18 @@ def is_relevant_product(item):
 
     text = f"{title} {category} {query}"
 
-    # Esclusioni generali
     excluded = [
-        "scarpe",
-        "scarpa",
-        "shoes",
-        "shoe",
-        "sneaker",
-        "stivali",
-        "boots",
-        "sandali",
-        "calze",
-        "calzini",
-        "socks",
-        "intimo",
-        "underwear",
-        "boxer",
-        "slip",
-        "reggiseno",
-        "bra",
-        "profumo",
-        "parfum",
-        "deodorante",
-        "shampoo",
-        "crema",
-        "make up",
-        "zaino",
-        "backpack",
-        "portafoglio",
-        "wallet",
-        "cintura",
-        "belt",
-        "cover",
-        "custodia",
-        "case",
+        "scarpe", "scarpa", "shoes", "shoe", "sneaker",
+        "stivali", "boots", "sandali",
+        "calze", "calzini", "socks",
+        "intimo", "underwear", "boxer", "slip",
+        "reggiseno", "bra",
+        "profumo", "parfum", "deodorante",
+        "shampoo", "crema", "make up",
+        "zaino", "backpack",
+        "portafoglio", "wallet",
+        "cintura", "belt",
+        "cover", "custodia", "case"
     ]
 
     if contains_any(text, excluded):
@@ -125,10 +103,7 @@ def is_relevant_product(item):
             return contains_any(
                 title,
                 ["the north face", "north face"]
-            ) and contains_any(
-                title,
-                ["pile", "fleece"]
-            )
+            ) and contains_any(title, ["pile", "fleece"])
 
         if "giacca" in query:
             return contains_any(
@@ -137,17 +112,11 @@ def is_relevant_product(item):
             ) and contains_any(
                 title,
                 [
-                    "giacca",
-                    "jacket",
-                    "parka",
-                    "softshell",
-                    "hardshell",
-                    "impermeabile",
-                    "waterproof",
-                    "antipioggia",
-                    "windbreaker",
-                    "piumino",
-                    "down jacket",
+                    "giacca", "jacket", "parka",
+                    "softshell", "hardshell",
+                    "impermeabile", "waterproof",
+                    "antipioggia", "windbreaker",
+                    "piumino", "down jacket"
                 ]
             )
 
@@ -165,45 +134,33 @@ def is_relevant_product(item):
             return "columbia" in title and contains_any(
                 title,
                 [
-                    "giacca",
-                    "jacket",
-                    "parka",
-                    "softshell",
-                    "hardshell",
-                    "impermeabile",
-                    "waterproof",
-                    "antipioggia",
-                    "windbreaker",
-                    "piumino",
-                    "down jacket",
+                    "giacca", "jacket", "parka",
+                    "softshell", "hardshell",
+                    "impermeabile", "waterproof",
+                    "antipioggia", "windbreaker",
+                    "piumino", "down jacket"
                 ]
             )
 
         return "columbia" in title
 
-    # GUESS - borse donna
+    # GUESS
     if "guess" in text:
         if "borsa" in query:
             return "guess" in title and contains_any(
                 title,
                 [
-                    "borsa",
-                    "bag",
-                    "handbag",
-                    "shoulder bag",
-                    "crossbody",
-                    "tracolla",
-                    "pochette",
-                    "clutch",
-                    "tote",
-                    "shopper",
-                    "borsetta",
+                    "borsa", "bag", "handbag",
+                    "shoulder bag", "crossbody",
+                    "tracolla", "pochette",
+                    "clutch", "tote",
+                    "shopper", "borsetta"
                 ]
             )
 
         return "guess" in title
 
-    # PANDORA - anelli
+    # PANDORA
     if "pandora" in text:
         if "anello" in query:
             return "pandora" in title and contains_any(
@@ -219,6 +176,9 @@ def is_relevant_product(item):
 def get_valid_prices(item):
     prices = item.get("prices", [])
 
+    if not isinstance(prices, list):
+        return []
+
     valid = []
 
     for value in prices:
@@ -227,32 +187,36 @@ def get_valid_prices(item):
             if price > 0:
                 valid.append(price)
         except (TypeError, ValueError):
-            continue
+            pass
 
     return valid
 
 
 def calculate_deal_score(prices):
-    if not prices:
-        return 0, 0, 0, 0, 0
-
     current_price = prices[-1]
     normal_price = statistics.median(prices)
     historical_low = min(prices)
 
-    if normal_price <= 0:
+    if normal_price <= 0 or current_price <= 0:
         return 0, normal_price, historical_low, 0, 0
 
-    discount = max(0, (normal_price - current_price) / normal_price)
-    ratio = normal_price / current_price if current_price > 0 else 0
+    discount = max(
+        0,
+        (normal_price - current_price) / normal_price
+    )
 
-    # Quanto il prezzo attuale è inferiore al normale
-    ratio_score = min(40, max(0, (ratio - 1) * 25))
+    ratio = normal_price / current_price
 
-    # Sconto rispetto al prezzo normale
-    discount_score = min(30, max(0, discount * 40))
+    ratio_score = min(
+        40,
+        max(0, (ratio - 1) * 25)
+    )
 
-    # Premia un prezzo vicino ai minimi storici
+    discount_score = min(
+        30,
+        max(0, discount * 40)
+    )
+
     if current_price <= historical_low * 1.10:
         low_score = 20
     elif current_price <= historical_low * 1.25:
@@ -260,8 +224,10 @@ def calculate_deal_score(prices):
     else:
         low_score = 0
 
-    # Più storico abbiamo, maggiore è l'affidabilità
-    history_score = min(10, len(prices) * 2)
+    history_score = min(
+        10,
+        len(prices) * 2
+    )
 
     score = round(
         ratio_score +
@@ -270,10 +236,8 @@ def calculate_deal_score(prices):
         history_score
     )
 
-    score = min(100, score)
-
     return (
-        score,
+        min(100, score),
         normal_price,
         historical_low,
         discount,
@@ -285,30 +249,67 @@ def send_telegram(message):
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
 
-    if not token or not chat_id:
-        print("ERRORE: token Telegram o chat ID mancanti.")
+    if not token:
+        print("ERRORE: TELEGRAM_BOT_TOKEN mancante.")
+        return False
+
+    if not chat_id:
+        print("ERRORE: TELEGRAM_CHAT_ID mancante.")
         return False
 
     url = f"https://api.telegram.org/bot{token}/sendMessage"
 
-    response = requests.post(
-        url,
-        json={
-            "chat_id": chat_id,
-            "text": message,
-            "disable_web_page_preview": False,
-        },
-        timeout=30,
+    try:
+        response = requests.post(
+            url,
+            json={
+                "chat_id": chat_id,
+                "text": message,
+                "disable_web_page_preview": False
+            },
+            timeout=30
+        )
+
+        print(f"Telegram HTTP: {response.status_code}")
+
+        if response.ok:
+            print("Messaggio Telegram inviato correttamente.")
+            return True
+
+        print(f"Errore Telegram: {response.text}")
+        return False
+
+    except Exception as e:
+        print(f"Errore connessione Telegram: {e}")
+        return False
+
+
+def load_history():
+    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Il tracker salva lo storico come dizionario:
+    # { "ASIN": { ...dati prodotto... } }
+    if isinstance(data, dict):
+        # Supporto anche nel caso esista una chiave "products"
+        if isinstance(data.get("products"), list):
+            return data["products"]
+
+        products = []
+
+        for value in data.values():
+            if isinstance(value, dict):
+                products.append(value)
+
+        return products
+
+    # Supporto anche per un eventuale storico già in formato lista
+    if isinstance(data, list):
+        return data
+
+    raise ValueError(
+        "Formato di price_history.json non riconosciuto."
     )
-
-    print(f"Telegram HTTP: {response.status_code}")
-
-    if response.ok:
-        print("Messaggio Telegram inviato.")
-        return True
-
-    print(f"Errore Telegram: {response.text}")
-    return False
 
 
 def main():
@@ -317,14 +318,13 @@ def main():
     print("==========================================")
 
     if not os.path.exists(HISTORY_FILE):
-        print(f"ERRORE: file {HISTORY_FILE} non trovato.")
+        print(f"ERRORE: {HISTORY_FILE} non trovato.")
         return
 
-    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-        history = json.load(f)
-
-    if not isinstance(history, list):
-        print("ERRORE: price_history.json non contiene una lista.")
+    try:
+        history = load_history()
+    except Exception as e:
+        print(f"ERRORE lettura storico: {e}")
         return
 
     print(f"Prodotti nello storico: {len(history)}")
@@ -335,10 +335,13 @@ def main():
     analysed = 0
     skipped_price = 0
     skipped_history = 0
-    skipped_category = 0
+    skipped_relevance = 0
     deals = []
 
     for item in history:
+        if not isinstance(item, dict):
+            continue
+
         prices = get_valid_prices(item)
 
         if not prices:
@@ -346,21 +349,18 @@ def main():
 
         current_price = prices[-1]
 
-        # Il prezzo attuale deve essere acquistabile
         if current_price > MAX_CURRENT_PRICE:
             skipped_price += 1
             continue
 
-        # Servono almeno 3 osservazioni storiche
         if len(prices) < MIN_HISTORY_POINTS:
             skipped_history += 1
             continue
 
         analysed += 1
 
-        # Deve appartenere alle categorie/brand che abbiamo deciso di cercare
         if not is_relevant_product(item):
-            skipped_category += 1
+            skipped_relevance += 1
             continue
 
         (
@@ -368,11 +368,13 @@ def main():
             normal_price,
             historical_low,
             discount,
-            ratio,
+            ratio
         ) = calculate_deal_score(prices)
 
+        title = item.get("title", "Prodotto senza titolo")
+
         print(
-            f"Analizzato: {item.get('title', 'Senza titolo')[:80]} | "
+            f"Analizzato: {title[:80]} | "
             f"Attuale: €{current_price:.2f} | "
             f"Normale: €{normal_price:.2f} | "
             f"Score: {score}"
@@ -386,8 +388,13 @@ def main():
                 "low": historical_low,
                 "discount": discount,
                 "ratio": ratio,
-                "score": score,
+                "score": score
             })
+
+    deals.sort(
+        key=lambda x: x["score"],
+        reverse=True
+    )
 
     print("")
     print("==========================================")
@@ -396,15 +403,9 @@ def main():
     print(f"Prodotti analizzati: {analysed}")
     print(f"Scartati per prezzo > 30 €: {skipped_price}")
     print(f"Scartati per storico insufficiente: {skipped_history}")
-    print(f"Scartati per categoria/rilevanza: {skipped_category}")
+    print(f"Scartati per rilevanza: {skipped_relevance}")
     print(f"Deal trovati: {len(deals)}")
     print("")
-
-    # Ordina i migliori deal per score
-    deals.sort(
-        key=lambda x: x["score"],
-        reverse=True
-    )
 
     if deals:
         for deal in deals:
@@ -412,10 +413,11 @@ def main():
 
             title = item.get("title", "Prodotto")
             asin = item.get("asin", "")
-            product_url = item.get(
-                "product_url",
-                f"https://www.amazon.it/dp/{asin}" if asin else ""
-            )
+
+            product_url = item.get("product_url", "")
+
+            if not product_url and asin:
+                product_url = f"https://www.amazon.it/dp/{asin}"
 
             score = deal["score"]
 
@@ -448,8 +450,8 @@ def main():
             "🤖 Deal Hunter — Controllo completato\n\n"
             f"📅 {today}\n"
             f"📦 Prodotti analizzati: {analysed}\n"
-            f"💰 Fascia acquisto: 0–30 €\n"
-            f"🔥 Deal trovati: 0\n\n"
+            "💰 Fascia acquisto: 0–30 €\n"
+            "🔥 Deal trovati: 0\n\n"
             "Nessun affare abbastanza interessante oggi."
         )
 
