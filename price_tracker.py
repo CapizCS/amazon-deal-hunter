@@ -1,15 +1,13 @@
 import os
 import json
 import re
-from datetime import date
 import requests
+from datetime import datetime
 
 
 # ============================================================
 # CONFIGURAZIONE
 # ============================================================
-
-PARSE_API_KEY = os.getenv("PARSE_API_KEY")
 
 PARSE_URL = (
     "https://api.parse.bot/scraper/"
@@ -20,198 +18,108 @@ PARSE_URL = (
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
-
-# ============================================================
-# PREZZI
-# ============================================================
-#
-# Lo storico NON ha il limite di 30 €.
-#
-# Salviamo prodotti fino a 300 € perché ci serve sapere
-# quanto costavano normalmente prima del ribasso.
-#
-# Il limite di 30 € viene applicato dal Deal Hunter.
-# ============================================================
-
+# Storico: salviamo prezzi fino a 300 €
 HISTORY_MIN_PRICE = 0.01
 HISTORY_MAX_PRICE = 300.0
 
+# Prezzo massimo per eventuale acquisto/alert
 ALERT_MAX_PRICE = 30.0
 
-
-# ============================================================
-# BUDGET PARSE
-# ============================================================
-
+# Ogni esecuzione usa esattamente 2 query
 QUERIES_PER_RUN = 2
 
-STANDARD_MONTHLY_QUERY_LIMIT = 180
+# Limite prudenziale settembre
+MONTHLY_QUERY_LIMIT = 140
 
-# Settembre 2026
-CURRENT_MONTH_QUERY_LIMIT = 140
-
-
-# ============================================================
-# STORICO MINIMO
-# ============================================================
-
-MIN_HISTORY_POINTS = 3
+# Dopo aver completato una coppia, la ripetiamo
+# per questo numero di passaggi prima di avanzare.
+#
+# 3 passaggi significa che lo stesso gruppo di query
+# viene cercato in 3 esecuzioni diverse.
+REPEAT_PASSES = 3
 
 
 # ============================================================
 # ROTAZIONE
 # ============================================================
-#
-# 20 query:
-#
-# Nike                 4
-# Adidas               4
-# The North Face       4
-# Columbia             3
-# Calvin Klein         2
-# Tommy Hilfiger       1
-# Guess                1
-# Pandora              1
-#
-# 9 cicli = 180 query
-# ============================================================
 
-SEARCH_CYCLE = [
-
-    # --------------------------------------------------------
-    # NIKE
-    # --------------------------------------------------------
-
+ROTATION = [
     {
         "category": "fashion_men",
         "query": "Nike t shirt uomo",
     },
-
     {
         "category": "fashion_women",
         "query": "Nike t shirt donna",
     },
-
     {
         "category": "fashion_men",
         "query": "Nike felpa uomo",
     },
-
     {
         "category": "fashion_women",
         "query": "Nike felpa donna",
     },
-
-
-    # --------------------------------------------------------
-    # ADIDAS
-    # --------------------------------------------------------
-
     {
         "category": "fashion_men",
         "query": "Adidas t shirt uomo",
     },
-
     {
         "category": "fashion_women",
         "query": "Adidas t shirt donna",
     },
-
     {
         "category": "fashion_men",
         "query": "Adidas felpa uomo",
     },
-
     {
         "category": "fashion_women",
         "query": "Adidas felpa donna",
     },
-
-
-    # --------------------------------------------------------
-    # THE NORTH FACE
-    # --------------------------------------------------------
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_men",
         "query": "The North Face pile uomo",
     },
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_women",
         "query": "The North Face pile donna",
     },
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_men",
         "query": "The North Face giacca uomo",
     },
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_women",
         "query": "The North Face giacca donna",
     },
-
-
-    # --------------------------------------------------------
-    # COLUMBIA
-    # --------------------------------------------------------
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_men",
         "query": "Columbia pile uomo",
     },
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_women",
         "query": "Columbia pile donna",
     },
-
     {
-        "category": "outdoor_clothing",
+        "category": "fashion_unisex",
         "query": "Columbia giacca uomo donna",
     },
-
-
-    # --------------------------------------------------------
-    # CALVIN KLEIN
-    # --------------------------------------------------------
-
     {
         "category": "fashion_men",
         "query": "Calvin Klein t shirt uomo",
     },
-
     {
         "category": "fashion_women",
         "query": "Calvin Klein t shirt donna",
     },
-
-
-    # --------------------------------------------------------
-    # TOMMY HILFIGER
-    # --------------------------------------------------------
-
     {
         "category": "fashion_men",
         "query": "Tommy Hilfiger t shirt uomo",
     },
-
-
-    # --------------------------------------------------------
-    # GUESS
-    # --------------------------------------------------------
-
     {
-        "category": "fashion_accessories",
+        "category": "fashion_women",
         "query": "Guess borsa donna",
     },
-
-
-    # --------------------------------------------------------
-    # PANDORA
-    # --------------------------------------------------------
-
     {
         "category": "jewelry",
         "query": "Pandora anello",
@@ -220,231 +128,146 @@ SEARCH_CYCLE = [
 
 
 # ============================================================
-# JSON
-# ============================================================
-
-def load_json(filename, default):
-
-    if not os.path.exists(filename):
-        return default
-
-    try:
-
-        with open(
-            filename,
-            "r",
-            encoding="utf-8"
-        ) as f:
-
-            return json.load(f)
-
-    except Exception:
-
-        return default
-
-
-def save_json(filename, data):
-
-    with open(
-        filename,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-
-# ============================================================
-# TESTO
+# FUNZIONI TESTO / PREZZO
 # ============================================================
 
 def normalize_text(text):
+    return " ".join(str(text or "").lower().split())
 
-    text = str(text or "").lower()
-
-    text = (
-        text
-        .replace("-", " ")
-        .replace("_", " ")
-        .replace("/", " ")
-        .replace("\\", " ")
-    )
-
-    text = re.sub(
-        r"\s+",
-        " ",
-        text
-    )
-
-    return text.strip()
-
-
-# ============================================================
-# PREZZO
-# ============================================================
 
 def parse_price(value):
-
     if value is None:
         return None
 
-    if isinstance(
-        value,
-        (int, float)
-    ):
+    if isinstance(value, (int, float)):
+        price = float(value)
 
-        return float(value)
+        if price > 0:
+            return price
+
+        return None
 
     text = str(value).strip()
 
     if not text:
         return None
 
-    text = (
-        text
-        .replace("€", "")
-        .replace("EUR", "")
-        .replace("\u00a0", " ")
-        .strip()
-    )
+    text = text.replace("€", "")
+    text = text.replace("EUR", "")
+    text = text.replace("eur", "")
+    text = text.strip()
 
-    if "," in text:
+    # Gestione numeri italiani:
+    # 1.299,99 -> 1299.99
+    # 29,99 -> 29.99
+    if "," in text and "." in text:
+        if text.rfind(",") > text.rfind("."):
+            text = text.replace(".", "")
+            text = text.replace(",", ".")
+        else:
+            text = text.replace(",", "")
 
-        text = (
-            text
-            .replace(".", "")
-            .replace(",", ".")
-        )
+    elif "," in text:
+        text = text.replace(",", ".")
 
-    else:
-
-        text = text.replace(",", "")
+    # Elimina eventuali caratteri residui
+    text = re.sub(r"[^0-9.\-]", "", text)
 
     try:
+        price = float(text)
 
-        return float(text)
+        if price > 0:
+            return price
 
-    except ValueError:
-
+    except (TypeError, ValueError):
         pass
 
-    match = re.search(
-        r"\d+(?:\.\d+)?",
-        text
-    )
-
-    if not match:
-        return None
-
-    try:
-
-        return float(
-            match.group(0)
-        )
-
-    except ValueError:
-
-        return None
+    return None
 
 
 # ============================================================
-# NORMALIZZAZIONE RISPOSTA PARSE
+# LETTURA RISPOSTA PARSE
 # ============================================================
 
-def find_products(obj):
+def find_products(value):
+    """
+    Cerca ricorsivamente prodotti dentro la risposta Parse.
+    Gestisce:
+    - liste
+    - dizionari
+    - JSON dentro stringhe
+    """
 
-    products = []
+    found = []
 
-    if isinstance(obj, dict):
+    if isinstance(value, list):
 
-        if obj.get("asin"):
-            products.append(obj)
+        for item in value:
+            found.extend(find_products(item))
 
-        for value in obj.values():
+        return found
 
-            products.extend(
-                find_products(value)
-            )
+    if isinstance(value, dict):
 
-    elif isinstance(obj, list):
+        if "asin" in value:
+            found.append(value)
 
-        for item in obj:
+        for child in value.values():
+            found.extend(find_products(child))
 
-            products.extend(
-                find_products(item)
-            )
+        return found
 
-    elif isinstance(obj, str):
+    if isinstance(value, str):
 
-        text = obj.strip()
+        text = value.strip()
 
-        if (
-            text.startswith("{")
-            or text.startswith("[")
-        ):
+        if not text:
+            return found
 
-            try:
+        try:
+            parsed = json.loads(text)
 
-                parsed = json.loads(text)
+            if parsed != value:
+                found.extend(find_products(parsed))
 
-                products.extend(
-                    find_products(parsed)
-                )
+        except Exception:
+            pass
 
-            except Exception:
+    return found
 
-                pass
-
-    return products
-
-
-# ============================================================
-# PARSE
-# ============================================================
 
 def search_parse(query):
+    api_key = os.environ.get("PARSE_API_KEY")
 
-    if not PARSE_API_KEY:
-
+    if not api_key:
         raise RuntimeError(
             "PARSE_API_KEY non configurata."
         )
 
-    headers = {
-        "X-API-Key": PARSE_API_KEY,
-        "Accept": "application/json",
-    }
-
-    params = {
-        "query": query,
-    }
-
     response = requests.get(
         PARSE_URL,
-        headers=headers,
-        params=params,
-        timeout=60,
+        params={
+            "query": query
+        },
+        headers={
+            "X-API-Key": api_key
+        },
+        timeout=90
     )
 
     response.raise_for_status()
 
     try:
-
         data = response.json()
 
     except Exception:
-
         data = response.text
 
     products = find_products(data)
 
+    # Elimina duplicati ASIN
     unique = {}
-
+    
     for product in products:
 
         asin = str(
@@ -452,33 +275,73 @@ def search_parse(query):
         ).strip()
 
         if asin:
-
             unique[asin] = product
 
-    return list(
-        unique.values()
-    )
+    return list(unique.values())
 
 
 # ============================================================
 # STORICO
 # ============================================================
-#
-# IMPORTANTE:
-#
-# NON facciamo più il filtro categoria qui.
-#
-# La query è già mirata:
-#
-# "Nike felpa uomo"
-# "Guess borsa donna"
-# "Pandora anello"
-#
-# Tutti i risultati con prezzo valido vengono conservati.
-#
-# Sarà il Deal Hunter a decidere se il prodotto è coerente
-# prima di generare un alert.
-# ============================================================
+
+def load_history():
+
+    if not os.path.exists(HISTORY_FILE):
+        return {}
+
+    try:
+
+        with open(
+            HISTORY_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            data = json.load(f)
+
+    except Exception:
+
+        return {}
+
+    if isinstance(data, dict):
+        return data
+
+    # Compatibilità con eventuale vecchio formato lista
+    if isinstance(data, list):
+
+        converted = {}
+
+        for item in data:
+
+            if not isinstance(item, dict):
+                continue
+
+            asin = str(
+                item.get("asin", "")
+            ).strip()
+
+            if asin:
+                converted[asin] = item
+
+        return converted
+
+    return {}
+
+
+def save_history(history):
+
+    with open(
+        HISTORY_FILE,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            history,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
 
 def update_history(
     products,
@@ -486,17 +349,16 @@ def update_history(
     query
 ):
 
-    history = load_json(
-        HISTORY_FILE,
-        {}
-    )
-
-    today = date.today().isoformat()
+    history = load_history()
 
     saved = 0
+    updated = 0
     skipped_price = 0
     skipped_other = 0
 
+    today = datetime.now().strftime(
+        "%Y-%m-%d"
+    )
 
     for product in products:
 
@@ -505,302 +367,271 @@ def update_history(
         ).strip()
 
         if not asin:
-
             skipped_other += 1
             continue
 
+        # ====================================================
+        # PREZZO ATTUALE
+        # ====================================================
 
-        title = str(
-            product.get("title", "")
-        ).strip()
+        price = None
 
-        if not title:
+        for key in [
+            "price",
+            "current_price",
+            "buybox_price",
+            "buy_box_price"
+        ]:
 
-            skipped_other += 1
-            continue
+            if key in product:
 
+                price = parse_price(
+                    product.get(key)
+                )
 
-        # ----------------------------------------------------
-        # PREZZO
-        # ----------------------------------------------------
-
-        price_value = product.get(
-            "price"
-        )
-
-        if price_value is None:
-
-            price_value = product.get(
-                "current_price"
-            )
-
-        if price_value is None:
-
-            price_value = product.get(
-                "buybox_price"
-            )
-
-        if price_value is None:
-
-            price_value = product.get(
-                "buy_box_price"
-            )
-
-        price = parse_price(
-            price_value
-        )
-
+                if price is not None:
+                    break
 
         if price is None:
-
-            skipped_price += 1
+            skipped_other += 1
             continue
 
-
-        # ----------------------------------------------------
-        # RANGE STORICO
-        # ----------------------------------------------------
+        # ====================================================
+        # STORICO 0.01 - 300 €
+        # ====================================================
 
         if (
             price < HISTORY_MIN_PRICE
             or price > HISTORY_MAX_PRICE
         ):
-
             skipped_price += 1
             continue
 
+        title = str(
+            product.get(
+                "title",
+                "Prodotto senza titolo"
+            )
+        ).strip()
 
-        # ----------------------------------------------------
-        # CREA PRODOTTO
-        # ----------------------------------------------------
+        product_url = str(
+            product.get(
+                "product_url",
+                ""
+            )
+        ).strip()
+
+        # ====================================================
+        # NUOVO PRODOTTO
+        # ====================================================
 
         if asin not in history:
 
             history[asin] = {
+                "asin": asin,
                 "title": title,
+                "product_url": product_url,
                 "category": category,
                 "query": query,
-                "prices": [],
+                "prices": [
+                    price
+                ],
+                "price_dates": [
+                    today
+                ]
             }
 
+            saved += 1
+            continue
+
+        # ====================================================
+        # PRODOTTO GIÀ PRESENTE
+        # ====================================================
 
         item = history[asin]
 
-        item["title"] = title
+        if not isinstance(item, dict):
+            item = {}
 
-        # Manteniamo la categoria originale.
-        if not item.get("category"):
+        item["asin"] = asin
 
-            item["category"] = category
+        if title:
+            item["title"] = title
 
-        # Conserviamo la query che ha trovato il prodotto.
-        if not item.get("query"):
+        if product_url:
+            item["product_url"] = product_url
 
-            item["query"] = query
+        item["category"] = category
+        item["query"] = query
 
+        prices = item.get(
+            "prices",
+            []
+        )
 
-        if (
-            "prices" not in item
-            or not isinstance(
-                item["prices"],
-                list
-            )
-        ):
+        dates = item.get(
+            "price_dates",
+            []
+        )
 
-            item["prices"] = []
+        if not isinstance(prices, list):
+            prices = []
 
+        if not isinstance(dates, list):
+            dates = []
 
-        # ----------------------------------------------------
-        # UNA RILEVAZIONE AL GIORNO
-        # ----------------------------------------------------
+        # ====================================================
+        # EVITA DUPLICATI DELLO STESSO GIORNO
+        # ====================================================
 
-        existing = None
+        if dates and dates[-1] == today:
 
-        for observation in item["prices"]:
-
-            if (
-                isinstance(
-                    observation,
-                    dict
-                )
-                and observation.get(
-                    "date"
-                ) == today
-            ):
-
-                existing = observation
-                break
-
-
-        if existing:
-
-            existing["price"] = round(
-                price,
-                2
-            )
+            if prices:
+                prices[-1] = price
+            else:
+                prices.append(price)
 
         else:
 
-            item["prices"].append(
-                {
-                    "date": today,
-                    "price": round(
-                        price,
-                        2
-                    ),
-                }
-            )
+            prices.append(price)
+            dates.append(today)
 
+        item["prices"] = prices
+        item["price_dates"] = dates
 
-        saved += 1
+        history[asin] = item
 
+        updated += 1
 
-    save_json(
-        HISTORY_FILE,
-        history
+    save_history(history)
+
+    return (
+        saved,
+        updated,
+        skipped_price,
+        skipped_other
     )
 
 
-    return {
-        "saved": saved,
-        "skipped_price": skipped_price,
-        "skipped_other": skipped_other,
-    }
-
-
 # ============================================================
-# LIMITE MENSILE
+# ROTAZIONE PERSISTENTE
 # ============================================================
 
-def get_monthly_limit(today):
+def load_rotation():
 
-    if (
-        today.year == 2026
-        and today.month == 9
-    ):
+    if not os.path.exists(ROTATION_FILE):
 
-        return CURRENT_MONTH_QUERY_LIMIT
-
-    return STANDARD_MONTHLY_QUERY_LIMIT
-
-
-# ============================================================
-# ROTAZIONE
-# ============================================================
-
-def load_rotation(today):
-
-    rotation = load_json(
-        ROTATION_FILE,
-        {
-            "version": 6,
-            "month": today.strftime("%Y-%m"),
+        return {
+            "month": datetime.now().strftime(
+                "%Y-%m"
+            ),
             "queries_used": 0,
             "index": 0,
+            "repeat_pass": 1
         }
-    )
 
-    current_month = today.strftime(
+    try:
+
+        with open(
+            ROTATION_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            data = json.load(f)
+
+    except Exception:
+
+        return {
+            "month": datetime.now().strftime(
+                "%Y-%m"
+            ),
+            "queries_used": 0,
+            "index": 0,
+            "repeat_pass": 1
+        }
+
+    if not isinstance(data, dict):
+
+        return {
+            "month": datetime.now().strftime(
+                "%Y-%m"
+            ),
+            "queries_used": 0,
+            "index": 0,
+            "repeat_pass": 1
+        }
+
+    return data
+
+
+def save_rotation(rotation):
+
+    with open(
+        ROTATION_FILE,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            rotation,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
+def prepare_rotation():
+
+    rotation = load_rotation()
+
+    current_month = datetime.now().strftime(
         "%Y-%m"
     )
 
-
-    if (
-        rotation.get("month")
-        != current_month
-    ):
+    # Nuovo mese: reset del contatore,
+    # ma ripartiamo dalla prima ricerca.
+    if rotation.get("month") != current_month:
 
         rotation = {
-            "version": 6,
             "month": current_month,
             "queries_used": 0,
             "index": 0,
+            "repeat_pass": 1
         }
 
-
-    try:
-
-        rotation["queries_used"] = int(
-            rotation.get(
-                "queries_used",
-                0
-            )
-        )
-
-    except Exception:
-
-        rotation["queries_used"] = 0
-
-
-    try:
-
-        rotation["index"] = int(
-            rotation.get(
-                "index",
-                0
-            )
-        )
-
-    except Exception:
-
-        rotation["index"] = 0
-
-
-    rotation["index"] %= len(
-        SEARCH_CYCLE
-    )
+    if "repeat_pass" not in rotation:
+        rotation["repeat_pass"] = 1
 
     return rotation
 
 
-def get_next_searches(
-    rotation,
-    monthly_limit
-):
+def advance_rotation(rotation):
 
-    remaining = (
-        monthly_limit
-        - rotation["queries_used"]
+    current_index = int(
+        rotation.get("index", 0)
     )
 
-    if remaining <= 0:
-
-        return []
-
-
-    count = min(
-        QUERIES_PER_RUN,
-        remaining
+    repeat_pass = int(
+        rotation.get("repeat_pass", 1)
     )
 
+    # Abbiamo completato questa coppia.
+    # La ripetiamo REPEAT_PASSES volte.
+    if repeat_pass < REPEAT_PASSES:
 
-    searches = []
-
-
-    for offset in range(count):
-
-        position = (
-            rotation["index"]
-            + offset
-        ) % len(SEARCH_CYCLE)
-
-        searches.append(
-            SEARCH_CYCLE[position]
+        rotation["repeat_pass"] = (
+            repeat_pass + 1
         )
 
+    else:
 
-    return searches
+        rotation["repeat_pass"] = 1
 
+        rotation["index"] = (
+            current_index + QUERIES_PER_RUN
+        ) % len(ROTATION)
 
-def register_successful_query(
-    rotation
-):
-
-    rotation["queries_used"] += 1
-
-    rotation["index"] = (
-        rotation["index"] + 1
-    ) % len(SEARCH_CYCLE)
+    return rotation
 
 
 # ============================================================
@@ -809,46 +640,32 @@ def register_successful_query(
 
 def main():
 
-    today = date.today()
+    print("")
+    print("==========================================")
+    print("DEAL HUNTER - AGGIORNAMENTO STORICO")
+    print("==========================================")
 
-    monthly_limit = get_monthly_limit(
-        today
+    rotation = prepare_rotation()
+
+    queries_used = int(
+        rotation.get(
+            "queries_used",
+            0
+        )
     )
 
-    rotation = load_rotation(
-        today
+    index = int(
+        rotation.get(
+            "index",
+            0
+        )
     )
 
-
-    print("=" * 60)
-    print(
-        "DEAL HUNTER - PRICE TRACKER"
-    )
-    print("=" * 60)
-
-
-    print(
-        f"Data: {today}"
-    )
-
-    print(
-        f"Mese: {rotation['month']}"
-    )
-
-    print(
-        f"Query utilizzate: "
-        f"{rotation['queries_used']}"
-        f"/{monthly_limit}"
-    )
-
-    print(
-        f"Posizione rotazione: "
-        f"{rotation['index']}"
-    )
-
-    print(
-        f"Query per esecuzione: "
-        f"{QUERIES_PER_RUN}"
+    repeat_pass = int(
+        rotation.get(
+            "repeat_pass",
+            1
+        )
     )
 
     print(
@@ -858,77 +675,95 @@ def main():
     )
 
     print(
-        f"Alert/acquisto: max "
-        f"{ALERT_MAX_PRICE:.0f} €"
+        f"Alert/acquisto: "
+        f"max {ALERT_MAX_PRICE:.0f} €"
     )
 
-
-    searches = get_next_searches(
-        rotation,
-        monthly_limit
+    print(
+        f"Query per esecuzione: "
+        f"{QUERIES_PER_RUN}"
     )
 
+    print(
+        f"Ripetizione coppia: "
+        f"{repeat_pass}/{REPEAT_PASSES}"
+    )
 
-    if not searches:
+    print(
+        f"Query mensili già utilizzate: "
+        f"{queries_used}/{MONTHLY_QUERY_LIMIT}"
+    )
 
-        print()
+    # ========================================================
+    # CONTROLLO LIMITE
+    # ========================================================
+
+    if (
+        queries_used + QUERIES_PER_RUN
+        > MONTHLY_QUERY_LIMIT
+    ):
+
+        print("")
         print(
             "LIMITE MENSILE RAGGIUNTO."
         )
 
         print(
-            "Nessuna query Parse "
-            "verrà eseguita."
+            "Nessuna query eseguita."
         )
 
-        save_json(
-            ROTATION_FILE,
-            rotation
-        )
+        save_rotation(rotation)
 
         return
 
+    # ========================================================
+    # SELEZIONE DELLE 2 QUERY
+    # ========================================================
 
-    all_products = []
+    selected = []
 
+    for offset in range(
+        QUERIES_PER_RUN
+    ):
+
+        position = (
+            index + offset
+        ) % len(ROTATION)
+
+        selected.append(
+            ROTATION[position]
+        )
+
+    total_saved = 0
+    total_updated = 0
+    total_price_skipped = 0
+    total_other_skipped = 0
     successful_queries = 0
 
-
     # ========================================================
-    # QUERY
+    # ESECUZIONE QUERY
     # ========================================================
 
-    for number, search in enumerate(
-        searches,
+    for number, slot in enumerate(
+        selected,
         start=1
     ):
 
-        category = search[
-            "category"
-        ]
+        category = slot["category"]
+        query = slot["query"]
 
-        query = search[
-            "query"
-        ]
-
-
-        print()
-
+        print("")
         print(
-            f"Query "
-            f"{number}/{len(searches)}"
+            f"Query {number}/{QUERIES_PER_RUN}"
         )
 
         print(
-            f"Categoria: "
-            f"{category}"
+            f"Categoria: {category}"
         )
 
         print(
-            f"Ricerca: "
-            f"{query}"
+            f"Ricerca: {query}"
         )
-
 
         try:
 
@@ -936,141 +771,66 @@ def main():
                 query
             )
 
-
             print(
                 f"Risultati ricevuti: "
                 f"{len(products)}"
             )
 
-
-            all_products.extend(
-                [
-                    (
-                        product,
-                        category,
-                        query
-                    )
-                    for product in products
-                ]
-            )
-
-
-            register_successful_query(
-                rotation
-            )
-
             successful_queries += 1
 
-
-        except Exception as e:
-
-            print(
-                f"ERRORE Parse: {e}"
-            )
-
-            print(
-                "Query NON conteggiata."
-            )
-
-
-    # ========================================================
-    # DEDUPLICAZIONE
-    # ========================================================
-
-    unique_products = {}
-
-
-    for (
-        product,
-        category,
-        query
-    ) in all_products:
-
-        asin = str(
-            product.get("asin", "")
-        ).strip()
-
-        if not asin:
-            continue
-
-
-        if asin not in unique_products:
-
-            unique_products[asin] = (
-                product,
+            (
+                saved,
+                updated,
+                price_skipped,
+                other_skipped
+            ) = update_history(
+                products,
                 category,
                 query
             )
 
+            total_saved += saved
+            total_updated += updated
+            total_price_skipped += (
+                price_skipped
+            )
+            total_other_skipped += (
+                other_skipped
+            )
 
-    products_to_process = list(
-        unique_products.values()
+        except Exception as e:
+
+            print("")
+            print(
+                f"ERRORE query '{query}':"
+            )
+
+            print(
+                str(e)
+            )
+
+    # ========================================================
+    # AGGIORNA CONTATORE
+    # ========================================================
+
+    rotation["queries_used"] = (
+        queries_used + successful_queries
     )
 
-
-    print()
-
-    print(
-        f"Prodotti unici ricevuti: "
-        f"{len(products_to_process)}"
-    )
-
-
-    # ========================================================
-    # AGGIORNAMENTO STORICO
-    # ========================================================
-
-    total_saved = 0
-    total_price_skipped = 0
-    total_other_skipped = 0
-
-
-    for (
-        product,
-        category,
-        query
-    ) in products_to_process:
-
-        result = update_history(
-            [product],
-            category,
-            query
-        )
-
-
-        total_saved += result[
-            "saved"
-        ]
-
-        total_price_skipped += result[
-            "skipped_price"
-        ]
-
-        total_other_skipped += result[
-            "skipped_other"
-        ]
-
-
-    # ========================================================
-    # SALVA ROTAZIONE
-    # ========================================================
-
-    save_json(
-        ROTATION_FILE,
+    rotation = advance_rotation(
         rotation
     )
 
+    save_rotation(rotation)
 
     # ========================================================
-    # RIEPILOGO
+    # RISULTATO
     # ========================================================
 
-    print()
-
-    print("=" * 60)
+    print("")
+    print("==========================================")
     print("COMPLETATO")
-    print("=" * 60)
-
+    print("==========================================")
 
     print(
         f"Query riuscite: "
@@ -1079,13 +839,18 @@ def main():
 
     print(
         f"Query mensili utilizzate: "
-        f"{rotation['queries_used']}"
-        f"/{monthly_limit}"
+        f"{rotation['queries_used']}/"
+        f"{MONTHLY_QUERY_LIMIT}"
     )
 
     print(
-        f"Prodotti salvati/aggiornati: "
+        f"Prodotti nuovi salvati: "
         f"{total_saved}"
+    )
+
+    print(
+        f"Prodotti aggiornati: "
+        f"{total_updated}"
     )
 
     print(
@@ -1098,36 +863,21 @@ def main():
         f"{total_other_skipped}"
     )
 
-    print()
-
     print(
-        f"Prossima posizione "
-        f"rotazione: "
+        f"Prossima posizione rotazione: "
         f"{rotation['index']}"
     )
 
+    print(
+        f"Prossima ripetizione coppia: "
+        f"{rotation['repeat_pass']}/"
+        f"{REPEAT_PASSES}"
+    )
 
-    if (
-        rotation["queries_used"]
-        >= monthly_limit
-    ):
-
-        print()
-
-        print(
-            "⚠️ LIMITE MENSILE "
-            "RAGGIUNTO."
-        )
-
-        print(
-            "Il tracker resterà fermo "
-            "fino al prossimo mese."
-        )
-
-
-    print("=" * 60)
+    print(
+        "=========================================="
+    )
 
 
 if __name__ == "__main__":
-
     main()
