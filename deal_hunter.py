@@ -45,7 +45,6 @@ def is_relevant_product(item):
     if contains_any(text, excluded):
         return False
 
-    # NIKE
     if "nike" in text:
         if "t shirt" in query or "t-shirt" in query or "tshirt" in query:
             return "nike" in title and contains_any(
@@ -61,7 +60,6 @@ def is_relevant_product(item):
 
         return "nike" in title
 
-    # ADIDAS
     if "adidas" in text:
         if "t shirt" in query or "t-shirt" in query or "tshirt" in query:
             return "adidas" in title and contains_any(
@@ -77,7 +75,6 @@ def is_relevant_product(item):
 
         return "adidas" in title
 
-    # CALVIN KLEIN
     if "calvin klein" in text:
         if "t shirt" in query or "t-shirt" in query or "tshirt" in query:
             return "calvin klein" in title and contains_any(
@@ -87,7 +84,6 @@ def is_relevant_product(item):
 
         return "calvin klein" in title
 
-    # TOMMY HILFIGER
     if "tommy hilfiger" in text:
         if "t shirt" in query or "t-shirt" in query or "tshirt" in query:
             return "tommy hilfiger" in title and contains_any(
@@ -97,44 +93,30 @@ def is_relevant_product(item):
 
         return "tommy hilfiger" in title
 
-    # THE NORTH FACE
     if "the north face" in text or "north face" in text:
         if "pile" in query:
-            return contains_any(
-                title,
-                ["the north face", "north face"]
-            ) and contains_any(
-                title,
-                ["pile", "fleece"]
+            return (
+                contains_any(title, ["the north face", "north face"])
+                and contains_any(title, ["pile", "fleece"])
             )
 
         if "giacca" in query:
-            return contains_any(
-                title,
-                ["the north face", "north face"]
-            ) and contains_any(
-                title,
-                [
-                    "giacca",
-                    "jacket",
-                    "parka",
-                    "softshell",
-                    "hardshell",
-                    "impermeabile",
-                    "waterproof",
-                    "antipioggia",
-                    "windbreaker",
-                    "piumino",
-                    "down jacket"
-                ]
+            return (
+                contains_any(title, ["the north face", "north face"])
+                and contains_any(
+                    title,
+                    [
+                        "giacca", "jacket", "parka",
+                        "softshell", "hardshell",
+                        "impermeabile", "waterproof",
+                        "antipioggia", "windbreaker",
+                        "piumino", "down jacket"
+                    ]
+                )
             )
 
-        return contains_any(
-            title,
-            ["the north face", "north face"]
-        )
+        return contains_any(title, ["the north face", "north face"])
 
-    # COLUMBIA
     if "columbia" in text:
         if "pile" in query:
             return "columbia" in title and contains_any(
@@ -146,45 +128,31 @@ def is_relevant_product(item):
             return "columbia" in title and contains_any(
                 title,
                 [
-                    "giacca",
-                    "jacket",
-                    "parka",
-                    "softshell",
-                    "hardshell",
-                    "impermeabile",
-                    "waterproof",
-                    "antipioggia",
-                    "windbreaker",
-                    "piumino",
-                    "down jacket"
+                    "giacca", "jacket", "parka",
+                    "softshell", "hardshell",
+                    "impermeabile", "waterproof",
+                    "antipioggia", "windbreaker",
+                    "piumino", "down jacket"
                 ]
             )
 
         return "columbia" in title
 
-    # GUESS
     if "guess" in text:
         if "borsa" in query:
             return "guess" in title and contains_any(
                 title,
                 [
-                    "borsa",
-                    "bag",
-                    "handbag",
-                    "shoulder bag",
-                    "crossbody",
-                    "tracolla",
-                    "pochette",
-                    "clutch",
-                    "tote",
-                    "shopper",
-                    "borsetta"
+                    "borsa", "bag", "handbag",
+                    "shoulder bag", "crossbody",
+                    "tracolla", "pochette",
+                    "clutch", "tote",
+                    "shopper", "borsetta"
                 ]
             )
 
         return "guess" in title
 
-    # PANDORA
     if "pandora" in text:
         if "anello" in query:
             return "pandora" in title and contains_any(
@@ -197,28 +165,211 @@ def is_relevant_product(item):
     return False
 
 
-def get_valid_prices(item):
-    prices = item.get("prices", [])
+def parse_number(value):
+    """
+    Converte un valore in numero.
+    Gestisce:
+    12.99
+    "12.99"
+    "€12,99"
+    "12,99 €"
+    """
 
-    if not isinstance(prices, list):
-        return []
+    if isinstance(value, (int, float)):
+        value = float(value)
+
+        if value > 0:
+            return value
+
+        return None
+
+    if not isinstance(value, str):
+        return None
+
+    text = value.strip()
+    text = text.replace("€", "")
+    text = text.replace("EUR", "")
+    text = text.replace("eur", "")
+    text = text.strip()
+
+    if not text:
+        return None
+
+    # Formato italiano: 12,99
+    if "," in text and "." in text:
+        # 1.299,99
+        if text.rfind(",") > text.rfind("."):
+            text = text.replace(".", "")
+            text = text.replace(",", ".")
+        else:
+            text = text.replace(",", "")
+
+    elif "," in text:
+        text = text.replace(",", ".")
+
+    try:
+        number = float(text)
+
+        if number > 0:
+            return number
+
+    except (TypeError, ValueError):
+        pass
+
+    return None
+
+
+def extract_price_from_dict(data):
+    """
+    Cerca un prezzo dentro un dizionario prodotto/osservazione.
+    """
+
+    possible_keys = [
+        "price",
+        "current_price",
+        "buybox_price",
+        "buy_box_price",
+        "amazon_price",
+        "value"
+    ]
+
+    for key in possible_keys:
+        if key in data:
+            price = parse_number(data[key])
+
+            if price is not None:
+                return price
+
+    return None
+
+
+def get_valid_prices(item):
+    """
+    Legge lo storico prezzi in modo robusto.
+
+    Supporta:
+      prices: [12.99, 15.99, 18.99]
+
+    oppure:
+      prices: {"data": 12.99, ...}
+
+    oppure:
+      prices: [
+          {"price": 12.99},
+          {"price": 15.99}
+      ]
+
+    oppure eventuali campi prezzo singoli.
+    """
+
+    prices_data = item.get("prices")
 
     valid = []
 
-    for value in prices:
-        try:
-            price = float(value)
+    # ------------------------------------------
+    # CASO 1: lista
+    # ------------------------------------------
 
-            if price > 0:
+    if isinstance(prices_data, list):
+
+        for value in prices_data:
+
+            # Numero semplice
+            price = parse_number(value)
+
+            if price is not None:
                 valid.append(price)
+                continue
 
-        except (TypeError, ValueError):
-            pass
+            # Dizionario, ad esempio {"price": 19.99}
+            if isinstance(value, dict):
+
+                price = extract_price_from_dict(value)
+
+                if price is not None:
+                    valid.append(price)
+
+    # ------------------------------------------
+    # CASO 2: dizionario
+    # ------------------------------------------
+
+    elif isinstance(prices_data, dict):
+
+        # Prima proviamo eventuali strutture annidate
+        for key in [
+            "history",
+            "prices",
+            "data",
+            "observations"
+        ]:
+
+            nested = prices_data.get(key)
+
+            if isinstance(nested, list):
+
+                for value in nested:
+
+                    price = parse_number(value)
+
+                    if price is not None:
+                        valid.append(price)
+                        continue
+
+                    if isinstance(value, dict):
+
+                        price = extract_price_from_dict(value)
+
+                        if price is not None:
+                            valid.append(price)
+
+                if valid:
+                    break
+
+        # Se non abbiamo trovato una lista,
+        # proviamo i valori del dizionario.
+        if not valid:
+
+            for value in prices_data.values():
+
+                price = parse_number(value)
+
+                if price is not None:
+                    valid.append(price)
+                    continue
+
+                if isinstance(value, dict):
+
+                    price = extract_price_from_dict(value)
+
+                    if price is not None:
+                        valid.append(price)
+
+    # ------------------------------------------
+    # CASO 3: eventuale prezzo direttamente
+    # nell'oggetto prodotto
+    # ------------------------------------------
+
+    if not valid:
+
+        for key in [
+            "price",
+            "current_price",
+            "buybox_price",
+            "buy_box_price"
+        ]:
+
+            if key in item:
+
+                price = parse_number(item[key])
+
+                if price is not None:
+                    valid.append(price)
 
     return valid
 
 
 def calculate_deal_score(prices):
+
     current_price = prices[-1]
     normal_price = statistics.median(prices)
     historical_low = min(prices)
@@ -274,6 +425,7 @@ def calculate_deal_score(prices):
 
 
 def send_telegram(message):
+
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
 
@@ -288,6 +440,7 @@ def send_telegram(message):
     url = f"https://api.telegram.org/bot{token}/sendMessage"
 
     try:
+
         response = requests.post(
             url,
             json={
@@ -308,37 +461,50 @@ def send_telegram(message):
         return False
 
     except Exception as e:
-        print(f"Errore connessione Telegram: {e}")
+
+        print(
+            f"Errore connessione Telegram: {e}"
+        )
+
         return False
 
 
 def load_history():
-    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+
+    with open(
+        HISTORY_FILE,
+        "r",
+        encoding="utf-8"
+    ) as f:
+
         data = json.load(f)
 
-    # Formato attuale:
+    # Formato dizionario:
     # {
-    #   "ASIN": {
-    #       "title": "...",
-    #       "prices": [...]
-    #   }
+    #   "ASIN": {...},
+    #   "ASIN": {...}
     # }
+
     if isinstance(data, dict):
 
-        # Supporto anche a eventuale formato:
-        # {"products": [...]}
-        if isinstance(data.get("products"), list):
+        if isinstance(
+            data.get("products"),
+            list
+        ):
             return data["products"]
 
         products = []
 
         for value in data.values():
+
             if isinstance(value, dict):
+
                 products.append(value)
 
         return products
 
-    # Supporto anche al vecchio formato lista
+    # Formato lista
+
     if isinstance(data, list):
         return data
 
@@ -354,28 +520,46 @@ def main():
     print("==========================================")
 
     if not os.path.exists(HISTORY_FILE):
-        print(f"ERRORE: {HISTORY_FILE} non trovato.")
+
+        print(
+            f"ERRORE: {HISTORY_FILE} non trovato."
+        )
+
         return
 
     try:
+
         history = load_history()
 
     except Exception as e:
-        print(f"ERRORE lettura storico: {e}")
+
+        print(
+            f"ERRORE lettura storico: {e}"
+        )
+
         return
 
-    print(f"Prodotti nello storico: {len(history)}")
-    print(f"Fascia acquisto: 0-{MAX_CURRENT_PRICE:.0f} €")
+    print(
+        f"Prodotti nello storico: {len(history)}"
+    )
+
+    print(
+        f"Fascia acquisto: "
+        f"0-{MAX_CURRENT_PRICE:.0f} €"
+    )
+
     print(
         f"Storico minimo richiesto: "
         f"{MIN_HISTORY_POINTS} prezzi"
     )
+
     print("")
 
     analysed = 0
     skipped_price = 0
     skipped_history = 0
     skipped_relevance = 0
+    products_without_prices = 0
 
     deals = []
 
@@ -387,25 +571,31 @@ def main():
         prices = get_valid_prices(item)
 
         if not prices:
+
+            products_without_prices += 1
+
             continue
 
         current_price = prices[-1]
 
-        # Prezzo attuale massimo per acquisto
         if current_price > MAX_CURRENT_PRICE:
+
             skipped_price += 1
+
             continue
 
-        # Servono almeno 3 osservazioni
         if len(prices) < MIN_HISTORY_POINTS:
+
             skipped_history += 1
+
             continue
 
         analysed += 1
 
-        # Controllo prodotto
         if not is_relevant_product(item):
+
             skipped_relevance += 1
+
             continue
 
         (
@@ -422,9 +612,11 @@ def main():
         )
 
         print(
-            f"Analizzato: {title[:80]} | "
+            f"Analizzato: "
+            f"{title[:80]} | "
             f"Attuale: €{current_price:.2f} | "
             f"Normale: €{normal_price:.2f} | "
+            f"Storico: {len(prices)} | "
             f"Score: {score}"
         )
 
@@ -440,7 +632,6 @@ def main():
                 "score": score
             })
 
-    # Migliori deal prima
     deals.sort(
         key=lambda x: x["score"],
         reverse=True
@@ -450,25 +641,40 @@ def main():
     print("==========================================")
     print("RISULTATO")
     print("==========================================")
-    print(f"Prodotti analizzati: {analysed}")
+
+    print(
+        f"Prodotti analizzati: {analysed}"
+    )
+
+    print(
+        f"Prodotti senza prezzo leggibile: "
+        f"{products_without_prices}"
+    )
+
     print(
         f"Scartati per prezzo > 30 €: "
         f"{skipped_price}"
     )
+
     print(
         f"Scartati per storico insufficiente: "
         f"{skipped_history}"
     )
+
     print(
         f"Scartati per rilevanza: "
         f"{skipped_relevance}"
     )
-    print(f"Deal trovati: {len(deals)}")
+
+    print(
+        f"Deal trovati: {len(deals)}"
+    )
+
     print("")
 
-    # ==================================================
-    # INVIO DEAL
-    # ==================================================
+    # ==========================================
+    # DEAL
+    # ==========================================
 
     if deals:
 
@@ -482,22 +688,21 @@ def main():
             )
 
             asin = str(
-                item.get("asin", "")
+                item.get(
+                    "asin",
+                    ""
+                )
             ).strip()
 
             # LINK AMAZON CANONICO
-            #
-            # Se abbiamo l'ASIN costruiamo direttamente:
-            # https://www.amazon.it/dp/ASIN
-            #
-            # In questo modo NON utilizziamo eventuali
-            # URL strani restituiti dal servizio esterno.
-
             if asin:
+
                 product_url = (
                     f"https://www.amazon.it/dp/{asin}"
                 )
+
             else:
+
                 product_url = item.get(
                     "product_url",
                     ""
@@ -506,12 +711,15 @@ def main():
             score = deal["score"]
 
             if score >= 90:
+
                 level = "🚨 ECCEZIONALE"
 
             elif score >= 80:
+
                 level = "🔥 SUPER DEAL"
 
             else:
+
                 level = "🟢 AFFARE"
 
             message = (
@@ -532,13 +740,15 @@ def main():
                 f"🛒 {product_url}"
             )
 
-            print("Invio deal Telegram...")
+            print(
+                "Invio deal Telegram..."
+            )
 
             send_telegram(message)
 
-    # ==================================================
+    # ==========================================
     # NESSUN DEAL
-    # ==================================================
+    # ==========================================
 
     else:
 
@@ -558,7 +768,10 @@ def main():
             "interessante oggi."
         )
 
-        print("Nessun deal trovato.")
+        print(
+            "Nessun deal trovato."
+        )
+
         print(
             "Invio messaggio Telegram "
             "di controllo..."
