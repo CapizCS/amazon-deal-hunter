@@ -18,29 +18,22 @@ PARSE_URL = (
 HISTORY_FILE = "price_history.json"
 ROTATION_FILE = "search_rotation.json"
 
-# Storico: salviamo prezzi fino a 300 €
+# Storico: salviamo tutti i prezzi da 0,01 a 300 €
 HISTORY_MIN_PRICE = 0.01
 HISTORY_MAX_PRICE = 300.0
 
-# Prezzo massimo per eventuale acquisto/alert
+# Prezzo massimo considerato dal Deal Hunter
 ALERT_MAX_PRICE = 30.0
 
-# Ogni esecuzione usa esattamente 2 query
+# 2 query per ogni esecuzione
 QUERIES_PER_RUN = 2
 
-# Limite prudenziale settembre
+# Limite prudenziale mensile
 MONTHLY_QUERY_LIMIT = 140
-
-# Dopo aver completato una coppia, la ripetiamo
-# per questo numero di passaggi prima di avanzare.
-#
-# 3 passaggi significa che lo stesso gruppo di query
-# viene cercato in 3 esecuzioni diverse.
-REPEAT_PASSES = 3
 
 
 # ============================================================
-# ROTAZIONE
+# ROTAZIONE DELLE RICERCHE
 # ============================================================
 
 ROTATION = [
@@ -128,12 +121,8 @@ ROTATION = [
 
 
 # ============================================================
-# FUNZIONI TESTO / PREZZO
+# PREZZI
 # ============================================================
-
-def normalize_text(text):
-    return " ".join(str(text or "").lower().split())
-
 
 def parse_price(value):
     if value is None:
@@ -157,10 +146,11 @@ def parse_price(value):
     text = text.replace("eur", "")
     text = text.strip()
 
-    # Gestione numeri italiani:
+    # Formato italiano:
     # 1.299,99 -> 1299.99
     # 29,99 -> 29.99
     if "," in text and "." in text:
+
         if text.rfind(",") > text.rfind("."):
             text = text.replace(".", "")
             text = text.replace(",", ".")
@@ -170,8 +160,11 @@ def parse_price(value):
     elif "," in text:
         text = text.replace(",", ".")
 
-    # Elimina eventuali caratteri residui
-    text = re.sub(r"[^0-9.\-]", "", text)
+    text = re.sub(
+        r"[^0-9.\-]",
+        "",
+        text
+    )
 
     try:
         price = float(text)
@@ -186,24 +179,19 @@ def parse_price(value):
 
 
 # ============================================================
-# LETTURA RISPOSTA PARSE
+# PARSE
 # ============================================================
 
 def find_products(value):
-    """
-    Cerca ricorsivamente prodotti dentro la risposta Parse.
-    Gestisce:
-    - liste
-    - dizionari
-    - JSON dentro stringhe
-    """
 
     found = []
 
     if isinstance(value, list):
 
         for item in value:
-            found.extend(find_products(item))
+            found.extend(
+                find_products(item)
+            )
 
         return found
 
@@ -213,7 +201,9 @@ def find_products(value):
             found.append(value)
 
         for child in value.values():
-            found.extend(find_products(child))
+            found.extend(
+                find_products(child)
+            )
 
         return found
 
@@ -225,10 +215,13 @@ def find_products(value):
             return found
 
         try:
+
             parsed = json.loads(text)
 
             if parsed != value:
-                found.extend(find_products(parsed))
+                found.extend(
+                    find_products(parsed)
+                )
 
         except Exception:
             pass
@@ -237,7 +230,10 @@ def find_products(value):
 
 
 def search_parse(query):
-    api_key = os.environ.get("PARSE_API_KEY")
+
+    api_key = os.environ.get(
+        "PARSE_API_KEY"
+    )
 
     if not api_key:
         raise RuntimeError(
@@ -265,19 +261,24 @@ def search_parse(query):
 
     products = find_products(data)
 
-    # Elimina duplicati ASIN
+    # Elimina duplicati usando ASIN
     unique = {}
-    
+
     for product in products:
 
         asin = str(
-            product.get("asin", "")
+            product.get(
+                "asin",
+                ""
+            )
         ).strip()
 
         if asin:
             unique[asin] = product
 
-    return list(unique.values())
+    return list(
+        unique.values()
+    )
 
 
 # ============================================================
@@ -286,7 +287,9 @@ def search_parse(query):
 
 def load_history():
 
-    if not os.path.exists(HISTORY_FILE):
+    if not os.path.exists(
+        HISTORY_FILE
+    ):
         return {}
 
     try:
@@ -296,6 +299,7 @@ def load_history():
             "r",
             encoding="utf-8"
         ) as f:
+
             data = json.load(f)
 
     except Exception:
@@ -305,18 +309,23 @@ def load_history():
     if isinstance(data, dict):
         return data
 
-    # Compatibilità con eventuale vecchio formato lista
     if isinstance(data, list):
 
         converted = {}
 
         for item in data:
 
-            if not isinstance(item, dict):
+            if not isinstance(
+                item,
+                dict
+            ):
                 continue
 
             asin = str(
-                item.get("asin", "")
+                item.get(
+                    "asin",
+                    ""
+                )
             ).strip()
 
             if asin:
@@ -363,16 +372,20 @@ def update_history(
     for product in products:
 
         asin = str(
-            product.get("asin", "")
+            product.get(
+                "asin",
+                ""
+            )
         ).strip()
 
         if not asin:
+
             skipped_other += 1
             continue
 
-        # ====================================================
-        # PREZZO ATTUALE
-        # ====================================================
+        # ----------------------------------------------------
+        # PREZZO
+        # ----------------------------------------------------
 
         price = None
 
@@ -393,17 +406,19 @@ def update_history(
                     break
 
         if price is None:
+
             skipped_other += 1
             continue
 
-        # ====================================================
-        # STORICO 0.01 - 300 €
-        # ====================================================
+        # ----------------------------------------------------
+        # FASCIA STORICO
+        # ----------------------------------------------------
 
         if (
             price < HISTORY_MIN_PRICE
             or price > HISTORY_MAX_PRICE
         ):
+
             skipped_price += 1
             continue
 
@@ -421,9 +436,9 @@ def update_history(
             )
         ).strip()
 
-        # ====================================================
+        # ----------------------------------------------------
         # NUOVO PRODOTTO
-        # ====================================================
+        # ----------------------------------------------------
 
         if asin not in history:
 
@@ -444,13 +459,16 @@ def update_history(
             saved += 1
             continue
 
-        # ====================================================
-        # PRODOTTO GIÀ PRESENTE
-        # ====================================================
+        # ----------------------------------------------------
+        # PRODOTTO ESISTENTE
+        # ----------------------------------------------------
 
         item = history[asin]
 
-        if not isinstance(item, dict):
+        if not isinstance(
+            item,
+            dict
+        ):
             item = {}
 
         item["asin"] = asin
@@ -459,7 +477,9 @@ def update_history(
             item["title"] = title
 
         if product_url:
-            item["product_url"] = product_url
+            item["product_url"] = (
+                product_url
+            )
 
         item["category"] = category
         item["query"] = query
@@ -474,17 +494,27 @@ def update_history(
             []
         )
 
-        if not isinstance(prices, list):
+        if not isinstance(
+            prices,
+            list
+        ):
             prices = []
 
-        if not isinstance(dates, list):
+        if not isinstance(
+            dates,
+            list
+        ):
             dates = []
 
-        # ====================================================
-        # EVITA DUPLICATI DELLO STESSO GIORNO
-        # ====================================================
+        # ----------------------------------------------------
+        # STESSO GIORNO:
+        # aggiorniamo invece di aggiungere
+        # ----------------------------------------------------
 
-        if dates and dates[-1] == today:
+        if (
+            dates
+            and dates[-1] == today
+        ):
 
             if prices:
                 prices[-1] = price
@@ -514,20 +544,21 @@ def update_history(
 
 
 # ============================================================
-# ROTAZIONE PERSISTENTE
+# ROTAZIONE
 # ============================================================
 
 def load_rotation():
 
-    if not os.path.exists(ROTATION_FILE):
+    if not os.path.exists(
+        ROTATION_FILE
+    ):
 
         return {
             "month": datetime.now().strftime(
                 "%Y-%m"
             ),
             "queries_used": 0,
-            "index": 0,
-            "repeat_pass": 1
+            "index": 0
         }
 
     try:
@@ -537,6 +568,7 @@ def load_rotation():
             "r",
             encoding="utf-8"
         ) as f:
+
             data = json.load(f)
 
     except Exception:
@@ -546,19 +578,20 @@ def load_rotation():
                 "%Y-%m"
             ),
             "queries_used": 0,
-            "index": 0,
-            "repeat_pass": 1
+            "index": 0
         }
 
-    if not isinstance(data, dict):
+    if not isinstance(
+        data,
+        dict
+    ):
 
         return {
             "month": datetime.now().strftime(
                 "%Y-%m"
             ),
             "queries_used": 0,
-            "index": 0,
-            "repeat_pass": 1
+            "index": 0
         }
 
     return data
@@ -588,48 +621,35 @@ def prepare_rotation():
         "%Y-%m"
     )
 
-    # Nuovo mese: reset del contatore,
-    # ma ripartiamo dalla prima ricerca.
-    if rotation.get("month") != current_month:
+    # Nuovo mese
+    if rotation.get(
+        "month"
+    ) != current_month:
 
         rotation = {
             "month": current_month,
             "queries_used": 0,
-            "index": 0,
-            "repeat_pass": 1
+            "index": 0
         }
-
-    if "repeat_pass" not in rotation:
-        rotation["repeat_pass"] = 1
 
     return rotation
 
 
-def advance_rotation(rotation):
+def advance_rotation(
+    rotation
+):
 
     current_index = int(
-        rotation.get("index", 0)
-    )
-
-    repeat_pass = int(
-        rotation.get("repeat_pass", 1)
-    )
-
-    # Abbiamo completato questa coppia.
-    # La ripetiamo REPEAT_PASSES volte.
-    if repeat_pass < REPEAT_PASSES:
-
-        rotation["repeat_pass"] = (
-            repeat_pass + 1
+        rotation.get(
+            "index",
+            0
         )
+    )
 
-    else:
-
-        rotation["repeat_pass"] = 1
-
-        rotation["index"] = (
-            current_index + QUERIES_PER_RUN
-        ) % len(ROTATION)
+    rotation["index"] = (
+        current_index
+        + QUERIES_PER_RUN
+    ) % len(ROTATION)
 
     return rotation
 
@@ -661,13 +681,6 @@ def main():
         )
     )
 
-    repeat_pass = int(
-        rotation.get(
-            "repeat_pass",
-            1
-        )
-    )
-
     print(
         f"Storico: "
         f"{HISTORY_MIN_PRICE:.2f}-"
@@ -685,21 +698,18 @@ def main():
     )
 
     print(
-        f"Ripetizione coppia: "
-        f"{repeat_pass}/{REPEAT_PASSES}"
+        f"Query mensili utilizzate: "
+        f"{queries_used}/"
+        f"{MONTHLY_QUERY_LIMIT}"
     )
 
-    print(
-        f"Query mensili già utilizzate: "
-        f"{queries_used}/{MONTHLY_QUERY_LIMIT}"
-    )
-
-    # ========================================================
+    # --------------------------------------------------------
     # CONTROLLO LIMITE
-    # ========================================================
+    # --------------------------------------------------------
 
     if (
-        queries_used + QUERIES_PER_RUN
+        queries_used
+        + QUERIES_PER_RUN
         > MONTHLY_QUERY_LIMIT
     ):
 
@@ -712,13 +722,15 @@ def main():
             "Nessuna query eseguita."
         )
 
-        save_rotation(rotation)
+        save_rotation(
+            rotation
+        )
 
         return
 
-    # ========================================================
+    # --------------------------------------------------------
     # SELEZIONE DELLE 2 QUERY
-    # ========================================================
+    # --------------------------------------------------------
 
     selected = []
 
@@ -727,7 +739,8 @@ def main():
     ):
 
         position = (
-            index + offset
+            index
+            + offset
         ) % len(ROTATION)
 
         selected.append(
@@ -740,29 +753,38 @@ def main():
     total_other_skipped = 0
     successful_queries = 0
 
-    # ========================================================
-    # ESECUZIONE QUERY
-    # ========================================================
+    # --------------------------------------------------------
+    # ESECUZIONE
+    # --------------------------------------------------------
 
     for number, slot in enumerate(
         selected,
         start=1
     ):
 
-        category = slot["category"]
-        query = slot["query"]
+        category = slot[
+            "category"
+        ]
+
+        query = slot[
+            "query"
+        ]
 
         print("")
         print(
-            f"Query {number}/{QUERIES_PER_RUN}"
+            f"Query "
+            f"{number}/"
+            f"{QUERIES_PER_RUN}"
         )
 
         print(
-            f"Categoria: {category}"
+            f"Categoria: "
+            f"{category}"
         )
 
         print(
-            f"Ricerca: {query}"
+            f"Ricerca: "
+            f"{query}"
         )
 
         try:
@@ -791,9 +813,11 @@ def main():
 
             total_saved += saved
             total_updated += updated
+
             total_price_skipped += (
                 price_skipped
             )
+
             total_other_skipped += (
                 other_skipped
             )
@@ -802,30 +826,34 @@ def main():
 
             print("")
             print(
-                f"ERRORE query '{query}':"
+                f"ERRORE query "
+                f"'{query}':"
             )
 
             print(
                 str(e)
             )
 
-    # ========================================================
-    # AGGIORNA CONTATORE
-    # ========================================================
+    # --------------------------------------------------------
+    # AGGIORNA ROTAZIONE
+    # --------------------------------------------------------
 
     rotation["queries_used"] = (
-        queries_used + successful_queries
+        queries_used
+        + successful_queries
     )
 
     rotation = advance_rotation(
         rotation
     )
 
-    save_rotation(rotation)
+    save_rotation(
+        rotation
+    )
 
-    # ========================================================
+    # --------------------------------------------------------
     # RISULTATO
-    # ========================================================
+    # --------------------------------------------------------
 
     print("")
     print("==========================================")
@@ -866,12 +894,6 @@ def main():
     print(
         f"Prossima posizione rotazione: "
         f"{rotation['index']}"
-    )
-
-    print(
-        f"Prossima ripetizione coppia: "
-        f"{rotation['repeat_pass']}/"
-        f"{REPEAT_PASSES}"
     )
 
     print(
