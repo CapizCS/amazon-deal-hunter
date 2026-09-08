@@ -1595,9 +1595,15 @@
       {
         "date": "2026-09-05",
         "price": 16.86
-      }
+      },
+      16.86
     ],
-    "query": "Calvin Klein t shirt uomo"
+    "query": "Calvin Klein t shirt uomo",
+    "asin": "B016W1FX9S",
+    "product_url": "https://www.amazon.it/Calvin-Klein-NECK-T-shirt-Black-Small/dp/B016W1FX9S/ref=sr_1_19?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-19",
+    "price_dates": [
+      "2026-09-08"
+    ]
   },
   "B0D1RMHV1H": {
     "title": "Calvin Klein Jeans",
@@ -8395,24 +8401,36 @@
   },
   "B016EJBW2K": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 35.46
-      }
+      },
+      35.46
+    ],
+    "asin": "B016EJBW2K",
+    "product_url": "https://www.amazon.it/Columbia-Fleece-Jacket-Multicolore-Unisex-Adulto/dp/B016EJBW2K/ref=sr_1_2?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-2",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B08P4T8NYY": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 36.08
-      }
+      },
+      37.99
+    ],
+    "asin": "B08P4T8NYY",
+    "product_url": "https://www.amazon.it/Columbia-Basin-Trail-Giacca-Carbone/dp/B08P4T8NYY/ref=sr_1_3?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-3",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0B1NZ1ZLM": {
@@ -8428,24 +8446,36 @@
   },
   "B0CN3W8Z6W": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 41.78
-      }
+      },
+      43.99
+    ],
+    "asin": "B0CN3W8Z6W",
+    "product_url": "https://www.amazon.it/Columbia-Basin-Butte-cerniera-confezione/dp/B0CN3W8Z6W/ref=sr_1_5?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-5",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D4CH57NM": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 44.51
-      }
+      },
+      44.51
+    ],
+    "asin": "B0D4CH57NM",
+    "product_url": "https://www.amazon.it/Columbia-Challenger-Windbreaker-Lightweight-Jacket/dp/B0D4CH57NM/ref=sr_1_6?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-6",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0FC7DPWPS": {
@@ -8461,35 +8491,53 @@
   },
   "B099JWTK74": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 49.0
-      }
+      },
+      49.0
+    ],
+    "asin": "B099JWTK74",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Antivento-Challenger-Novelty/dp/B099JWTK74/ref=sr_1_9?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-9",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0FCZLLDKK": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 49.99
-      }
+      },
+      48.99
+    ],
+    "asin": "B0FCZLLDKK",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Rugged-cerniera-intera/dp/B0FCZLLDKK/ref=sr_1_8?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-8",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D4C3VHHC": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 50.95
-      }
+      },
+      50.95
+    ],
+    "asin": "B0D4C3VHHC",
+    "product_url": "https://www.amazon.it/Columbia-Limits-Jacket-Waterproof-Mountain/dp/B0D4C3VHHC/ref=sr_1_10?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-10",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CPGM2MYQ": {
@@ -8538,24 +8586,36 @@
   },
   "B0BCW72HP9": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 55.88
-      }
+      },
+      55.88
+    ],
+    "asin": "B0BCW72HP9",
+    "product_url": "https://www.amazon.it/Columbia-Ascender-Giacca-Grafite-Uomo/dp/B0BCW72HP9/ref=sr_1_12?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-12",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D4CF2FBP": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 56.78
-      }
+      },
+      56.78
+    ],
+    "asin": "B0D4CF2FBP",
+    "product_url": "https://www.amazon.it/Columbia-Challenger-Novelty-Windbreaker-Lightweight/dp/B0D4CF2FBP/ref=sr_1_13?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-13",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3WYVBS": {
@@ -8626,13 +8686,19 @@
   },
   "B07RBF5YZX": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 65.09
-      }
+      },
+      65.31
+    ],
+    "asin": "B07RBF5YZX",
+    "product_url": "https://www.amazon.it/Columbia-Limits-impermeabile-Graphite-Heather/dp/B07RBF5YZX/ref=sr_1_18?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-18",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0084AXKTG": {
@@ -8648,24 +8714,36 @@
   },
   "B0CLSGJDD9": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 66.97
-      }
+      },
+      74.22
+    ],
+    "asin": "B0CLSGJDD9",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Softshell-Ascender-Uomo/dp/B0CLSGJDD9/ref=sr_1_30?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-30",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B01N4FF712": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 67.16
-      }
+      },
+      67.16
+    ],
+    "asin": "B01N4FF712",
+    "product_url": "https://www.amazon.it/Columbia-Pouring-Adventure-Impermeabile-Traspirante/dp/B01N4FF712/ref=sr_1_19?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-19",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3TZ9M3": {
@@ -8692,24 +8770,36 @@
   },
   "B0CLSGC175": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 68.17
-      }
+      },
+      68.17
+    ],
+    "asin": "B0CLSGC175",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-stampata-Timberwild/dp/B0CLSGC175/ref=sr_1_22?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-22",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B096G9XT7W": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 69.6
-      }
+      },
+      69.6
+    ],
+    "asin": "B096G9XT7W",
+    "product_url": "https://www.amazon.it/Columbia-Heights-Softshell-X-Large-Unisex-Adulto/dp/B096G9XT7W/ref=sr_1_24?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-24",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3VB35J": {
@@ -8725,24 +8815,36 @@
   },
   "B0FC7TP9GF": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 69.99
-      }
+      },
+      68.99
+    ],
+    "asin": "B0FC7TP9GF",
+    "product_url": "https://www.amazon.it/Columbia-Hikebound-impermeabile-sempreblu-stropicciato/dp/B0FC7TP9GF/ref=sr_1_23?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-23",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3V7F56": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 69.99
-      }
+      },
+      69.99
+    ],
+    "asin": "B0CN3V7F56",
+    "product_url": "https://www.amazon.it/Columbia-Piumino-uomo-Lake-pezzo/dp/B0CN3V7F56/ref=sr_1_26?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-26",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CLQQ2Y9H": {
@@ -8758,46 +8860,70 @@
   },
   "B0CLSW37QK": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 70.39
-      }
+      },
+      70.04
+    ],
+    "asin": "B0CLSW37QK",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-impermeabile-Marina-Collegiata/dp/B0CLSW37QK/ref=sr_1_27?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-27",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0084AXB4A": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 70.63
-      }
+      },
+      59.47
+    ],
+    "asin": "B0084AXB4A",
+    "product_url": "https://www.amazon.it/Columbia-Uomo-Giacca-Pile-Arancione/dp/B0084AXB4A/ref=sr_1_15?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-15",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0GFNVPS79": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 70.99
-      }
+      },
+      70.99
+    ],
+    "asin": "B0GFNVPS79",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-cerniera-Greenscape/dp/B0GFNVPS79/ref=sr_1_28?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-28",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B099KSQZG1": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 73.03
-      }
+      },
+      100.71
+    ],
+    "asin": "B099KSQZG1",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Impermeabile-Earth-Explorer/dp/B099KSQZG1/ref=sr_1_42?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-42",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3V4WRC": {
@@ -8813,57 +8939,87 @@
   },
   "B0CLQT6CMY": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 77.99
-      }
+      },
+      77.99
+    ],
+    "asin": "B0CLQT6CMY",
+    "product_url": "https://www.amazon.it/Columbia-Pike-Lake-Piumino-confezione/dp/B0CLQT6CMY/ref=sr_1_33?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-33",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CN3WW3BK": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 79.99
-      }
+      },
+      79.49
+    ],
+    "asin": "B0CN3WW3BK",
+    "product_url": "https://www.amazon.it/Columbia-Lake-22-cappuccio-confezione/dp/B0CN3WW3BK/ref=sr_1_34?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-34",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0FYHWLGKZ": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 81.03
-      }
+      },
+      81.03
+    ],
+    "asin": "B0FYHWLGKZ",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-Intera/dp/B0FYHWLGKZ/ref=sr_1_37?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-37",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B00Q7C6V0I": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 83.27
-      }
+      },
+      83.27
+    ],
+    "asin": "B00Q7C6V0I",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-Black/dp/B00Q7C6V0I/ref=sr_1_38?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-38",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CLQPSVL7": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_unisex",
     "query": "Columbia giacca uomo donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 84.5
-      }
+      },
+      84.5
+    ],
+    "asin": "B0CLQPSVL7",
+    "product_url": "https://www.amazon.it/Columbia-Switchback-Ii-foderata-X-Small/dp/B0CLQPSVL7/ref=sr_1_39?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-39",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D7MZHCS5": {
@@ -8896,7 +9052,13 @@
       {
         "date": "2026-09-05",
         "price": 14.11
-      }
+      },
+      14.11
+    ],
+    "asin": "B0D7MZ3P1D",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-Shirt-Maniche-Graphic/dp/B0D7MZ3P1D/ref=sr_1_3?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-3",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DSXV1GWY": {
@@ -8918,7 +9080,13 @@
       {
         "date": "2026-09-05",
         "price": 14.3
-      }
+      },
+      12.02
+    ],
+    "asin": "B0D7N2FZ39",
+    "product_url": "https://www.amazon.it/Calvin-T-Shirt-Maniche-Sleeve-Aleutian/dp/B0D7N2FZ39/ref=sr_1_1?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-1",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B071WCM49G": {
@@ -8929,7 +9097,13 @@
       {
         "date": "2026-09-05",
         "price": 14.96
-      }
+      },
+      14.96
+    ],
+    "asin": "B071WCM49G",
+    "product_url": "https://www.amazon.it/Calvin-Klein-000NU8661A-T-Shirt-LOUGEWEAR/dp/B071WCM49G/ref=sr_1_6?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-6",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CSG25YJ7": {
@@ -8940,7 +9114,13 @@
       {
         "date": "2026-09-05",
         "price": 15.29
-      }
+      },
+      15.29
+    ],
+    "asin": "B0CSG25YJ7",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-MONOLOGO-J30J325649/dp/B0CSG25YJ7/ref=sr_1_7?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-7",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D7N18HJM": {
@@ -8951,7 +9131,13 @@
       {
         "date": "2026-09-05",
         "price": 15.36
-      }
+      },
+      15.36
+    ],
+    "asin": "B0D7N18HJM",
+    "product_url": "https://www.amazon.it/Calvin-T-Shirt-Maniche-Regular-Aluminum/dp/B0D7N18HJM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-8",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DK41YL5S": {
@@ -8973,7 +9159,13 @@
       {
         "date": "2026-09-05",
         "price": 15.65
-      }
+      },
+      12.67
+    ],
+    "asin": "B0FDGVVBY7",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Wholesale-Lv04rf801g-Magliette/dp/B0FDGVVBY7/ref=sr_1_2?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-2",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D1RLFT23": {
@@ -8984,7 +9176,13 @@
       {
         "date": "2026-09-05",
         "price": 16.29
-      }
+      },
+      14.66
+    ],
+    "asin": "B0D1RLFT23",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-Shirt-Maniche-Moonbeam/dp/B0D1RLFT23/ref=sr_1_4?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-4",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D1RK8S6K": {
@@ -8995,7 +9193,13 @@
       {
         "date": "2026-09-05",
         "price": 16.42
-      }
+      },
+      16.42
+    ],
+    "asin": "B0D1RK8S6K",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-MONOLOGO-Maglietta/dp/B0D1RK8S6K/ref=sr_1_13?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-13",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CL57LN2H": {
@@ -9006,7 +9210,13 @@
       {
         "date": "2026-09-05",
         "price": 16.51
-      }
+      },
+      16.51
+    ],
+    "asin": "B0CL57LN2H",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-J30J325649-Maglietta/dp/B0CL57LN2H/ref=sr_1_14?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-14",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D7MZLSQC": {
@@ -9028,7 +9238,13 @@
       {
         "date": "2026-09-05",
         "price": 16.86
-      }
+      },
+      16.86
+    ],
+    "asin": "B01CNHD1UI",
+    "product_url": "https://www.amazon.it/Calvin-Klein-000NB1164E-T-Shirt-Heather/dp/B01CNHD1UI/ref=sr_1_18?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-18",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0F6QT7GQ3": {
@@ -9039,7 +9255,13 @@
       {
         "date": "2026-09-05",
         "price": 16.9
-      }
+      },
+      16.9
+    ],
+    "asin": "B0F6QT7GQ3",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Iu0iu00715-Maglietta-Unisex-Adulto/dp/B0F6QT7GQ3/ref=sr_1_20?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-20",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D7MZNHQN": {
@@ -9072,7 +9294,13 @@
       {
         "date": "2026-09-05",
         "price": 17.39
-      }
+      },
+      15.65
+    ],
+    "asin": "B0F4DLFP15",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Re819G-Magliette-grafiche/dp/B0F4DLFP15/ref=sr_1_11?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-11",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0C8F9CGS7": {
@@ -9083,7 +9311,13 @@
       {
         "date": "2026-09-05",
         "price": 17.4
-      }
+      },
+      17.4
+    ],
+    "asin": "B0C8F9CGS7",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Girocollo-Magliette-Muschio/dp/B0C8F9CGS7/ref=sr_1_23?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-23",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0FFZPX74H": {
@@ -9094,7 +9328,13 @@
       {
         "date": "2026-09-05",
         "price": 17.56
-      }
+      },
+      17.56
+    ],
+    "asin": "B0FFZPX74H",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Institutional-Lv04rab810-Magliette/dp/B0FFZPX74H/ref=sr_1_24?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-24",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0CL57WS73": {
@@ -9105,7 +9345,13 @@
       {
         "date": "2026-09-05",
         "price": 17.83
-      }
+      },
+      17.83
+    ],
+    "asin": "B0CL57WS73",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-J30J320806-Magliette/dp/B0CL57WS73/ref=sr_1_26?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-26",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DSXYV8LK": {
@@ -9116,7 +9362,13 @@
       {
         "date": "2026-09-05",
         "price": 17.94
-      }
+      },
+      17.94
+    ],
+    "asin": "B0DSXYV8LK",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Monogram-Lv04Rd254G-Magliette/dp/B0DSXYV8LK/ref=sr_1_28?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-28",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DK43YNVG": {
@@ -9138,7 +9390,13 @@
       {
         "date": "2026-09-05",
         "price": 18.14
-      }
+      },
+      16.99
+    ],
+    "asin": "B0D1RJHV2R",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-Regular-Maglietta/dp/B0D1RJHV2R/ref=sr_1_21?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-21",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DSY5X57Y": {
@@ -9149,7 +9407,13 @@
       {
         "date": "2026-09-05",
         "price": 18.27
-      }
+      },
+      18.27
+    ],
+    "asin": "B0DSY5X57Y",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Rd816G-Magliette-grafiche/dp/B0DSY5X57Y/ref=sr_1_31?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-31",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DK424H4L": {
@@ -9182,7 +9446,13 @@
       {
         "date": "2026-09-05",
         "price": 18.89
-      }
+      },
+      18.89
+    ],
+    "asin": "B0DK41NHD8",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04rc857g-Magliette-grafiche/dp/B0DK41NHD8/ref=sr_1_34?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-34",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B09R2BNX3V": {
@@ -9193,7 +9463,13 @@
       {
         "date": "2026-09-05",
         "price": 19.0
-      }
+      },
+      19.0
+    ],
+    "asin": "B09R2BNX3V",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Monogram-T-Shirt-Brillante/dp/B09R2BNX3V/ref=sr_1_35?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-35",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0F4DJC84B": {
@@ -9204,7 +9480,13 @@
       {
         "date": "2026-09-05",
         "price": 19.0
-      }
+      },
+      19.0
+    ],
+    "asin": "B0F4DJC84B",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Re834G-Magliette-grafiche/dp/B0F4DJC84B/ref=sr_1_36?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-36",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DK43PVW9": {
@@ -9215,7 +9497,13 @@
       {
         "date": "2026-09-05",
         "price": 19.13
-      }
+      },
+      19.13
+    ],
+    "asin": "B0DK43PVW9",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Glitched-Lv04rc858g-Magliette/dp/B0DK43PVW9/ref=sr_1_37?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-37",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DSY78KV4": {
@@ -9226,7 +9514,13 @@
       {
         "date": "2026-09-05",
         "price": 19.2
-      }
+      },
+      17.28
+    ],
+    "asin": "B0DSY78KV4",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Rd814G-Magliette-Brilliant/dp/B0DSY78KV4/ref=sr_1_22?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-22",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D1RKL3PR": {
@@ -9237,7 +9531,13 @@
       {
         "date": "2026-09-05",
         "price": 19.27
-      }
+      },
+      19.27
+    ],
+    "asin": "B0D1RKL3PR",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-Maglietta-Atmosphere/dp/B0D1RKL3PR/ref=sr_1_38?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-38",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DK44H8BP": {
@@ -9248,7 +9548,13 @@
       {
         "date": "2026-09-05",
         "price": 19.42
-      }
+      },
+      19.42
+    ],
+    "asin": "B0DK44H8BP",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Glitched-Lv04rc858g-Magliette/dp/B0DK44H8BP/ref=sr_1_40?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-40",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0DSY6ZDQ2": {
@@ -9259,7 +9565,13 @@
       {
         "date": "2026-09-05",
         "price": 19.48
-      }
+      },
+      19.48
+    ],
+    "asin": "B0DSY6ZDQ2",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Rd865G-Magliette-grafiche/dp/B0DSY6ZDQ2/ref=sr_1_41?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-41",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0D7QQBD1H": {
@@ -9270,7 +9582,13 @@
       {
         "date": "2026-09-05",
         "price": 19.9
-      }
+      },
+      19.9
+    ],
+    "asin": "B0D7QQBD1H",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-Shirt-Jeans-Institutional/dp/B0D7QQBD1H/ref=sr_1_42?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-42",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0FDGWX4LT": {
@@ -9292,7 +9610,13 @@
       {
         "date": "2026-09-05",
         "price": 20.0
-      }
+      },
+      20.0
+    ],
+    "asin": "B0GVG5HXS6",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-shirt-5003346232-marrone/dp/B0GVG5HXS6/ref=sr_1_44?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-44",
+    "price_dates": [
+      "2026-09-08"
     ]
   },
   "B0F6QLFPQF": {
@@ -14642,6 +14966,422 @@
     "query": "Columbia pile donna",
     "prices": [
       54.0
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B082XY613H": {
+    "asin": "B082XY613H",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Fleece-Giacche-Shells-Stone/dp/B082XY613H/ref=sr_1_4?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-4",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      42.0
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0FC71ZDN9": {
+    "asin": "B0FC71ZDN9",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-impermeabile-verde-muschio/dp/B0FC71ZDN9/ref=sr_1_7?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-7",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      48.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLT37PQF": {
+    "asin": "B0CLT37PQF",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Glennaker-Lake-impermeabile-confezione/dp/B0CLT37PQF/ref=sr_1_14?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-14",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      58.29
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CN3VWSH2": {
+    "asin": "B0CN3VWSH2",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Ascender-Giacca-softshell-colore/dp/B0CN3VWSH2/ref=sr_1_16?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-16",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      59.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DLX4RC5C": {
+    "asin": "B0DLX4RC5C",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Adventure-impermeabile-collegiale-montagna/dp/B0DLX4RC5C/ref=sr_1_17?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-17",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      61.0
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0D4C3DCHG": {
+    "asin": "B0D4C3DCHG",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Challenger-Windbreaker-Lightweight-Jacket/dp/B0D4C3DCHG/ref=sr_1_20?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-20",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      67.7
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CN3XQW9D": {
+    "asin": "B0CN3XQW9D",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Ascender-Softshell-cappuccio-confezione/dp/B0CN3XQW9D/ref=sr_1_21?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-21",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      67.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CN81GVHV": {
+    "asin": "B0CN81GVHV",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-out-Shield-Giacca-Cappuccio-Uomo/dp/B0CN81GVHV/ref=sr_1_25?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-25",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      69.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0FB35GYCC": {
+    "asin": "B0FB35GYCC",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Tall-Heights-softshell-cappuccio/dp/B0FB35GYCC/ref=sr_1_29?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-29",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      71.41
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CN3WWXGH": {
+    "asin": "B0CN3WWXGH",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Cascade-Softshell-Giacca-confezione/dp/B0CN3WWXGH/ref=sr_1_32?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-32",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      75.88
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B07FGYN2PZ": {
+    "asin": "B07FGYN2PZ",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Cascade-Softshell-Collegiate-Heather/dp/B07FGYN2PZ/ref=sr_1_35?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-35",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      79.68
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0D4C5DJQ8": {
+    "asin": "B0D4C5DJQ8",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Powder-Hybrid-Hooded-Jacket/dp/B0D4C5DJQ8/ref=sr_1_36?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-36",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      81.0
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DLRPRLJM": {
+    "asin": "B0DLRPRLJM",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Cascade-Ridge-Giacca-Softshell/dp/B0DLRPRLJM/ref=sr_1_40?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-40",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      89.17
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLR734B8": {
+    "asin": "B0CLR734B8",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Puffect-III-Giacca-taglia/dp/B0CLR734B8/ref=sr_1_41?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-41",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      97.75
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLRBRTDN": {
+    "asin": "B0CLRBRTDN",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Puffect-II-Giacca-cappuccio/dp/B0CLRBRTDN/ref=sr_1_43?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-43",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      102.51
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLR6FK6Z": {
+    "asin": "B0CLR6FK6Z",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Softshell-Ascender-X-Large/dp/B0CLR6FK6Z/ref=sr_1_44?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-44",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      105.66
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLR7493Z": {
+    "asin": "B0CLR7493Z",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Ascender-II-softshell-cappuccio/dp/B0CLR7493Z/ref=sr_1_45?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-45",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      107.21
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLSF6V82": {
+    "asin": "B0CLSF6V82",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Jacket-Ascender-Giacca-Softshell-Collegiate/dp/B0CLSF6V82/ref=sr_1_46?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-46",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      108.91
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B01HZ24YMA": {
+    "asin": "B01HZ24YMA",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Sportswear-Company-Softshell-Bluebell/dp/B01HZ24YMA/ref=sr_1_47?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-47",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      109.0
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0CLRB519Y": {
+    "asin": "B0CLRB519Y",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-PHG-Ascender-II-softshell/dp/B0CLRB519Y/ref=sr_1_48?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-48",
+    "category": "fashion_unisex",
+    "query": "Columbia giacca uomo donna",
+    "prices": [
+      110.68
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0FFZTN9CJ": {
+    "asin": "B0FFZTN9CJ",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Crewneck-Lv04lc255g-Magliette/dp/B0FFZTN9CJ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-5",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      14.72
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DK44JM76": {
+    "asin": "B0DK44JM76",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04rc857g-Magliette-grafiche/dp/B0DK44JM76/ref=sr_1_10?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-10",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      15.48
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0D7MZBRNF": {
+    "asin": "B0D7MZBRNF",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-shirt-Maniche-Brilliant/dp/B0D7MZBRNF/ref=sr_1_12?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-12",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      16.35
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0D7N2BX96": {
+    "asin": "B0D7N2BX96",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-Shirt-Maniche-Painted/dp/B0D7N2BX96/ref=sr_1_15?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-15",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      16.56
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DK43DTZH": {
+    "asin": "B0DK43DTZH",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04rc859g-Magliette-grafiche/dp/B0DK43DTZH/ref=sr_1_29?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-29",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      17.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0D7N1X7KJ": {
+    "asin": "B0D7N1X7KJ",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-T-Shirt-Maniche-Relaxed/dp/B0D7N1X7KJ/ref=sr_1_30?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-30",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      18.05
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0F4DKNHVB": {
+    "asin": "B0F4DKNHVB",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Re820G-Magliette-grafiche/dp/B0F4DKNHVB/ref=sr_1_39?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-39",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      19.29
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0FDGXFP1M": {
+    "asin": "B0FDGXFP1M",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Wholesale-Lv04rf800g-Magliette/dp/B0FDGXFP1M/ref=sr_1_43?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-43",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      19.99
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DT4T3TMF": {
+    "asin": "B0DT4T3TMF",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-000Nm2748E-Classic-Lagoon/dp/B0DT4T3TMF/ref=sr_1_45?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-45",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      20.25
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0DK43L6TL": {
+    "asin": "B0DK43L6TL",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Smooth-Lv040hm265-Magliette/dp/B0DK43L6TL/ref=sr_1_46?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-46",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      20.79
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0F4NTYJXD": {
+    "asin": "B0F4NTYJXD",
+    "title": "Calvin Klein",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Lv04Rc272G-Magliette-Medieval/dp/B0F4NTYJXD/ref=sr_1_47?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-47",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      20.9
+    ],
+    "price_dates": [
+      "2026-09-08"
+    ]
+  },
+  "B0GGLLR6G3": {
+    "asin": "B0GGLLR6G3",
+    "title": "Calvin Klein Jeans",
+    "product_url": "https://www.amazon.it/Calvin-Klein-Jeans-T-Shirt-Bianca/dp/B0GGLLR6G3/ref=sr_1_48?dib=eyJ2IjoiMSJ9.oNjvc5e2LEkZKGBWk-fcfHiNfoN_xx04aKZ6l-gJX2TTT1YoySQifs6QjsTdY552jELHfrHAVOkLkuSJ0rwuEtHyzuFtpp5FigoS7uyGssthZFpBARsbg8ygMBTI1ccJvk8keDoMOhK9wv3R8fsWMNwKEQT3xH2flK9Dlee1-aHvCLcbndA0EDLN1y9WFontObaN3r7gvaDLbuTT37WloX7OBmBsonj_0F_JkoHHI7PdXgqeJbjaMqlFdXLxjag9ElIim1g32tc4VZEp9a-0brUqbB4JkCEem7AfwOt-frM.9Szz0AJ58P_MphWQmh_P1e_MOuLiFtLxzCtoSdSvaik&dib_tag=se&keywords=Calvin+Klein+t+shirt+uomo&qid=1788890471&sr=8-48",
+    "category": "fashion_men",
+    "query": "Calvin Klein t shirt uomo",
+    "prices": [
+      20.95
     ],
     "price_dates": [
       "2026-09-08"
