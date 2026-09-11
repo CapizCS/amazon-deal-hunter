@@ -7383,12 +7383,14 @@
         "date": "2026-09-05",
         "price": 24.99
       },
-      24.99
+      24.99,
+      39.13
     ],
     "asin": "B00Q7D30C4",
-    "product_url": "https://www.amazon.it/Pullover-manica-Mountain-cerniera-antracite/dp/B00Q7D30C4/ref=sr_1_3?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-3",
+    "product_url": "https://www.amazon.it/Pullover-manica-Mountain-cerniera-antracite/dp/B00Q7D30C4/ref=sr_1_28?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-28",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B07KRT6LQ2": {
@@ -7400,23 +7402,31 @@
         "date": "2026-09-05",
         "price": 25.99
       },
+      25.99,
       25.99
     ],
     "asin": "B07KRT6LQ2",
-    "product_url": "https://www.amazon.it/Columbia-Light-Cerniera-Intera-Collegiate/dp/B07KRT6LQ2/ref=sr_1_4?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-4",
+    "product_url": "https://www.amazon.it/Columbia-Light-Cerniera-Intera-Collegiate/dp/B07KRT6LQ2/ref=sr_1_2?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-2",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYSV6V3": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 26.31
-      }
+      },
+      34.5
+    ],
+    "asin": "B0DJYSV6V3",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-collegiale-Mountain/dp/B0DJYSV6V3/ref=sr_1_17?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-17",
+    "price_dates": [
+      "2026-09-11"
     ]
   },
   "B0CSPSKBQ2": {
@@ -7445,12 +7455,14 @@
         "date": "2026-09-05",
         "price": 29.11
       },
-      24.02
+      24.02,
+      22.35
     ],
     "asin": "B0DLQPKD5X",
-    "product_url": "https://www.amazon.it/Columbia-Klamath-Range-Foresta-pluviale/dp/B0DLQPKD5X/ref=sr_1_2?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-2",
+    "product_url": "https://www.amazon.it/Columbia-Klamath-Range-Foresta-pluviale/dp/B0DLQPKD5X/ref=sr_1_1?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-1",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B096SZ6HRR": {
@@ -7473,12 +7485,14 @@
         "date": "2026-09-05",
         "price": 30.0
       },
-      42.0
+      42.0,
+      45.5
     ],
     "asin": "B0CMDMQ72Q",
-    "product_url": "https://www.amazon.it/Columbia-2-Pile-Intera-Giacca-Montagna/dp/B0CMDMQ72Q/ref=sr_1_36?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-36",
+    "product_url": "https://www.amazon.it/Columbia-2-Pile-Intera-Giacca-Montagna/dp/B0CMDMQ72Q/ref=sr_1_44?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-44",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLQZLFSK": {
@@ -7490,12 +7504,14 @@
         "date": "2026-09-05",
         "price": 31.4
       },
-      31.09
+      31.09,
+      31.14
     ],
     "asin": "B0DLQZLFSK",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-intera-unisex-collegiale/dp/B0DLQZLFSK/ref=sr_1_9?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-9",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-intera-unisex-collegiale/dp/B0DLQZLFSK/ref=sr_1_7?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-7",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLR7Y6K1": {
@@ -7507,12 +7523,14 @@
         "date": "2026-09-05",
         "price": 31.42
       },
-      31.42
+      31.42,
+      31.12
     ],
     "asin": "B0DLR7Y6K1",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-satinato/dp/B0DLR7Y6K1/ref=sr_1_10?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-10",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-satinato/dp/B0DLR7Y6K1/ref=sr_1_6?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-6",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0BKQYTY8W": {
@@ -7552,12 +7570,14 @@
         "date": "2026-09-05",
         "price": 33.0
       },
+      33.0,
       33.0
     ],
     "asin": "B01JIL8UGM",
-    "product_url": "https://www.amazon.it/Columbia-Fast-Trek-Full-Pile/dp/B01JIL8UGM/ref=sr_1_13?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-13",
+    "product_url": "https://www.amazon.it/Columbia-Fast-Trek-Full-Pile/dp/B01JIL8UGM/ref=sr_1_12?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-12",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYYR1MH": {
@@ -7597,12 +7617,14 @@
         "date": "2026-09-05",
         "price": 33.49
       },
-      33.49
+      33.49,
+      30.14
     ],
     "asin": "B0CN3VPR8P",
-    "product_url": "https://www.amazon.it/Columbia-Park-View-Cerniera-Confezione/dp/B0CN3VPR8P/ref=sr_1_15?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-15",
+    "product_url": "https://www.amazon.it/Columbia-Park-View-Cerniera-Confezione/dp/B0CN3VPR8P/ref=sr_1_5?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-5",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLXDGBH6": {
@@ -7614,12 +7636,14 @@
         "date": "2026-09-05",
         "price": 34.38
       },
-      34.38
+      34.38,
+      31.36
     ],
     "asin": "B0DLXDGBH6",
-    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-cerniera-tabacco/dp/B0DLXDGBH6/ref=sr_1_18?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-18",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-cerniera-tabacco/dp/B0DLXDGBH6/ref=sr_1_8?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-8",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B003VR9I52": {
@@ -7631,12 +7655,14 @@
         "date": "2026-09-05",
         "price": 34.59
       },
-      34.59
+      34.59,
+      33.76
     ],
     "asin": "B003VR9I52",
-    "product_url": "https://www.amazon.it/Columbia-Klamath-II-Cerniera-Maglietta-Escursionismo/dp/B003VR9I52/ref=sr_1_19?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-19",
+    "product_url": "https://www.amazon.it/Columbia-Klamath-II-Cerniera-Maglietta-Escursionismo/dp/B003VR9I52/ref=sr_1_15?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-15",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYQ6FGX": {
@@ -7648,12 +7674,14 @@
         "date": "2026-09-05",
         "price": 34.82
       },
-      34.82
+      34.82,
+      34.93
     ],
     "asin": "B0DJYQ6FGX",
-    "product_url": "https://www.amazon.it/Columbia-Rugged-Ridge-Sherpa-intera/dp/B0DJYQ6FGX/ref=sr_1_20?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-20",
+    "product_url": "https://www.amazon.it/Columbia-Rugged-Ridge-Sherpa-intera/dp/B0DJYQ6FGX/ref=sr_1_19?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-19",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0CNS7TB6J": {
@@ -7710,12 +7738,14 @@
         "date": "2026-09-05",
         "price": 33.99
       },
-      34.0
+      34.0,
+      33.99
     ],
     "asin": "B0DK678MH1",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Half-Snap/dp/B0DK678MH1/ref=sr_1_21_mod_primary_new?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-21",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Half-Snap/dp/B0DK678MH1/ref=sr_1_22_mod_primary_new?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-22",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B08CB5NSTD": {
@@ -7727,12 +7757,14 @@
         "date": "2026-09-05",
         "price": 36.75
       },
+      36.75,
       36.75
     ],
     "asin": "B08CB5NSTD",
-    "product_url": "https://www.amazon.it/Titan-Pass-mezza-pile-taglia/dp/B08CB5NSTD/ref=sr_1_22?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-22",
+    "product_url": "https://www.amazon.it/Titan-Pass-mezza-pile-taglia/dp/B08CB5NSTD/ref=sr_1_23?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-23",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B089FB72TD": {
@@ -7744,12 +7776,14 @@
         "date": "2026-09-05",
         "price": 36.88
       },
+      36.88,
       36.88
     ],
     "asin": "B089FB72TD",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-squalo/dp/B089FB72TD/ref=sr_1_23?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-23",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-squalo/dp/B089FB72TD/ref=sr_1_24?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-24",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0BGKZ3CL8": {
@@ -7761,12 +7795,14 @@
         "date": "2026-09-05",
         "price": 37.16
       },
-      37.17
+      37.17,
+      37.16
     ],
     "asin": "B0BGKZ3CL8",
-    "product_url": "https://www.amazon.it/Columbia-Klamath-Range-Maglia-Tuta/dp/B0BGKZ3CL8/ref=sr_1_24?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-24",
+    "product_url": "https://www.amazon.it/Columbia-Klamath-Range-Maglia-Tuta/dp/B0BGKZ3CL8/ref=sr_1_25?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-25",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLR587MC": {
@@ -7795,23 +7831,31 @@
         "date": "2026-09-05",
         "price": 37.99
       },
-      37.99
+      37.99,
+      35.49
     ],
     "asin": "B0FC7J7LC9",
-    "product_url": "https://www.amazon.it/Columbia-Basin-giacca-intera-fossile/dp/B0FC7J7LC9/ref=sr_1_26?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-26",
+    "product_url": "https://www.amazon.it/Columbia-Basin-giacca-intera-fossile/dp/B0FC7J7LC9/ref=sr_1_20?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-20",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLX4MB9R": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 38.25
-      }
+      },
+      40.77
+    ],
+    "asin": "B0DLX4MB9R",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-cerniera/dp/B0DLX4MB9R/ref=sr_1_33?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-33",
+    "price_dates": [
+      "2026-09-11"
     ]
   },
   "B0CLR3BNL3": {
@@ -7823,12 +7867,14 @@
         "date": "2026-09-05",
         "price": 38.39
       },
+      38.39,
       38.39
     ],
     "asin": "B0CLR3BNL3",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pietra-Scura/dp/B0CLR3BNL3/ref=sr_1_28?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-28",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pietra-Scura/dp/B0CLR3BNL3/ref=sr_1_26?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-26",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B003VR4QF4": {
@@ -7840,12 +7886,14 @@
         "date": "2026-09-05",
         "price": 40.88
       },
-      40.88
+      40.88,
+      40.76
     ],
     "asin": "B003VR4QF4",
-    "product_url": "https://www.amazon.it/Columbia-Camicia-Casual-Black-Medium/dp/B003VR4QF4/ref=sr_1_31?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-31",
+    "product_url": "https://www.amazon.it/Columbia-Camicia-Casual-Black-Medium/dp/B003VR4QF4/ref=sr_1_32?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-32",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK5Z5ZWV": {
@@ -7857,12 +7905,14 @@
         "date": "2026-09-05",
         "price": 40.92
       },
-      40.92
+      40.92,
+      41.03
     ],
     "asin": "B0DK5Z5ZWV",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-taglia/dp/B0DK5Z5ZWV/ref=sr_1_32?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-32",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-taglia/dp/B0DK5Z5ZWV/ref=sr_1_36?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-36",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0HHM633SM": {
@@ -7874,12 +7924,14 @@
         "date": "2026-09-05",
         "price": 40.99
       },
-      41.0
+      41.0,
+      40.99
     ],
     "asin": "B0HHM633SM",
-    "product_url": "https://www.amazon.it/Columbia-Pile-Cerniera-TrekTM-Light/dp/B0HHM633SM/ref=sr_1_33?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-33",
+    "product_url": "https://www.amazon.it/Columbia-Pile-Cerniera-TrekTM-Light/dp/B0HHM633SM/ref=sr_1_34?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-34",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0GVMP6HH9": {
@@ -7891,12 +7943,14 @@
         "date": "2026-09-05",
         "price": 40.99
       },
-      41.0
+      41.0,
+      40.99
     ],
     "asin": "B0GVMP6HH9",
-    "product_url": "https://www.amazon.it/Columbia-Pile-Cerniera-TrekTM-Light/dp/B0GVMP6HH9/ref=sr_1_34?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-34",
+    "product_url": "https://www.amazon.it/Columbia-Pile-Cerniera-TrekTM-Light/dp/B0GVMP6HH9/ref=sr_1_35?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-35",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYPXJDH": {
@@ -7925,12 +7979,14 @@
         "date": "2026-09-05",
         "price": 42.79
       },
+      42.79,
       42.79
     ],
     "asin": "B00Q7COVFA",
-    "product_url": "https://www.amazon.it/Columbia-uomo-Giacca-pile-arancione/dp/B00Q7COVFA/ref=sr_1_39?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-39",
+    "product_url": "https://www.amazon.it/Columbia-uomo-Giacca-pile-arancione/dp/B00Q7COVFA/ref=sr_1_38?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-38",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FYJKY6WK": {
@@ -7942,12 +7998,14 @@
         "date": "2026-09-05",
         "price": 43.22
       },
-      43.23
+      43.23,
+      43.22
     ],
     "asin": "B0FYJKY6WK",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-cerniera-colore/dp/B0FYJKY6WK/ref=sr_1_41?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-41",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-cerniera-colore/dp/B0FYJKY6WK/ref=sr_1_39?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-39",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLQM9W7K": {
@@ -7970,12 +8028,14 @@
         "date": "2026-09-05",
         "price": 43.52
       },
+      43.6,
       43.6
     ],
     "asin": "B0084AXKCS",
-    "product_url": "https://www.amazon.it/Columbia-uomini-Steens-Mountain-giacca/dp/B0084AXKCS/ref=sr_1_43?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-43",
+    "product_url": "https://www.amazon.it/Columbia-uomini-Steens-Mountain-giacca/dp/B0084AXKCS/ref=sr_1_40?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-40",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK5XPT7R": {
@@ -8026,12 +8086,14 @@
         "date": "2026-09-05",
         "price": 45.67
       },
+      44.42,
       44.42
     ],
     "asin": "B096SZJGN2",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Full-Collegiate/dp/B096SZJGN2/ref=sr_1_44?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-44",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Full-Collegiate/dp/B096SZJGN2/ref=sr_1_43?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-43",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B076TSZW64": {
@@ -8043,23 +8105,31 @@
         "date": "2026-09-05",
         "price": 22.0
       },
+      27.95,
       27.95
     ],
     "asin": "B076TSZW64",
-    "product_url": "https://www.amazon.it/Columbia-Donna-Glacial-Black-Taglia/dp/B076TSZW64/ref=sr_1_4?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-4",
+    "product_url": "https://www.amazon.it/Columbia-Donna-Glacial-Black-Taglia/dp/B076TSZW64/ref=sr_1_4?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-4",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK679G9M": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 24.8
-      }
+      },
+      33.8
+    ],
+    "asin": "B0DK679G9M",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Stampato-Deschutes/dp/B0DK679G9M/ref=sr_1_13?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-13",
+    "price_dates": [
+      "2026-09-11"
     ]
   },
   "B0CLQWLLM5": {
@@ -8093,12 +8163,14 @@
         "date": "2026-09-05",
         "price": 26.07
       },
+      26.02,
       26.02
     ],
     "asin": "B0DLR7KPYJ",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-lavanda/dp/B0DLR7KPYJ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-1",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-lavanda/dp/B0DLR7KPYJ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-1",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0CLR3BQV7": {
@@ -8110,12 +8182,14 @@
         "date": "2026-09-05",
         "price": 26.64
       },
+      26.64,
       26.64
     ],
     "asin": "B0CLR3BQV7",
-    "product_url": "https://www.amazon.it/Columbia-Felpa-stampa-Glacial-confezione/dp/B0CLR3BQV7/ref=sr_1_2?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-2",
+    "product_url": "https://www.amazon.it/Columbia-Felpa-stampa-Glacial-confezione/dp/B0CLR3BQV7/ref=sr_1_2?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-2",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FB34DNFB": {
@@ -8127,12 +8201,14 @@
         "date": "2026-09-05",
         "price": 26.99
       },
-      26.99
+      26.99,
+      27.49
     ],
     "asin": "B0FB34DNFB",
-    "product_url": "https://www.amazon.it/Columbia-Gilet-Benton-Springs-colore/dp/B0FB34DNFB/ref=sr_1_3?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-3",
+    "product_url": "https://www.amazon.it/Columbia-Gilet-Benton-Springs-colore/dp/B0FB34DNFB/ref=sr_1_3?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-3",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK7QKF2R": {
@@ -8161,12 +8237,14 @@
         "date": "2026-09-05",
         "price": 30.99
       },
+      30.99,
       30.99
     ],
     "asin": "B08P4SPX1L",
-    "product_url": "https://www.amazon.it/Columbia-Basin-Giacca-Bright-Geranio/dp/B08P4SPX1L/ref=sr_1_7?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-7",
+    "product_url": "https://www.amazon.it/Columbia-Basin-Giacca-Bright-Geranio/dp/B08P4SPX1L/ref=sr_1_7?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-7",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLQPFNPY": {
@@ -8178,12 +8256,14 @@
         "date": "2026-09-05",
         "price": 31.31
       },
+      31.0,
       31.0
     ],
     "asin": "B0DLQPFNPY",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-intera/dp/B0DLQPFNPY/ref=sr_1_8?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-8",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-unisex-cerniera-intera/dp/B0DLQPFNPY/ref=sr_1_8?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-8",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B07K2YRXLF": {
@@ -8195,12 +8275,14 @@
         "date": "2026-09-05",
         "price": 31.57
       },
-      31.57
+      31.57,
+      31.56
     ],
     "asin": "B07K2YRXLF",
-    "product_url": "https://www.amazon.it/Columbia-Womens-Benton-Springs-Pullover/dp/B07K2YRXLF/ref=sr_1_9?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-9",
+    "product_url": "https://www.amazon.it/Columbia-Womens-Benton-Springs-Pullover/dp/B07K2YRXLF/ref=sr_1_9?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-9",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FB364YVD": {
@@ -8212,12 +8294,14 @@
         "date": "2026-09-05",
         "price": 33.14
       },
+      32.0,
       32.0
     ],
     "asin": "B0FB364YVD",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Giacca-cerniera/dp/B0FB364YVD/ref=sr_1_10?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-10",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Giacca-cerniera/dp/B0FB364YVD/ref=sr_1_10?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-10",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLRN77QQ": {
@@ -8257,12 +8341,14 @@
         "date": "2026-09-05",
         "price": 34.19
       },
+      36.0,
       36.0
     ],
     "asin": "B00CSN5L06",
-    "product_url": "https://www.amazon.it/Columbia-Fast-Giacca-Donna-Bianco/dp/B00CSN5L06/ref=sr_1_16_mod_primary_new?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-16",
+    "product_url": "https://www.amazon.it/Columbia-Fast-Giacca-Donna-Bianco/dp/B00CSN5L06/ref=sr_1_15?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-15",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK4JC9TW": {
@@ -8302,12 +8388,14 @@
         "date": "2026-09-05",
         "price": 36.99
       },
+      36.99,
       36.99
     ],
     "asin": "B0FC7MWV3N",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-Essential-cerniera-intera/dp/B0FC7MWV3N/ref=sr_1_17?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-17",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Essential-cerniera-intera/dp/B0FC7MWV3N/ref=sr_1_16?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-16",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FYK9RX89": {
@@ -8319,12 +8407,14 @@
         "date": "2026-09-05",
         "price": 37.71
       },
+      37.71,
       37.71
     ],
     "asin": "B0FYK9RX89",
-    "product_url": "https://www.amazon.it/Columbia-Glacial-donna-pile-minerale/dp/B0FYK9RX89/ref=sr_1_18?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-18",
+    "product_url": "https://www.amazon.it/Columbia-Glacial-donna-pile-minerale/dp/B0FYK9RX89/ref=sr_1_17?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-17",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B076TMKHQD": {
@@ -8358,12 +8448,14 @@
         "date": "2026-09-05",
         "price": 39.49
       },
-      39.5
+      39.5,
+      39.49
     ],
     "asin": "B0CN3XCDXW",
-    "product_url": "https://www.amazon.it/Columbia-Tech-Pile-Cerniera-Intera-m%C3%A9lange/dp/B0CN3XCDXW/ref=sr_1_20?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-20",
+    "product_url": "https://www.amazon.it/Columbia-Tech-Pile-Cerniera-Intera-m%C3%A9lange/dp/B0CN3XCDXW/ref=sr_1_18?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-18",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLRQ2VYX": {
@@ -8386,12 +8478,14 @@
         "date": "2026-09-05",
         "price": 39.98
       },
+      39.98,
       39.98
     ],
     "asin": "B072KHXLSB",
-    "product_url": "https://www.amazon.it/Columbia-1748361-Giacche-Maglioni-Donna/dp/B072KHXLSB/ref=sr_1_22?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-22",
+    "product_url": "https://www.amazon.it/Columbia-1748361-Giacche-Maglioni-Donna/dp/B072KHXLSB/ref=sr_1_21?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-21",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FYK42S6J": {
@@ -8403,12 +8497,14 @@
         "date": "2026-09-05",
         "price": 40.22
       },
+      40.22,
       40.22
     ],
     "asin": "B0FYK42S6J",
-    "product_url": "https://www.amazon.it/Columbia-Glacial-Light-donna-grande/dp/B0FYK42S6J/ref=sr_1_23?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-23",
+    "product_url": "https://www.amazon.it/Columbia-Glacial-Light-donna-grande/dp/B0FYK42S6J/ref=sr_1_22?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-22",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FYJZZ6FY": {
@@ -8454,12 +8550,14 @@
         "date": "2026-09-05",
         "price": 40.25
       },
-      40.25
+      40.25,
+      40.22
     ],
     "asin": "B08CMJLS9H",
-    "product_url": "https://www.amazon.it/Columbia-Peak-Cerniera-Donna-Black/dp/B08CMJLS9H/ref=sr_1_26?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-26",
+    "product_url": "https://www.amazon.it/Columbia-Peak-Cerniera-Donna-Black/dp/B08CMJLS9H/ref=sr_1_23?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-23",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B08QJR4421": {
@@ -8482,12 +8580,14 @@
         "date": "2026-09-05",
         "price": 41.43
       },
+      41.43,
       41.43
     ],
     "asin": "B0DLQK4VD1",
-    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-lavanda/dp/B0DLQK4VD1/ref=sr_1_28?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-28",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-lavanda/dp/B0DLQK4VD1/ref=sr_1_25?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-25",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B08QJRJPFP": {
@@ -8499,12 +8599,14 @@
         "date": "2026-09-05",
         "price": 41.6
       },
+      41.6,
       41.6
     ],
     "asin": "B08QJRJPFP",
-    "product_url": "https://www.amazon.it/Columbia-Hart-Mountain-Felpa-Donna/dp/B08QJRJPFP/ref=sr_1_29?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-29",
+    "product_url": "https://www.amazon.it/Columbia-Hart-Mountain-Felpa-Donna/dp/B08QJRJPFP/ref=sr_1_26?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-26",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLRCT9RY": {
@@ -8533,12 +8635,14 @@
         "date": "2026-09-05",
         "price": 46.06
       },
-      46.06
+      46.06,
+      45.85
     ],
     "asin": "B08QJRGSP4",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Intera-Donna/dp/B08QJRGSP4/ref=sr_1_33?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-33",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Intera-Donna/dp/B08QJRGSP4/ref=sr_1_31?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-31",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B087VHH8NV": {
@@ -8550,12 +8654,14 @@
         "date": "2026-09-05",
         "price": 46.99
       },
+      46.99,
       46.99
     ],
     "asin": "B087VHH8NV",
-    "product_url": "https://www.amazon.it/Columbia-Printed-Giacche-Nocturnal-Sparkler/dp/B087VHH8NV/ref=sr_1_34?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-34",
+    "product_url": "https://www.amazon.it/Columbia-Printed-Giacche-Nocturnal-Sparkler/dp/B087VHH8NV/ref=sr_1_32?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-32",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B073K16TJD": {
@@ -8567,12 +8673,14 @@
         "date": "2026-09-05",
         "price": 46.99
       },
+      46.99,
       46.99
     ],
     "asin": "B073K16TJD",
-    "product_url": "https://www.amazon.it/Columbia-Printed-Giacca-Donna-Grigio/dp/B073K16TJD/ref=sr_1_35?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-35",
+    "product_url": "https://www.amazon.it/Columbia-Printed-Giacca-Donna-Grigio/dp/B073K16TJD/ref=sr_1_33?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-33",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYT7FBL": {
@@ -8584,12 +8692,14 @@
         "date": "2026-09-05",
         "price": 47.29
       },
+      47.29,
       47.29
     ],
     "asin": "B0DJYT7FBL",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-cerniera-confezione/dp/B0DJYT7FBL/ref=sr_1_36?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-36",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-cerniera-confezione/dp/B0DJYT7FBL/ref=sr_1_34?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-34",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLRNVK9B": {
@@ -8612,12 +8722,14 @@
         "date": "2026-09-05",
         "price": 49.53
       },
-      49.53
+      49.53,
+      48.4
     ],
     "asin": "B0DLXG9ZMS",
-    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Felpa-Confezione/dp/B0DLXG9ZMS/ref=sr_1_38?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-38",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Felpa-Confezione/dp/B0DLXG9ZMS/ref=sr_1_35?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-35",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FYK4YHBW": {
@@ -8629,12 +8741,14 @@
         "date": "2026-09-05",
         "price": 49.95
       },
+      49.95,
       49.95
     ],
     "asin": "B0FYK4YHBW",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Anticato/dp/B0FYK4YHBW/ref=sr_1_39?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-39",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Anticato/dp/B0FYK4YHBW/ref=sr_1_37?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-37",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B088TCQXRR": {
@@ -8646,12 +8760,14 @@
         "date": "2026-09-05",
         "price": 50.29
       },
+      50.29,
       50.29
     ],
     "asin": "B088TCQXRR",
-    "product_url": "https://www.amazon.it/Columbia-Benton-SpringsTM-1372111-integrale/dp/B088TCQXRR/ref=sr_1_40?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-40",
+    "product_url": "https://www.amazon.it/Columbia-Benton-SpringsTM-1372111-integrale/dp/B088TCQXRR/ref=sr_1_38?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-38",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLRD21C3": {
@@ -8702,12 +8818,14 @@
         "date": "2026-09-05",
         "price": 52.0
       },
+      52.0,
       52.0
     ],
     "asin": "B0B3KPH35H",
-    "product_url": "https://www.amazon.it/Columbia-Park-Fleece-Felpa-Donna/dp/B0B3KPH35H/ref=sr_1_45?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-45",
+    "product_url": "https://www.amazon.it/Columbia-Park-Fleece-Felpa-Donna/dp/B0B3KPH35H/ref=sr_1_43?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-43",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B08QJPXG1Q": {
@@ -8719,12 +8837,14 @@
         "date": "2026-09-05",
         "price": 52.0
       },
+      52.0,
       52.0
     ],
     "asin": "B08QJPXG1Q",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Corta-Donna/dp/B08QJPXG1Q/ref=sr_1_46?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-46",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Corta-Donna/dp/B08QJPXG1Q/ref=sr_1_44?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-44",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK7RHRQP": {
@@ -8746,13 +8866,19 @@
   },
   "B0GFNQN767": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
+    "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 54.39
-      }
+      },
+      54.39
+    ],
+    "asin": "B0GFNQN767",
+    "product_url": "https://www.amazon.it/Columbia-Timber-Meadow-Fleece-Giacca/dp/B0GFNQN767/ref=sr_1_48?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-48",
+    "price_dates": [
+      "2026-09-11"
     ]
   },
   "B0GFNGFPPH": {
@@ -8852,19 +8978,21 @@
   },
   "B0CN3W8Z6W": {
     "title": "Columbia",
-    "category": "fashion_unisex",
-    "query": "Columbia giacca uomo donna",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 41.78
       },
+      43.99,
       43.99
     ],
     "asin": "B0CN3W8Z6W",
-    "product_url": "https://www.amazon.it/Columbia-Basin-Butte-cerniera-confezione/dp/B0CN3W8Z6W/ref=sr_1_5?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-5",
+    "product_url": "https://www.amazon.it/Columbia-Basin-Butte-cerniera-confezione/dp/B0CN3W8Z6W/ref=sr_1_41?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-41",
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0D4CH57NM": {
@@ -16679,40 +16807,46 @@
   "B0BKR1S41Y": {
     "asin": "B0BKR1S41Y",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pullover-Fossile/dp/B0BKR1S41Y/ref=sr_1_11?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-11",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pullover-Fossile/dp/B0BKR1S41Y/ref=sr_1_10?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-10",
     "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
+      31.99,
       31.99
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B076X664KF": {
     "asin": "B076X664KF",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Uomo-Maglione-grigio-4X/dp/B076X664KF/ref=sr_1_27?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-27",
+    "product_url": "https://www.amazon.it/Columbia-Uomo-Maglione-grigio-4X/dp/B076X664KF/ref=sr_1_18?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-18",
     "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
-      38.02
+      38.02,
+      34.59
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLX4PB4W": {
     "asin": "B0DLX4PB4W",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Juniper-Peak-Giacca-tabacco/dp/B0DLX4PB4W/ref=sr_1_38?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-38",
+    "product_url": "https://www.amazon.it/Columbia-Juniper-Peak-Giacca-tabacco/dp/B0DLX4PB4W/ref=sr_1_30?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-30",
     "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
-      42.33
+      42.33,
+      40.08
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYQ5SNT": {
@@ -16731,27 +16865,31 @@
   "B08QJV5825": {
     "asin": "B08QJV5825",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Intera-Cappuccio/dp/B08QJV5825/ref=sr_1_46?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-46",
+    "product_url": "https://www.amazon.it/Columbia-Giacca-Cerniera-Intera-Cappuccio/dp/B08QJV5825/ref=sr_1_45?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-45",
     "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
-      46.0
+      46.0,
+      45.99
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B07L4JHVFC": {
     "asin": "B07L4JHVFC",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Cerniera-Modello/dp/B07L4JHVFC/ref=sr_1_47?dib=eyJ2IjoiMSJ9.K2_h4o2Uisva1_TLPgXDR-opI9D_pXnE8qcofJ6pXcXHt76PNmUui9VCCC_mCMRK14D83QzAOD3SfxhAoD128bYK1WKuHAKZ992C4Ow5jp7pF59d2u_o_MdeEesYkO-kv8XZB9_lo5S14zd8fkgz8S76jNkfITpM4PZTtkcYEnGrfoGKTfP1iKt3SRVipszkU9vdjd0G2LvNbTFGahkgDlVbqX0QrUiWQgpY95AqunwEZaBqaM_xc_0EvInUtZ2UhZe6PV2rp02q7ifYm9sxrEdJO0auxuFNqrAS-sRg3BM.jcUBY5AX54aPDY_D3NjfNNMQ6NPZWfnJ9tGzvHixQG0&dib_tag=se&keywords=Columbia+pile+uomo&qid=1788868865&sr=8-47",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Cerniera-Modello/dp/B07L4JHVFC/ref=sr_1_46?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-46",
     "category": "fashion_men",
     "query": "Columbia pile uomo",
     "prices": [
+      46.71,
       46.71
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLQZQVV8": {
@@ -16770,14 +16908,16 @@
   "B0CLQV4MX5": {
     "asin": "B0CLQV4MX5",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Fleece-Confezione/dp/B0CLQV4MX5/ref=sr_1_5?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-5",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Fleece-Confezione/dp/B0CLQV4MX5/ref=sr_1_5?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-5",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
+      27.99,
       27.99
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DK684CZP": {
@@ -16809,14 +16949,16 @@
   "B0DK7S1JWM": {
     "asin": "B0DK7S1JWM",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Deschutes/dp/B0DK7S1JWM/ref=sr_1_15?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-15",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Deschutes/dp/B0DK7S1JWM/ref=sr_1_14?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-14",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
+      35.98,
       35.98
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLR8H64V": {
@@ -16835,27 +16977,31 @@
   "B0DLQYV4B4": {
     "asin": "B0DLQYV4B4",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Felpa-Confezione/dp/B0DLQYV4B4/ref=sr_1_27?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-27",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Felpa-Confezione/dp/B0DLQYV4B4/ref=sr_1_24?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-24",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
+      40.99,
       40.99
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLQTRFDP": {
     "asin": "B0DLQTRFDP",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Colore-Grigio/dp/B0DLQTRFDP/ref=sr_1_31?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-31",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Colore-Grigio/dp/B0DLQTRFDP/ref=sr_1_12?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-12",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
-      44.99
+      44.99,
+      33.49
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DLR3VH5P": {
@@ -16887,53 +17033,61 @@
   "B0DJYVCM6P": {
     "asin": "B0DJYVCM6P",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Sherpa-cerniera-intera-giacca/dp/B0DJYVCM6P/ref=sr_1_42?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-42",
+    "product_url": "https://www.amazon.it/Columbia-Sherpa-cerniera-intera-giacca/dp/B0DJYVCM6P/ref=sr_1_40?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-40",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
+      50.73,
       50.73
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0DJYWFV9F": {
     "asin": "B0DJYWFV9F",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Fast-Trek-cerniera-confezione/dp/B0DJYWFV9F/ref=sr_1_44?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-44",
+    "product_url": "https://www.amazon.it/Columbia-Fast-Trek-cerniera-confezione/dp/B0DJYWFV9F/ref=sr_1_42?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-42",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
-      51.85
+      51.85,
+      51.81
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0CN3WNZV1": {
     "asin": "B0CN3WNZV1",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Panorama-Sherpa-Fleece-Pacchetto/dp/B0CN3WNZV1/ref=sr_1_48?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoU0lNuQLKrKjf4k5H8C1T4YDXQqIDShXFrluHd_5yyfc4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebLFrQ7XfNXelQySz8miTlWvbDEhCKx2Ii340TyUT6KVWXetBc5eRcOo_4Bfy68zeqc2MNx0yCTBVJnv11GGkrcZm-xZzuu3jKe1RDKTh3kdwztKrfheRhjBsESjFJmaInxwIIsHiJ3w6BifdQgKFWDs.RKbWplnjeyA-A2NJcifl8Jq0qmZ_WH7DZB3zp79Acsw&dib_tag=se&keywords=Columbia+pile+donna&qid=1788868871&sr=8-48",
+    "product_url": "https://www.amazon.it/Columbia-Panorama-Sherpa-Fleece-Pacchetto/dp/B0CN3WNZV1/ref=sr_1_45?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-45",
     "category": "fashion_women",
     "query": "Columbia pile donna",
     "prices": [
-      54.0
+      54.0,
+      53.99
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B082XY613H": {
     "asin": "B082XY613H",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Fleece-Giacche-Shells-Stone/dp/B082XY613H/ref=sr_1_4?dib=eyJ2IjoiMSJ9.F-NZwlwz668seOURo0jGfUOmfp9f91FDh-cFd2Omn2a6E-nHSCJMxvbjLxtvkuKzxBpQlcQpAFxY9n7msO1n2lgwYV3ab9ycZ4bDVzCFPRpwaNN9cmC8R_UQhtSDBfTUlNKhhJcgY5F-luI8qn39ElTKDc3ne4bh78T_MqeLDm2TTcjuvdIYdcQwlPfw70jae7C7TeiAZDMV9d_p7SYGto94X5pNDPfiVV4C1U3LEkQmkFS_MZvqRx_oSi5JJmcB5y2kvYt0oSor9ek8_ItHWCotLJ7o-KfOWz2R6U-O-Pk.OezHJ0RxmBxKtsjMucypDwnDzvpLNLQ2K8uuTAjxQpM&dib_tag=se&keywords=Columbia+giacca+uomo+donna&qid=1788890466&sr=8-4",
-    "category": "fashion_unisex",
-    "query": "Columbia giacca uomo donna",
+    "product_url": "https://www.amazon.it/Columbia-Fleece-Giacche-Shells-Stone/dp/B082XY613H/ref=sr_1_27?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-27",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
     "prices": [
-      42.0
+      42.0,
+      38.52
     ],
     "price_dates": [
-      "2026-09-08"
+      "2026-09-08",
+      "2026-09-11"
     ]
   },
   "B0FC71ZDN9": {
@@ -18699,6 +18853,292 @@
     "query": "The North Face giacca donna",
     "prices": [
       83.71
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0FC7K7QSW": {
+    "asin": "B0FC7K7QSW",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Felpa-Klamath-Range-muschio/dp/B0FC7K7QSW/ref=sr_1_3?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-3",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      25.99
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0CSPPZ6S4": {
+    "asin": "B0CSPPZ6S4",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Fast-Fleece-Giacche-Softshell/dp/B0CSPPZ6S4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-4",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      29.06
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0076R6O64": {
+    "asin": "B0076R6O64",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Mountain-Front-Zip-Charcoal-Heather/dp/B0076R6O64/ref=sr_1_9?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-9",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      31.49
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0BQ7JN7FX": {
+    "asin": "B0BQ7JN7FX",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Gamma-Klamath-Pullover-Pietra/dp/B0BQ7JN7FX/ref=sr_1_11?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-11",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      32.43
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DJYS96R6": {
+    "asin": "B0DJYS96R6",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-cerniera/dp/B0DJYS96R6/ref=sr_1_14?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-14",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      33.38
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLXG2DNP": {
+    "asin": "B0DLXG2DNP",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-intera/dp/B0DLXG2DNP/ref=sr_1_21?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-21",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      35.5
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLRF6FDV": {
+    "asin": "B0DLRF6FDV",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-tabacco-mimetico/dp/B0DLRF6FDV/ref=sr_1_31?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-31",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      40.49
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLR42BRJ": {
+    "asin": "B0DLR42BRJ",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Fleece-Giacca-Cerniera-Intera/dp/B0DLR42BRJ/ref=sr_1_37?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-37",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      42.22
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0C63R9XVC": {
+    "asin": "B0C63R9XVC",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Bambino-Mensa/dp/B0C63R9XVC/ref=sr_1_42?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-42",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      44.41
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B00AI3FJPA": {
+    "asin": "B00AI3FJPA",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Summit-Giacca-Rosso-Rocket/dp/B00AI3FJPA/ref=sr_1_47?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-47",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      47.24
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B07J21L5JX": {
+    "asin": "B07J21L5JX",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Sportswear-Felpa-Powder-Black-L/dp/B07J21L5JX/ref=sr_1_48?dib=eyJ2IjoiMSJ9.gVfSLgpU-v09mF2yx8_QzJhTHQxGfg_7mO8L3zyPakn9OCijgqkHLbDRbYI_fYcAQ94i7Fjj_v9qXjY2HFU96Gx7GZX2lvXH3nnEndJ9sPL1rATXEE1biUXjmTZiT28WsnMku1IP1gbrh7LPN5njIeu7q3hUf4oqznU7UPvoghaWYlJUsSbrAdJ9A5V4aPiy3LOJq9D8j6jdWbpKNcWker7hv33M-zQEeco6lmbGdXjIdMkVBdcujljM_JEo8G5kBdp7U4uzakyMtmKszhCOYxO8I1FfOibPlIeLsSDKEDM.sgQwRx7Qj0fkNa2a4TFTiF37oOoHJJqSEoLsOOVFrQY&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789149667&sr=8-48",
+    "category": "fashion_men",
+    "query": "Columbia pile uomo",
+    "prices": [
+      47.55
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DK7RKN3Z": {
+    "asin": "B0DK7RKN3Z",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Confezione/dp/B0DK7RKN3Z/ref=sr_1_6?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-6",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      28.36
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B003NX8C6K": {
+    "asin": "B003NX8C6K",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Benton-springstm-Blush-Grigio/dp/B003NX8C6K/ref=sr_1_11?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-11",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      32.15
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLR3SLFZ": {
+    "asin": "B0DLR3SLFZ",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Zing-Snowflight-Glacial-cerniera/dp/B0DLR3SLFZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-19",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      39.51
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLRL3LHJ": {
+    "asin": "B0DLRL3LHJ",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Sequoia-Grove-Giacca-confezione/dp/B0DLRL3LHJ/ref=sr_1_27?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-27",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      42.0
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DK4K9BKH": {
+    "asin": "B0DK4K9BKH",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Jacket-confezione/dp/B0DK4K9BKH/ref=sr_1_28?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-28",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      42.99
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLR9Y2B1": {
+    "asin": "B0DLR9Y2B1",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Felpa-Donna-Intera-Confezione/dp/B0DLR9Y2B1/ref=sr_1_29?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-29",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      43.77
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0GFJ7DV3V": {
+    "asin": "B0GFJ7DV3V",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Jasper-Ridge-bottoni-pressione/dp/B0GFJ7DV3V/ref=sr_1_30?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-30",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      44.99
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLQRDDW7": {
+    "asin": "B0DLQRDDW7",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Jasper-Ridge-bottoni-automatici/dp/B0DLQRDDW7/ref=sr_1_39?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-39",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      50.49
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0GFNL9NLN": {
+    "asin": "B0GFNL9NLN",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Timber-Meadow-Fleece-Sedona/dp/B0GFNL9NLN/ref=sr_1_41?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-41",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      51.7
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0DLXQKSY9": {
+    "asin": "B0DLXQKSY9",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Donna-Sequoia-Everblue-Crushed/dp/B0DLXQKSY9/ref=sr_1_46?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-46",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      53.99
+    ],
+    "price_dates": [
+      "2026-09-11"
+    ]
+  },
+  "B0CLR9THL8": {
+    "asin": "B0CLR9THL8",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-PFG-Uncharted-donna-taglia/dp/B0CLR9THL8/ref=sr_1_47?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBFiQDrRHC7ZI173RfAcxSsg4uj5fL3jJMvn8X7P1axCsG8WS-tSaYtqmT9wqxAYebH_LV6fikkgZNOxgZyBFLq_aAngvt-jvsCqwH1HrG1lyuk5YdCmmJGgKsIxnksF53_vssvBHgpcX-NqtCc7v8_35UrP77TlRTYxTJFz3w1xK2laXymjD4gYxsmBVWps7EwC2Wx8IfuXo_1oeh0EQ_wE.7hlmwNTA8LRMP0t8EA0E83Z6cWaAxtQmc0SZmP5BMrc&dib_tag=se&keywords=Columbia+pile+donna&qid=1789149670&sr=8-47",
+    "category": "fashion_women",
+    "query": "Columbia pile donna",
+    "prices": [
+      54.09
     ],
     "price_dates": [
       "2026-09-11"
