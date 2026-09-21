@@ -173,7 +173,7 @@
     ]
   },
   "B00HWVNPTI": {
-    "category": "clothing",
+    "category": "fashion_men",
     "title": "Regatta",
     "url": "https://www.amazon.it/Regatta-Thompson-Giacca-pile-Large/dp/B00HWVNPTI/ref=sr_1_6?dib=eyJ2IjoiMSJ9.lS49a4eRhsuNMmL6XDvdBzj3faWAO5ODK9KVfEsYKnyenCWTRZFHS-IhgZqeaGDHKnq2hC7jmswtKAKYEdsWKZuYp0CdVPKJngYFpA5jpjPv0DpML5SopT0n01-nIcIzZeyIsqBH7YvN56MUmANOdNzuawus_A0XueOEUwKFVKmfJ0QzaBi2WcdMw5HQXLsy6yi0L35mJHTtcChlVq6OEJujvAaAHRwWNl1V0M1RYhrLG-NlQUWvRMRlVloYcPjrrTbH3ZbJ-Yaeaxvm50LEeoOXs7rYm0X2yciWclbFmJo.7DyHVkRBCiAYHSwEb-NHGbxtaax5MMjBmd3pXWtK2LU&dib_tag=se&keywords=abbigliamento+outdoor&qid=1788465705&sr=8-6",
     "image_url": "https://m.media-amazon.com/images/I/81oT66i16EL._AC_UL320_.jpg",
@@ -183,7 +183,14 @@
       {
         "date": "2026-09-03",
         "price": 12.99
-      }
+      },
+      12.99
+    ],
+    "asin": "B00HWVNPTI",
+    "product_url": "https://www.amazon.it/Regatta-Thompson-Giacca-pile-Large/dp/B00HWVNPTI/ref=sr_1_3?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-3",
+    "query": "The North Face pile uomo",
+    "price_dates": [
+      "2026-09-21"
     ]
   },
   "B0FQ34PC8Q": {
@@ -8614,7 +8621,7 @@
   "B07KRT6LQ2": {
     "title": "Columbia",
     "category": "fashion_men",
-    "query": "Columbia pile uomo",
+    "query": "The North Face pile uomo",
     "prices": [
       {
         "date": "2026-09-05",
@@ -8623,15 +8630,17 @@
       25.99,
       25.99,
       25.99,
+      25.99,
       25.99
     ],
     "asin": "B07KRT6LQ2",
-    "product_url": "https://www.amazon.it/Columbia-Light-Cerniera-Intera-Collegiate/dp/B07KRT6LQ2/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1Sk5Nlz8PerFlqpQrqvunphTHQxGfg_7mO8L3zyPakmZIGuurzCgojIrqFlbd1gNSHozx2Ugo1vTHiiySonASNV4F1fk-Nz9kFVPdehf5ceobUpBfRB6o23lXSRo3W2QYs5eBJj2XoVtAcUBQZ5xjhji_gcVHQEK6hA6HvWV0HWx7fmi6Pak-QESnZvliA_X7Twp9DGndFXX5ZHsKawZAotBEOnVvixoOw7xA3DD_Sfs2qa7tk3Dn0Qi4ZNiDIBhcEa3TEI1DPOcwq3id663IaFxLcQu2rO104vIIEN75BM.EVAqzQRFmlvN15IX2q7H-2Vlhq0K5VUdu1i-QMv6mdA&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789732861&sr=8-2",
+    "product_url": "https://www.amazon.it/Columbia-Light-Cerniera-Intera-Collegiate/dp/B07KRT6LQ2/ref=sr_1_22?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-22",
     "price_dates": [
       "2026-09-08",
       "2026-09-11",
       "2026-09-15",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   "B0DJYSV6V3": {
@@ -8691,13 +8700,19 @@
   },
   "B096SZ6HRR": {
     "title": "Columbia",
-    "category": "outdoor_clothing",
-    "query": "Columbia pile uomo",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
     "prices": [
       {
         "date": "2026-09-05",
         "price": 29.43
-      }
+      },
+      31.49
+    ],
+    "asin": "B096SZ6HRR",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Giacca-Mountain-Collegiate/dp/B096SZ6HRR/ref=sr_1_40?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-40",
+    "price_dates": [
+      "2026-09-21"
     ]
   },
   "B0CMDMQ72Q": {
@@ -9513,7 +9528,7 @@
   "B0FB34DNFB": {
     "title": "Columbia",
     "category": "fashion_women",
-    "query": "Columbia pile donna",
+    "query": "The North Face pile donna",
     "prices": [
       {
         "date": "2026-09-05",
@@ -9522,15 +9537,17 @@
       26.99,
       27.49,
       26.99,
+      26.99,
       26.99
     ],
     "asin": "B0FB34DNFB",
-    "product_url": "https://www.amazon.it/Columbia-Gilet-Benton-Springs-colore/dp/B0FB34DNFB/ref=sr_1_3?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBOPXCx4fBgHnO5NZMpzl87weuzB42Z8m58gFUuX6Ucqcbn82bArhLPOTb12Q1oCsilWX88EoaUMUdGvZUF6bK-oURoiwiw8bVzfnkLZwu7nX16iJZI-wxv7oWRuhG1bWuQnbqwlP-df_Ctg8WENGhw-Nsr3moS_7bp34by4IJJfGl_JD6yZ0fVys6ePHYP8iA_hcocUAG4plBbSlI5DP_dU.sN_uk5eu4wvPAWwngoyN9_vyCwJkvHzIfHGKeJtNzbQ&dib_tag=se&keywords=Columbia+pile+donna&qid=1789732865&sr=8-3",
+    "product_url": "https://www.amazon.it/Columbia-Gilet-Benton-Springs-colore/dp/B0FB34DNFB/ref=sr_1_35?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-35",
     "price_dates": [
       "2026-09-08",
       "2026-09-11",
       "2026-09-15",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   "B0DK7QKF2R": {
@@ -9618,7 +9635,7 @@
   "B0FB364YVD": {
     "title": "Columbia",
     "category": "fashion_women",
-    "query": "Columbia pile donna",
+    "query": "The North Face pile donna",
     "prices": [
       {
         "date": "2026-09-05",
@@ -9627,15 +9644,17 @@
       32.0,
       32.0,
       32.0,
+      32.0,
       32.0
     ],
     "asin": "B0FB364YVD",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Giacca-cerniera/dp/B0FB364YVD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBOPXCx4fBgHnO5NZMpzl87weuzB42Z8m58gFUuX6Ucqcbn82bArhLPOTb12Q1oCsilWX88EoaUMUdGvZUF6bK-oURoiwiw8bVzfnkLZwu7nX16iJZI-wxv7oWRuhG1bWuQnbqwlP-df_Ctg8WENGhw-Nsr3moS_7bp34by4IJJfGl_JD6yZ0fVys6ePHYP8iA_hcocUAG4plBbSlI5DP_dU.sN_uk5eu4wvPAWwngoyN9_vyCwJkvHzIfHGKeJtNzbQ&dib_tag=se&keywords=Columbia+pile+donna&qid=1789732865&sr=8-9",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Giacca-cerniera/dp/B0FB364YVD/ref=sr_1_46?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-46",
     "price_dates": [
       "2026-09-08",
       "2026-09-11",
       "2026-09-15",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   "B0DLRN77QQ": {
@@ -20073,10 +20092,11 @@
   "B0BKR1S41Y": {
     "asin": "B0BKR1S41Y",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pullover-Fossile/dp/B0BKR1S41Y/ref=sr_1_8?dib=eyJ2IjoiMSJ9.1Sk5Nlz8PerFlqpQrqvunphTHQxGfg_7mO8L3zyPakmZIGuurzCgojIrqFlbd1gNSHozx2Ugo1vTHiiySonASNV4F1fk-Nz9kFVPdehf5ceobUpBfRB6o23lXSRo3W2QYs5eBJj2XoVtAcUBQZ5xjhji_gcVHQEK6hA6HvWV0HWx7fmi6Pak-QESnZvliA_X7Twp9DGndFXX5ZHsKawZAotBEOnVvixoOw7xA3DD_Sfs2qa7tk3Dn0Qi4ZNiDIBhcEa3TEI1DPOcwq3id663IaFxLcQu2rO104vIIEN75BM.EVAqzQRFmlvN15IX2q7H-2Vlhq0K5VUdu1i-QMv6mdA&dib_tag=se&keywords=Columbia+pile+uomo&qid=1789732861&sr=8-8",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Pullover-Fossile/dp/B0BKR1S41Y/ref=sr_1_45?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-45",
     "category": "fashion_men",
-    "query": "Columbia pile uomo",
+    "query": "The North Face pile uomo",
     "prices": [
+      31.99,
       31.99,
       31.99,
       31.99,
@@ -20086,7 +20106,8 @@
       "2026-09-08",
       "2026-09-11",
       "2026-09-15",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   "B076X664KF": {
@@ -22676,18 +22697,20 @@
   "B0DK7RKN3Z": {
     "asin": "B0DK7RKN3Z",
     "title": "Columbia",
-    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Confezione/dp/B0DK7RKN3Z/ref=sr_1_6?dib=eyJ2IjoiMSJ9.2G0M5TELJtup1oROGa9zP4PTdMses9VFrHkcyOfbE77stYC_EfdibhSilFcmrtJoWh7LY7LQ4h9rLcPV2xYlBOPXCx4fBgHnO5NZMpzl87weuzB42Z8m58gFUuX6Ucqcbn82bArhLPOTb12Q1oCsilWX88EoaUMUdGvZUF6bK-oURoiwiw8bVzfnkLZwu7nX16iJZI-wxv7oWRuhG1bWuQnbqwlP-df_Ctg8WENGhw-Nsr3moS_7bp34by4IJJfGl_JD6yZ0fVys6ePHYP8iA_hcocUAG4plBbSlI5DP_dU.sN_uk5eu4wvPAWwngoyN9_vyCwJkvHzIfHGKeJtNzbQ&dib_tag=se&keywords=Columbia+pile+donna&qid=1789732865&sr=8-6",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Pressione-Confezione/dp/B0DK7RKN3Z/ref=sr_1_39?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-39",
     "category": "fashion_women",
-    "query": "Columbia pile donna",
+    "query": "The North Face pile donna",
     "prices": [
       28.36,
       25.52,
+      28.86,
       28.86
     ],
     "price_dates": [
       "2026-09-11",
       "2026-09-15",
-      "2026-09-18"
+      "2026-09-18",
+      "2026-09-21"
     ]
   },
   "B003NX8C6K": {
@@ -24425,18 +24448,20 @@
   "B09HC6XBC7": {
     "asin": "B09HC6XBC7",
     "title": "adidas",
-    "product_url": "https://www.amazon.it/adidas-Feelcozy-Maglione-Black-White/dp/B09HC6XBC7/ref=sr_1_28?dib=eyJ2IjoiMSJ9.GX1dzx0OZFv2GUhkJ8tXcB28-urNobUeDgmQgEtlNnUcuplWPlHtdzZJjSrQnTQ6a8QSyZkM90IlwHxttS90YA4Ekj4WKWiesWtLgOxsRSaSrVHm74woHZsORaXSE1hiUmHxQrDsQ3p_UfyY4Fsafhw4kkIvoaJyJFp1FwP6So_vZ61rk6l2YjA5_SnCNbEcc5LCPh4iwC9zSpBPdaQDpsLbbZlmHmk2J_-L4Z0YhLwP6XtTPTOQDlflDKRjIBkez55t0o3sA-meU_wBNmz4jotbiTKVET13jFOymHCa0vE.P8NC4N7bD43LcaN9oEbge7nfOVKyTVRCj3vNgAEH0H4&dib_tag=se&keywords=Adidas+felpa+uomo&qid=1789927260&sr=8-28",
+    "product_url": "https://www.amazon.it/adidas-Feelcozy-Maglione-Black-White/dp/B09HC6XBC7/ref=sr_1_25?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-25",
     "category": "fashion_men",
-    "query": "Adidas felpa uomo",
+    "query": "The North Face pile uomo",
     "prices": [
       26.99,
       27.49,
+      26.49,
       26.49
     ],
     "price_dates": [
       "2026-09-14",
       "2026-09-17",
-      "2026-09-20"
+      "2026-09-20",
+      "2026-09-21"
     ]
   },
   "B08PL1LMGL": {
@@ -29629,6 +29654,1137 @@
     ],
     "price_dates": [
       "2026-09-20"
+    ]
+  },
+  "B096YLPXS4": {
+    "asin": "B096YLPXS4",
+    "title": "Amazon Essentials",
+    "product_url": "https://www.amazon.it/Amazon-Essentials-Giacca-Polare-Intera/dp/B096YLPXS4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-1",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      12.24
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B085YVKCQC": {
+    "asin": "B085YVKCQC",
+    "title": "Prodotti chimici più sicuri",
+    "product_url": "https://www.amazon.it/Amazon-Essentials-Maniche-Fleece-Outerwear-Jackets-XXXL-4XL/dp/B085YVKCQC/ref=sr_1_2?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-2",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      12.3
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FL89WRXQ": {
+    "asin": "B0FL89WRXQ",
+    "title": "Giacca estiva leggera da uomo, alla moda, casual, a maniche lunghe, con abbottonatura e mezza cerniera, antivento, vestibilità",
+    "product_url": "https://www.amazon.it/VaiKanhai-abbottonatura-cerniera-antivento-vestibilit%C3%A0/dp/B0FL89WRXQ/ref=sr_1_4?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-4",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      13.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJFCDMV": {
+    "asin": "B0GYJFCDMV",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Ciclismo-Cerniera-Traspirante/dp/B0GYJFCDMV/ref=sr_1_5?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-5",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      14.39
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B00VIF0IY4": {
+    "asin": "B00VIF0IY4",
+    "title": "Regatta",
+    "product_url": "https://www.amazon.it/Regatta-Classic-Giacca-Pile-Black/dp/B00VIF0IY4/ref=sr_1_6?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-6",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      14.69
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FLD26SZR": {
+    "asin": "B0FLD26SZR",
+    "title": "Giacca da uomo atletica, per allenamento, corsa, a maniche lunghe, con cappuccio, giacca da lavoro, giacca invernale per le mezze stagioni, vestibilità normale",
+    "product_url": "https://www.amazon.it/VaiKanhai-allenamento-cappuccio-invernale-vestibilit%C3%A0/dp/B0FLD26SZR/ref=sr_1_7?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-7",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      14.79
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJ8VNCP": {
+    "asin": "B0GYJ8VNCP",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Softshell-Viaggio-Escursioni/dp/B0GYJ8VNCP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-8",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      15.09
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJB2S7M": {
+    "asin": "B0GYJB2S7M",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Ciclismo-Traspirante-Maniche/dp/B0GYJB2S7M/ref=sr_1_9?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-9",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      15.59
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B006X3JDBU": {
+    "asin": "B006X3JDBU",
+    "title": "SOL'S",
+    "product_url": "https://www.amazon.it/sol-Giacca-Pile-North-Green/dp/B006X3JDBU/ref=sr_1_10?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-10",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      15.88
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJD5XLS": {
+    "asin": "B0GYJD5XLS",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Ciclismo-Traspirante-Maniche/dp/B0GYJD5XLS/ref=sr_1_11?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-11",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      17.19
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYMYJ1M1": {
+    "asin": "B0GYMYJ1M1",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Softshell-Viaggio-Escursioni/dp/B0GYMYJ1M1/ref=sr_1_12?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-12",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      17.69
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0BMWJ8LP3": {
+    "asin": "B0BMWJ8LP3",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Giacca-pile-Marina/dp/B0BMWJ8LP3/ref=sr_1_13?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-13",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      17.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJ9GFP2": {
+    "asin": "B0GYJ9GFP2",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Monopetto-Autunnale-Elegante/dp/B0GYJ9GFP2/ref=sr_1_14?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-14",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      18.69
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DN1SJDZ5": {
+    "asin": "B0DN1SJDZ5",
+    "title": "JJ REBEL",
+    "product_url": "https://www.amazon.it/JJ-Fleece-Jacket-Giacca-Jreblake/dp/B0DN1SJDZ5/ref=sr_1_15?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-15",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      18.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GCYCM24F": {
+    "asin": "B0GCYCM24F",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/leggero-cerniera-morbido-tessuto-multiple/dp/B0GCYCM24F/ref=sr_1_16?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-16",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      19.11
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B01IRM7348": {
+    "asin": "B01IRM7348",
+    "title": "CMP",
+    "product_url": "https://www.amazon.it/CMP-Micro-Arctic-Fleece-Ferrari/dp/B01IRM7348/ref=sr_1_17?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-17",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      20.49
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJ9R2SD": {
+    "asin": "B0GYJ9R2SD",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Termico-Uomo-Cardigan-Interno/dp/B0GYJ9R2SD/ref=sr_1_18?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-18",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      22.29
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GYJ8HG5T": {
+    "asin": "B0GYJ8HG5T",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Uomo-Floreale-Cappuccio-Regolabile/dp/B0GYJ8HG5T/ref=sr_1_19?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-19",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      24.69
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0999DS2B3": {
+    "asin": "B0999DS2B3",
+    "title": "Regatta",
+    "product_url": "https://www.amazon.it/Regatta-RMA486-ZV795-Pile-Bawdonfleece/dp/B0999DS2B3/ref=sr_1_20?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-20",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      24.92
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0D4BWB741": {
+    "asin": "B0D4BWB741",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Fleece-Safari/dp/B0D4BWB741/ref=sr_1_21?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-21",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      25.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B001JDGI3K": {
+    "asin": "B001JDGI3K",
+    "title": "Urban Classics",
+    "product_url": "https://www.amazon.it/Urban-Classics-TB014-Blank-2-Pack-Cappuccio/dp/B001JDGI3K/ref=sr_1_23?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-23",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      25.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B08Q8DWLGT": {
+    "asin": "B08Q8DWLGT",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Klamath-Range-Giacca-Cerniera/dp/B08Q8DWLGT/ref=sr_1_24?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-24",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      25.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DJ2XGFPM": {
+    "asin": "B0DJ2XGFPM",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Cotone-Sportiva-Completa-Cappuccio/dp/B0DJ2XGFPM/ref=sr_1_26?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-26",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      26.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B019DYGL60": {
+    "asin": "B019DYGL60",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Uomo-163926-Steens-Mountain/dp/B019DYGL60/ref=sr_1_27?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-27",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      26.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0G4C963VN": {
+    "asin": "B0G4C963VN",
+    "title": "Giacca in pelle PU da uomo giacca vintage retrò giacche da moto con cerniera completa colletto alla coreana giacche autunnali cappotti da motociclista casual da motociclista Outwear per",
+    "product_url": "https://www.amazon.it/HUYTBYG-cerniera-completa-autunnali-motociclista/dp/B0G4C963VN/ref=sr_1_28?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-28",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      28.81
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B07T8DK213": {
+    "asin": "B07T8DK213",
+    "title": "JP 1880",
+    "product_url": "https://www.amazon.it/JP-1880-723305-Gilet-Pile/dp/B07T8DK213/ref=sr_1_29?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-29",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      28.94
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DJLY4VM7": {
+    "asin": "B0DJLY4VM7",
+    "title": "adidas",
+    "product_url": "https://www.amazon.it/adidas-Terrex-Multi-Essentials-confezione/dp/B0DJLY4VM7/ref=sr_1_30?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-30",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      28.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0HBKF16CZ": {
+    "asin": "B0HBKF16CZ",
+    "title": "WWricotta",
+    "product_url": "https://www.amazon.it/WWricotta-Pullover-Allentato-Primaverile-Confortevole/dp/B0HBKF16CZ/ref=sr_1_32?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-32",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.59
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DKBKKGSN": {
+    "asin": "B0DKBKKGSN",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/allaperto-asciugatura-escursionismo-multitasche-traspirante/dp/B0DKBKKGSN/ref=sr_1_33?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-33",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.75
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0D9M9487X": {
+    "asin": "B0D9M9487X",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Polar-Uomo-Modello/dp/B0D9M9487X/ref=sr_1_34?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-34",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.9
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0D9MCDPJB": {
+    "asin": "B0D9MCDPJB",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Modello-Colore-Taglia/dp/B0D9MCDPJB/ref=sr_1_35?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-35",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.9
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0D9MB78JM": {
+    "asin": "B0D9MB78JM",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Modello-Colore-Grigio/dp/B0D9MB78JM/ref=sr_1_36?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-36",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.9
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0G4J1Z74M": {
+    "asin": "B0G4J1Z74M",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Giacca-Tamazonia-XXL/dp/B0G4J1Z74M/ref=sr_1_37?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-37",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B07KCRMHS4": {
+    "asin": "B07KCRMHS4",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-Antracite/dp/B07KCRMHS4/ref=sr_1_38?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-38",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      31.03
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0C7HG1DLL": {
+    "asin": "B0C7HG1DLL",
+    "title": "JACK & JONES",
+    "product_url": "https://www.amazon.it/JACK-JONES-Jjebradley-Blazer-Marine/dp/B0C7HG1DLL/ref=sr_1_39_mod_primary_new?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-39",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      29.19
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B07KCDP2QX": {
+    "asin": "B07KCDP2QX",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Steens-Mountain-Giacca-Antracite/dp/B07KCDP2QX/ref=sr_1_41?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-41",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      31.67
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B001O59QM8": {
+    "asin": "B001O59QM8",
+    "title": "Regatta",
+    "product_url": "https://www.amazon.it/Regatta-TRF532-Felpa-Grigio-Seal/dp/B001O59QM8/ref=sr_1_42_mod_primary_new?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-42",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      27.7
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CYGSL5FF": {
+    "asin": "B0CYGSL5FF",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/Fodera-Casual-Collare-Scamosciata-AllAperto/dp/B0CYGSL5FF/ref=sr_1_43?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-43",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      31.96
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0BGYBDQL6": {
+    "asin": "B0BGYBDQL6",
+    "title": "THE NORTH FACE",
+    "product_url": "https://www.amazon.it/Cappello-Mudder-Trucker-sfumato-taglia/dp/B0BGYBDQL6/ref=sr_1_44?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-44",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      31.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0GCT3SDJZ": {
+    "asin": "B0GCT3SDJZ",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/leggero-softshell-foderato-maniche-cerniera/dp/B0GCT3SDJZ/ref=sr_1_46?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-46",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      32.11
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B00NVUH9NC": {
+    "asin": "B00NVUH9NC",
+    "title": "Trespass",
+    "product_url": "https://www.amazon.it/Trespass-Clasp-Giacca-Penna-MAJKGIK10003_BLKXXL/dp/B00NVUH9NC/ref=sr_1_47?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-47",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      32.49
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FX7GDMFQ": {
+    "asin": "B0FX7GDMFQ",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/foderata-invernale-cappuccio-pelliccia-camionista/dp/B0FX7GDMFQ/ref=sr_1_48?dib=eyJ2IjoiMSJ9.qUzLZJEena8uOQwV9nxooCjS-82IhvkgU3b-P29fI4xmbK1wegZMVk4FrIz3DaNMAsUH-bQOsf1RMDQlzPlDUOowrCvW6Du3JY30hyQfeO0r-KRT7hW7jd0l07nwkcKuiRK-EfDDK_eCKYJNwizPVZrcbvGYfkdhyhhWO43FC6wJqwzZVyTlXFvs6_Z-JqSi4v3BDEQ8ySCqM0_l3xnv1wQhslGH_O7UxecvC568A5WDeuth1R3tQJjrkVChe0VkmcFf4eGUZrF68VoM4p_PGNkgxeKofoFBEvwlqPblABY.-so-Xi_lYDT4gqZPbizNQRdG0kZ7hTW9l9YBeLa-Gsk&dib_tag=se&keywords=The+North+Face+pile+uomo&qid=1789970462&sr=8-48",
+    "category": "fashion_men",
+    "query": "The North Face pile uomo",
+    "prices": [
+      32.56
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FLK9WGGZ": {
+    "asin": "B0FLK9WGGZ",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/Maglione-drappeggiato-camicetta-maglioni-vestibilit%C3%A0/dp/B0FLK9WGGZ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-1",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      1.97
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FD75FR6X": {
+    "asin": "B0FD75FR6X",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/girocollo-divertente-pullover-cappuccio-insegnante/dp/B0FD75FR6X/ref=sr_1_2?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-2",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      3.96
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FD6GZRH7": {
+    "asin": "B0FD6GZRH7",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/lavorato-elegante-cardigan-vestibilit%C3%A0-camicette/dp/B0FD6GZRH7/ref=sr_1_3?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-3",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      6.64
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FLDZ39MF": {
+    "asin": "B0FLDZ39MF",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/Oversize-maniche-Pullover-Maglioni-Allentato/dp/B0FLDZ39MF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-4",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      7.81
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FR94G81Q": {
+    "asin": "B0FR94G81Q",
+    "title": "Generisch",
+    "product_url": "https://www.amazon.it/Generisch-invernale-cappuccio-leopardato-patchwork/dp/B0FR94G81Q/ref=sr_1_5?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-5",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      9.49
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DHCMY2BY": {
+    "asin": "B0DHCMY2BY",
+    "title": "HAOLEI",
+    "product_url": "https://www.amazon.it/HAOLEI-Cappuccio-Fronte-Retro-2024-Settimana/dp/B0DHCMY2BY/ref=sr_1_6?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-6",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      9.69
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FR9349ZQ": {
+    "asin": "B0FR9349ZQ",
+    "title": "Generisch",
+    "product_url": "https://www.amazon.it/Generisch-Maglione-oversize-elegante-cappuccio/dp/B0FR9349ZQ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-7",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      11.49
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FD7B2PXZ": {
+    "asin": "B0FD7B2PXZ",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/protezione-cerniera-asciugatura-abbigliamento-escursionismo/dp/B0FD7B2PXZ/ref=sr_1_8?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-8",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      11.67
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FLF147HM": {
+    "asin": "B0FLF147HM",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/impermeabile-escursionismo-cerniera-cappuccio-traspirante/dp/B0FLF147HM/ref=sr_1_9?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-9",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      12.48
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FFGY87SH": {
+    "asin": "B0FFGY87SH",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/Wmomen-cerniera-lautunno-abbigliamento-sportivo/dp/B0FFGY87SH/ref=sr_1_10?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-10",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      14.2
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B097F41Q35": {
+    "asin": "B097F41Q35",
+    "title": "Prodotti chimici più sicuri",
+    "product_url": "https://www.amazon.it/Amazon-Essentials-Giacca-vestibilit%C3%A0-Classica/dp/B097F41Q35/ref=sr_1_11?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-11",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      15.4
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B00B39UKEI": {
+    "asin": "B00B39UKEI",
+    "title": "SOL'S",
+    "product_url": "https://www.amazon.it/SOLS-North-Giacca-donna-pile/dp/B00B39UKEI/ref=sr_1_12?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-12",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      15.88
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B01B1GYG2Y": {
+    "asin": "B01B1GYG2Y",
+    "title": "Regatta",
+    "product_url": "https://www.amazon.it/Regatta-Sweethart-Symmetry-Cerniera-Bianco-Polar/dp/B01B1GYG2Y/ref=sr_1_13?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-13",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      15.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CWPGBY5W": {
+    "asin": "B0CWPGBY5W",
+    "title": "Mukua",
+    "product_url": "https://www.amazon.it/Mukua-Perth-Woman-Giacca-Donna/dp/B0CWPGBY5W/ref=sr_1_14?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-14",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      16.86
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0BZ4JZ2Y6": {
+    "asin": "B0BZ4JZ2Y6",
+    "title": "CMP",
+    "product_url": "https://www.amazon.it/CMP-Maglia-Pile-Donna-Gloss/dp/B0BZ4JZ2Y6/ref=sr_1_15?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-15",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      17.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B09KZB9T4G": {
+    "asin": "B09KZB9T4G",
+    "title": "riou",
+    "product_url": "https://www.amazon.it/Invernale-Abbigliamento-Sportivo-Pantaloni-Ginnastica/dp/B09KZB9T4G/ref=sr_1_16?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-16",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      18.16
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CX3Z1D73": {
+    "asin": "B0CX3Z1D73",
+    "title": "riou",
+    "product_url": "https://www.amazon.it/Riou-Invernale-Cappuccio-Ginnastica-Pantaloni/dp/B0CX3Z1D73/ref=sr_1_17?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-17",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      18.27
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FMQR3RHD": {
+    "asin": "B0FMQR3RHD",
+    "title": "IQYU",
+    "product_url": "https://www.amazon.it/IQYU-softshell-cappuccio-impermeabile-traspirante/dp/B0FMQR3RHD/ref=sr_1_18?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-18",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      19.86
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0HFT3J75X": {
+    "asin": "B0HFT3J75X",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Indumento-Protettivo-Traspirante-AllAperto/dp/B0HFT3J75X/ref=sr_1_19?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-19",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      19.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FTVKCCW3": {
+    "asin": "B0FTVKCCW3",
+    "title": "Generisch",
+    "product_url": "https://www.amazon.it/Generisch-Maglione-orsacchiotto-morbido-invernale/dp/B0FTVKCCW3/ref=sr_1_20?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-20",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      20.49
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0HFSY1961": {
+    "asin": "B0HFSY1961",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Trekking-Cappuccio-Completa-Protezione/dp/B0HFSY1961/ref=sr_1_21?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-21",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      20.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0HFSTQTLG": {
+    "asin": "B0HFSTQTLG",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-sportiva-aderente-invernale-traspirante/dp/B0HFSTQTLG/ref=sr_1_22?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-22",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      20.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B08PV322CG": {
+    "asin": "B08PV322CG",
+    "title": "Giacca da Donna Casual in Peluche Giacca Natalizia con Cuciture a Quadri Calda Autunno e Inverno",
+    "product_url": "https://www.amazon.it/keepmore-Peluche-Natalizia-Cuciture-Autunno/dp/B08PV322CG/ref=sr_1_23?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-23",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      20.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CVN39LZX": {
+    "asin": "B0CVN39LZX",
+    "title": "Velilla",
+    "product_url": "https://www.amazon.it/VELILLA-Donna-Giacca-Pile-Nero/dp/B0CVN39LZX/ref=sr_1_24?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-24",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      21.4
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B078ZM87LY": {
+    "asin": "B078ZM87LY",
+    "title": "Trespass",
+    "product_url": "https://www.amazon.it/Trespass-Donna-Pile-FAFLFLJ20007-X-Small/dp/B078ZM87LY/ref=sr_1_25?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-25",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      22.2
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B076VJDTZB": {
+    "asin": "B076VJDTZB",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Donna-Glacial-Beige-Taglia/dp/B076VJDTZB/ref=sr_1_26?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-26",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      22.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B00VIFHW70": {
+    "asin": "B00VIFHW70",
+    "title": "Regatta",
+    "product_url": "https://www.amazon.it/Regatta-Micropile-Cerniera-Full-Zip-Classic/dp/B00VIFHW70/ref=sr_1_27?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-27",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      23.55
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FMQQ33NR": {
+    "asin": "B0FMQQ33NR",
+    "title": "IQYU",
+    "product_url": "https://www.amazon.it/IQYU-impermeabile-ciclismo-traspirante-softshell/dp/B0FMQQ33NR/ref=sr_1_28?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-28",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      24.82
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0HFSYVD29": {
+    "asin": "B0HFSYVD29",
+    "title": "Generico",
+    "product_url": "https://www.amazon.it/Generico-Impermeabile-Antivento-Cappuccio-Escursioni/dp/B0HFSYVD29/ref=sr_1_29?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-29",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      24.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B097J2V2DK": {
+    "asin": "B097J2V2DK",
+    "title": "Amazon Essentials",
+    "product_url": "https://www.amazon.it/Amazon-Essentials-Giacca-Maniche-Lunghe/dp/B097J2V2DK/ref=sr_1_30?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-30",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      24.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FXQVWHY9": {
+    "asin": "B0FXQVWHY9",
+    "title": "Generic",
+    "product_url": "https://www.amazon.it/invernali-impermeabili-antiscivolo-passeggio-polpaccio/dp/B0FXQVWHY9/ref=sr_1_31?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-31",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      25.23
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0F2THQQSV": {
+    "asin": "B0F2THQQSV",
+    "title": "Geographical Norway",
+    "product_url": "https://www.amazon.it/Geographical-Norway-Tourbilloneama_Lady-Donna-Marina/dp/B0F2THQQSV/ref=sr_1_32?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-32",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      25.42
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CKVY2LGY": {
+    "asin": "B0CKVY2LGY",
+    "title": "Helly Hansen",
+    "product_url": "https://www.amazon.it/Helly-Hansen-Graphic-Felpa-Oceano/dp/B0CKVY2LGY/ref=sr_1_33?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-33",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      25.9
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DLX67KYK": {
+    "asin": "B0DLX67KYK",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-West-Fleece-Donna-Confezione/dp/B0DLX67KYK/ref=sr_1_34?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-34",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      26.52
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B07YBCS7T7": {
+    "asin": "B07YBCS7T7",
+    "title": "Trespass",
+    "product_url": "https://www.amazon.it/Trespass-Reserve-Micropile-Cappuccio-FAFLFLTR0021_DNBL/dp/B07YBCS7T7/ref=sr_1_36?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-36",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      27.27
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CKLTNGDZ": {
+    "asin": "B0CKLTNGDZ",
+    "title": "Giacca da trekking da donna, impermeabile, in pile, imbottita, traspirante, corta, antivento, in softshell, calde giacche invernali con cappuccio con coulisse, cachi, 5X-Large",
+    "product_url": "https://www.amazon.it/Dinnesis-impermeabile-imbottita-traspirante-antivento/dp/B0CKLTNGDZ/ref=sr_1_37?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-37",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      28.2
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FMQR7CZW": {
+    "asin": "B0FMQR7CZW",
+    "title": "IQYU",
+    "product_url": "https://www.amazon.it/IQYU-impermeabile-traspirante-invernale-antivento/dp/B0FMQR7CZW/ref=sr_1_38?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-38",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      28.7
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CLQYPHKW": {
+    "asin": "B0CLQYPHKW",
+    "title": "Columbia",
+    "product_url": "https://www.amazon.it/Columbia-Benton-Springs-Fleece-Confezione/dp/B0CLQYPHKW/ref=sr_1_40?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-40",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      28.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B07PRGPLWQ": {
+    "asin": "B07PRGPLWQ",
+    "title": "ALPIDEX",
+    "product_url": "https://www.amazon.it/ALPIDEX-Giacca-Morbido-Coletto-Taglia/dp/B07PRGPLWQ/ref=sr_1_41?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-41",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      29.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0FWKM969S": {
+    "asin": "B0FWKM969S",
+    "title": "Giacca Pile Donna Invernale con Cappuccio Cerniera Felpa Sherpa Polar Hoodie Caldo Termica Lavoro Teddy Cappotto per Outdoor Running Trekking Sci",
+    "product_url": "https://www.amazon.it/Mnking-Invernale-Cappuccio-Cerniera-FS5563W-Black-XS/dp/B0FWKM969S/ref=sr_1_42?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-42",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      29.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B09MBCPLXB": {
+    "asin": "B09MBCPLXB",
+    "title": "IZAS",
+    "product_url": "https://www.amazon.it/IZAS-Cappello-Invernale-Kazbek-II/dp/B09MBCPLXB/ref=sr_1_43?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-43",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      29.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B09KVJ4SYM": {
+    "asin": "B09KVJ4SYM",
+    "title": "Carhartt",
+    "product_url": "https://www.amazon.it/Carhartt-Felpa-girocollo-Clarksburg-Graphic/dp/B09KVJ4SYM/ref=sr_1_44?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-44",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      31.9
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0DJLXZCJ4": {
+    "asin": "B0DJLXZCJ4",
+    "title": "adidas",
+    "product_url": "https://www.amazon.it/adidas-Terrex-Multi-Essentials-confezione/dp/B0DJLXZCJ4/ref=sr_1_45?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-45",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      31.99
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B0CMB9G2R7": {
+    "asin": "B0CMB9G2R7",
+    "title": "Helly Hansen",
+    "product_url": "https://www.amazon.it/Helly-Hansen-Verglas-T-Shirt-Giallo/dp/B0CMB9G2R7/ref=sr_1_47?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-47",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      32.08
+    ],
+    "price_dates": [
+      "2026-09-21"
+    ]
+  },
+  "B083LXGLKX": {
+    "asin": "B083LXGLKX",
+    "title": "THE NORTH FACE",
+    "product_url": "https://www.amazon.it/NORTH-FACE-Etip-Guanti-Donna/dp/B083LXGLKX/ref=sr_1_48?dib=eyJ2IjoiMSJ9.bf4ZOvt7qPVIH3axwDiMIrXVnOsMxM6FAz80UOk7fN-6rG0mUu8tKvvYZJmzlncLM227JpeooXl8aTiRQ7rnb_7nZ5S7_GlzSADyoyeqGDqDe1yiK7kIhYDV2YIBGHYisrq_oxcNmbTFP4LqTw3mAUHjwDI9RdUIELc4Eq6l3WGifaCh1VZrLTHMhC8lbrCT3ISvpcoDpbC_1VVfmL_ZLRZqxtdyAkvumn3_tA94xpKJwOViJ_iq6nsj6B6M_5IXvAKDVE-Lx0Fx4Pqh05HIJNG11SWWRKosbvpVciyaxKc.X-T60xJZt5IAssuo1Cj1dkljdSdWnuxryGGvlKQ19tg&dib_tag=se&keywords=The+North+Face+pile+donna&qid=1789970465&sr=8-48",
+    "category": "fashion_women",
+    "query": "The North Face pile donna",
+    "prices": [
+      32.79
+    ],
+    "price_dates": [
+      "2026-09-21"
     ]
   }
 }
